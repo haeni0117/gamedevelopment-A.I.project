@@ -1,0 +1,16 @@
+font filter=lfs diff=lfs merge=lfs -text
+font.meta filter=lfs diff=lfs merge=lfs -text
+image filter=lfs diff=lfs merge=lfs -text
+Script filter=lfs diff=lfs merge=lfs -text
+New[[:space:]]Render[[:space:]]Texture.renderTexture filter=lfs diff=lfs merge=lfs -text
+New[[:space:]]Render[[:space:]]Texture.renderTexture.meta filter=lfs diff=lfs merge=lfs -text
+Script.meta filter=lfs diff=lfs merge=lfs -text
+texture.meta filter=lfs diff=lfs merge=lfs -text
+video.meta filter=lfs diff=lfs merge=lfs -text
+New[[:space:]]Render[[:space:]]Texture[[:space:]]1.renderTexture filter=lfs diff=lfs merge=lfs -text
+image.meta filter=lfs diff=lfs merge=lfs -text
+texture filter=lfs diff=lfs merge=lfs -text
+video filter=lfs diff=lfs merge=lfs -text
+Scenes.meta filter=lfs diff=lfs merge=lfs -text
+Scenes filter=lfs diff=lfs merge=lfs -text
+New[[:space:]]Render[[:space:]]Texture[[:space:]]1.renderTexture.meta filter=lfs diff=lfs merge=lfs -text
