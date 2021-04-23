@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class text1_7 : MonoBehaviour
 {
+    int num;
     int cnt ;
     int count;
     public Text m_TypingText; 
@@ -20,6 +21,8 @@ public class text1_7 : MonoBehaviour
     public Text mom_t;
     public Text dad_t;
     public Text bro_t;
+    public GameObject btnclick;
+    
 
 
     //타이핑코루틴함수
@@ -34,6 +37,7 @@ public class text1_7 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        btn = item.transform.Find("Button").GetComponent<Button>();
         Debug.Log("startasking");
         m_Speed = 0.05f; 
         originalask.text="누구야?";
@@ -77,6 +81,15 @@ public class text1_7 : MonoBehaviour
             }
         }
     }
+    //버튼에게 onclick으로 연결할 함수 -> 버튼을 클릭하면 num증가하고 그때 interactable : false 해당 코루틴 함수가 종료되면 다시 interactable을 켜준다.
+    public void buttonclick(){
+        num++;
+        btn = item.transform.Find("Button").GetComponent<Button>();
+        btn.interactable = false; // 버튼 클릭을 비활성
+        if(num=1){
+            mom1();
+        }
+    }
 
     public void mom0(){
         int count=100;
@@ -90,9 +103,9 @@ public class text1_7 : MonoBehaviour
         m_Speed = 0.05f; 
         generaltext.text="“다 너 때문이야. 네가 그러지만 않았어도, \n우리는 모두 살 수 있었어. \n다 네가, 네가 고집을 부려서 우리 현이가…….”";
         StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
-        if(Input.GetMouseButtonDown(0)){
-            mom1();
-        }
+        // if(Input.GetMouseButtonDown(0)){
+        //     mom1();
+        // }
         
         
         
@@ -103,7 +116,8 @@ public class text1_7 : MonoBehaviour
         Debug.Log(count);
         m_Speed = 0.05f; 
         generaltext.text="엄마는 대답 대신 구겨진 보닛 사이에 낀 왼 다리를 \n피가 나도록 긁기 시작한다.\n나는 도망치고 싶다고 생각하지만, \n절망감이 켜켜이 쌓인 목소리로 나를 비난하는 \n엄마의 눈동자를 벗어날 수가 없다.";
-        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));        
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));   
+        btn.interactable = true;    
     }
     public void mom2(){
         Debug.Log("mom_narration2");
