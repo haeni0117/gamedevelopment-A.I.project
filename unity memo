@@ -1,0 +1,17 @@
+버튼클릭활성화/비활성화(btn은 이미 정의해준 변수명)
+btn.interactable = false; // 버튼 클릭을 비활성
+btn.interactable = true; // 버튼 클릭을 활성
+=> noninvokable member cannot be used like a method라는 에러가 발생한다. 왜 이 에러가 나왔는지는 모르겠지만 이제는 된다. 
+GetComponent<Button>().interactable = true;
+GetComponent<Button>().interactable = false;
+GetComponent라는 것은 해당 게임오브젝트의 속성을 불러온다는 의미. 위 코드는 해당 게임 오브젝트의 button속성을 불러와서 버튼클릭을 비활성화한다는 것이다. 
+
+버튼활성화/비활성화
+btn.SetActive(true);
+btn.SetActive(false);
+
+정수를 다루는 조건문에서 == 2개로 쓰지 않으면 에러가 난다
+
+noninvokable member cannot be used like a method
+
+다른 스크립트에서 함수 불러오기
