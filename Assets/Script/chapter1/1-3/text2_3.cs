@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class text2_3 : MonoBehaviour
 {
-    int count = 0;
+    public int count = 0;
     public Text m_TypingText; 
     public string m_Message;
     public float m_Speed;
