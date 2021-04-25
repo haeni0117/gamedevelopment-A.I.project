@@ -385,5 +385,6 @@ public class text1_7 : MonoBehaviour
         generaltext.text="나는 번쩍이는 푸른빛을 그러모아 주먹을 쥐고 \n자동차를 힘껏 내리쳤다.";
         StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
         Invoke("cntup31",5);
+    }
 }
 
