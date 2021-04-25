@@ -76,6 +76,27 @@ public class text1_7 : MonoBehaviour
     private void cntup24(){
         cnt=2300;
     }
+    private void cntup25(){
+        cnt=2400;
+    }
+    private void cntup26(){
+        cnt=2500;
+    }
+    private void cntup27(){
+        cnt=2600;
+    }
+    private void cntup28(){
+        cnt=2700;
+    }
+    private void cntup29(){
+        cnt=2800;
+    }
+    private void cntup30(){
+        cnt=2900;
+    }
+    private void cntup31(){
+        cnt=3000;
+    }
 
 
     //타이핑코루틴함수
@@ -147,17 +168,53 @@ public class text1_7 : MonoBehaviour
                 bro_b.interactable=true;
                 dad_t.text = "아빠";
                 bro_t.text="오빠";
-            }
-            if(cnt==1301){
-                cnt++;
-                mom_b.interactable=false;
-                dad_b.interactable=false;
-                bro_b.interactable=true;
                 mom_t.text="엄마";
-                dad_t.text = "아빠";
-                bro_t.text="오빠";
-            }
             
+            }
+            if(cnt==2001){
+                cnt++;
+                bro1();
+            }
+            if(cnt==2101){
+                cnt++;
+                bro2();
+            }
+            if(cnt==2201){
+                cnt++;
+                bro3_typingfast();
+            }
+            if(cnt==2301){
+                cnt++;
+                bro4();
+            }
+            if(cnt==2401){
+                cnt++;
+                bro5();
+            }
+            if(cnt==2501){
+                cnt++;
+                bro6();
+            }
+            if(cnt==2601){
+                cnt++;
+                bro7();
+            }
+            if(cnt==2701){
+                cnt++;
+                bro8();
+            }
+            if(cnt==2801){
+                cnt++;
+                bro9();
+            }
+            if(cnt==2901){
+                cnt++;
+                bro10();
+            }
+            if(cnt==3001){
+                cnt++;
+                
+            }
             // if(cnt==104){
             //     original();
             // }
@@ -280,14 +337,53 @@ public class text1_7 : MonoBehaviour
         StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
         Invoke("cntup24",6);
     }
-     public void bro4(){
-        Debug.Log("bro_typing");
+    public void bro4(){
+        Debug.Log("bro_narration3");
         m_Speed = 0.05f; 
         generaltext.text="온몸이 뒤틀린 가족들에게 나도 왼손을 잃었다고, \n운전을 한 사람은 내가 아니라고 외치고 싶지만, \n까맣게 칠해진 유년의 기억 속에서 \n새빨간 의심이 고개를 들고 속삭인다.";
         StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
         Invoke("cntup25",5);
     }
-
-    
+    public void bro5(){
+        Debug.Log("bro_narration4");
+        m_Speed = 0.05f; 
+        generaltext.text="사실 네가 잘못한 게 맞을 거라고.\n이 모든 참상은 다 너 때문이라고. \n그래서 나 같은 건 죽어 마땅할지도 모른다고.\n\n\"그래, 어쩌면 나 같은 건….\"";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup26",5);
+    }
+    public void bro6(){
+        Debug.Log("bro_narration5");
+        m_Speed = 0.05f; 
+        generaltext.text="손목의 잘린 단면을 타고 \n손바닥 모양의 푸른빛이 잠깐 나타났다 사라지고,\n노이즈 섞인 목소리가 손을 타고 흘러나온다.\n\n\"…을…요.\"";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup27",5);
+    }
+    public void bro7(){
+        Debug.Log("bro_narration6");
+        m_Speed = 0.05f; 
+        generaltext.text="\"뭐라고?\"\n\n아직도 피가 흐르는 손목에 귀를 갖다 대자 \n카라의 목소리가 들린다.";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup28",5);
+    }
+    public void bro8(){
+        Debug.Log("bro_narration7");
+        m_Speed = 0.05f; 
+        generaltext.text="\"홀로…을…꺼요!\"\n\n죽은 오빠가 입을 벙긋거리고,\n잘린 손목은 아프지 않고,\n아무리 비가 거세져도 발밑으로 물이 고이지 않아.\n빗소리를 뚫고 오빠가 악에 받쳐 소리친다.";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup29",5);
+    }
+    public void bro9(){
+        Debug.Log("bro_narration8");
+        m_Speed = 0.05f; 
+        generaltext.text="\"네가 지은 죄는 절대로 용서받을 수 없어!\n왜냐면 이건 다,\"\n\n“환각이니까.”";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup30",5);
+    }
+    public void bro10(){
+        Debug.Log("bro_narration9");
+        m_Speed = 0.05f; 
+        generaltext.text="나는 번쩍이는 푸른빛을 그러모아 주먹을 쥐고 \n자동차를 힘껏 내리쳤다.";
+        StartCoroutine(Typing(m_TypingText, generaltext.text, m_Speed));
+        Invoke("cntup31",5);
 }
 
