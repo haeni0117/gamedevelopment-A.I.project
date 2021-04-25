@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class text1_7 : MonoBehaviour
 {
-    int num=0;
-    int cnt;
-    int count;
+    public Image image;
+    private fadeeffect _fadeeffect;
+    // fadeeffect fade;
+    // [SerializeField]
+    // private AnimationCurve fadeCurve;
+    // int num=0;
+    public int cnt;
+    public int count;
     public Text m_TypingText; 
     public Text generaltext;
     public string m_Message;
@@ -25,9 +30,28 @@ public class text1_7 : MonoBehaviour
     public Button mom_b;
     public Button bro_b; 
     public Button btn;
-    float timer;
-    
+    // float timer;
+    // public Image fadeout_;
+    // private float fadetime=1;
+//=====================================================================================================================================
+    //fadeout&fadein function
+//=====================================================================================================================================
+    // private IEnumerator fadein(float start, float end){
+    //     float currentTime = 0.0f;
+    //     float percent = 0.0f;
+    //     while(percent<1){
+    //         currentTime +=Time.deltaTime;
+    //         percent = currentTime/fadetime;
+    //         Color color = fadeout_.color;
+    //         color.a = Mathf.Lerp(start, end, fadeCurve.Evaluate(percent));
+    //         fadeout_.color = color;
+            
+    //         yield return null;
 
+    //     }
+    // }
+
+//=====================================================================================================================================
     IEnumerator Typing(Text typingText, string message, float speed) 
     { 
         for (int i = 0; i < message.Length; i++) 
@@ -36,7 +60,8 @@ public class text1_7 : MonoBehaviour
             yield return new WaitForSeconds(speed); 
         }
         
-    }//=====================================================================================================================================
+    }
+    //=====================================================================================================================================
     //==============================count up function ============================================================
     //mom
     void cntup1(){
@@ -113,13 +138,15 @@ public class text1_7 : MonoBehaviour
         mom.SetActive(false);
         dad.SetActive(false);
         bro.SetActive(false);
-        
+        _fadeeffect = FindObjectOfType<fadeeffect>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        _fadeeffect.StartCoroutine("Fade");
+
         Debug.Log(cnt);
         if(Input.GetMouseButtonDown(0))
           cnt++;
@@ -213,6 +240,9 @@ public class text1_7 : MonoBehaviour
             }
             if(cnt==3001){
                 cnt++;
+                _fadeeffect.StartCoroutine("Fade");//
+                // StartCoroutine(fadein(0,1));
+
                 
             }
             // if(cnt==104){
