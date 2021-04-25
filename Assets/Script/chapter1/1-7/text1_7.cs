@@ -6,12 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class text1_7 : MonoBehaviour
 {
-    public Image image;
-    private fadeeffect _fadeeffect;
-    // fadeeffect fade;
-    // [SerializeField]
-    // private AnimationCurve fadeCurve;
-    // int num=0;
+    public GameObject butForFadeout;
     public int cnt;
     public int count;
     public Text m_TypingText; 
@@ -138,15 +133,13 @@ public class text1_7 : MonoBehaviour
         mom.SetActive(false);
         dad.SetActive(false);
         bro.SetActive(false);
-        _fadeeffect = FindObjectOfType<fadeeffect>();
+    
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        _fadeeffect.StartCoroutine("Fade");
-
         Debug.Log(cnt);
         if(Input.GetMouseButtonDown(0))
           cnt++;
@@ -240,8 +233,7 @@ public class text1_7 : MonoBehaviour
             }
             if(cnt==3001){
                 cnt++;
-                _fadeeffect.StartCoroutine("Fade");//
-                // StartCoroutine(fadein(0,1));
+                butForFadeout.SetActive(true);
 
                 
             }

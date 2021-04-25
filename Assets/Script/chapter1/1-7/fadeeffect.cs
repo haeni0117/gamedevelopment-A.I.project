@@ -11,9 +11,11 @@ public class fadeeffect : MonoBehaviour
     [SerializeField]
     [Range(0.01f,10f)]//slider UI 생성
     private float fadetime;
-    
+
     public Image image;
-    
+    public void fadeoutstart(){
+        StartCoroutine(Fade(0,1));
+    }
 
     private void Awake(){
         image = GetComponent<Image>();
@@ -21,12 +23,12 @@ public class fadeeffect : MonoBehaviour
         // cnt = text1_7.cnt;
     }
 
-    private IEnumerator Fade(){
+    private IEnumerator Fade(float start, float end){
         
         float currentTime = 0.0f; //현재시간
-        float percent = 0.05f;
-        float start = 0.0f;
-        float end = 1.0f;
+        float percent = 0.0f;
+        // float start = 0.0f;
+        // float end = 1.0f;
 
         while(percent <1){//완전히 불투명한 상태가 아니라면
             currentTime += Time.deltaTime ;//원래 0.0f으로 초기화된 상태의 currentTime값에서 시간의 흐름 만들어줌
@@ -35,9 +37,10 @@ public class fadeeffect : MonoBehaviour
             Color color = image.color;
             color.a = Mathf.Lerp(start,end,percent);
             image.color = color;
-
             yield return null;
 
+
+            
         }
     }
     // Start is called before the first frame update
