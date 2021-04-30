@@ -8,14 +8,12 @@ public class text2_2 : MonoBehaviour
 {
     public GameObject button_; //fadeout 용도
     //모든 선택지를 확인했는지 -> bool로 체크
-    //Q bool 왜 안됨?
-    
-    bool first_num=false;
-    bool second_num=false;
-    bool third_num=false;
+    //Q bool 왜 안됨?okay
 
-    //다음 씬 연결 버튼
-    public GameObject next;
+
+    static bool first_bool=false;
+    static bool second_bool = false;
+    static bool third_bool = false;
 
     //서랍장 조사 => 층별로 버튼 클릭 가능하게 구성
     public GameObject first_drawer;
@@ -63,9 +61,9 @@ public class text2_2 : MonoBehaviour
         first_drawer.GetComponent<Button>().interactable = true;
         second_drawer.GetComponent<Button>().interactable=false;
         third_drawer.GetComponent<Button>().interactable=false;
-        first_num=true;
+        text2_2.first_bool=true;
         //bool 변수 값 확인목적 디버그
-        Debug.Log("1 :" +first_num+"2 :"+second_num+"3 :"+third_num);
+    
         Invoke("buttoninteractable",3);
     }
     //the second_floor of drawer investigation
@@ -78,9 +76,10 @@ public class text2_2 : MonoBehaviour
         second_drawer.GetComponent<Button>().interactable=false;
         third_drawer.GetComponent<Button>().interactable=false;
         Invoke("buttoninteractable",3);
-        second_num = true;
-        //bool 변수 값 확인목적 디버그
-        Debug.Log("1 :" +first_num+"2 :"+second_num+"3 :"+third_num);
+        text2_2.second_bool = true;
+        //bool&int 변수 값 확인목적 디버그
+        // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
+        // Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
     }
     //the third_floor of drawer investigation
     public void third(){
@@ -93,9 +92,11 @@ public class text2_2 : MonoBehaviour
         third_drawer.GetComponent<Button>().interactable=false;
         Invoke("buttoninteractable",3);
 
-        third_num = true;
+        text2_2.third_bool = true;
+    
         //bool 변수 값 확인목적 디버그
-        Debug.Log("1 :" +first_num+"2 :"+second_num+"3 :"+third_num);
+        // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
+        Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
     }
 
     // Start is called before the first frame update
@@ -110,9 +111,20 @@ public class text2_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(first_num==true&&second_num==true){
-            next.SetActive(true);
+        Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
+        if(first_bool==true&&second_bool==true&&third_bool==true){
+            button_.SetActive(true);
         }
-        if(first())
+        //bool값 변경 -> 다음 씬 연결 버튼 활성화(SetActive)
+        // if(first_num!=0){
+        //     first_bool=true;
+        // }
+        // if(second_num!=0){
+        //     second_bool=true;
+        // }
+        // if(third_num!=0){
+        //     third_bool=true;
+        // }
+        
     }
 }
