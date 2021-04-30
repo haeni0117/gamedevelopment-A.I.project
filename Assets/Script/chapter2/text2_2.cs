@@ -107,13 +107,16 @@ public class text2_2 : MonoBehaviour
         third_drawer.GetComponent<Button>().interactable=false;
         narr();
     }
+    void activating(){
+        button_.SetActive(true);
+    }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
         if(first_bool==true&&second_bool==true&&third_bool==true){
-            button_.SetActive(true);
+            Invoke("activating",3);
         }
         //bool값 변경 -> 다음 씬 연결 버튼 활성화(SetActive)
         // if(first_num!=0){
