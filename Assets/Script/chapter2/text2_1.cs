@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class text2_1 : MonoBehaviour
 {
     public GameObject button_;
-    public int cnt = 0;
+    public static int cnt = 0; //static 변수로 수정 
     public Text m_TypingText; 
     public string m_Message;
     public float m_Speed;
