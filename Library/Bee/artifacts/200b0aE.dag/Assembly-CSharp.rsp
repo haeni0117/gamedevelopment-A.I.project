@@ -319,6 +319,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/button.cs"
+"Assets/Scenes/k.cs"
 "Assets/Script/chapter1/1-0/NewBehaviourScript.cs"
 "Assets/Script/chapter1/1-0/VideoController.cs"
 "Assets/Script/chapter1/1-1/button_.cs"
