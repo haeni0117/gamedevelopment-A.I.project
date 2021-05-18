@@ -1798,3 +1798,75 @@ System memory in use after: 187.4 MB.
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3388.
 Total: 1.561958 ms (FindLiveObjects: 0.166208 ms CreateObjectMapping: 0.058916 ms MarkObjects: 1.303459 ms  DeleteObjects: 0.031875 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002899 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.065 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.4 MB.
+System memory in use after: 187.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3391.
+Total: 2.557250 ms (FindLiveObjects: 0.196583 ms CreateObjectMapping: 0.074958 ms MarkObjects: 2.255167 ms  DeleteObjects: 0.029375 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7166.513321 seconds.
+  path: Assets/Scenes/ch2/2-1.unity
+  artifactKey: Guid(8402155f5755b442eae1025cfc2a59cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-1.unity using Guid(8402155f5755b442eae1025cfc2a59cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2edb737a80a888285107d7e0872480') in 0.027471 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002172 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.060 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.6 MB.
+System memory in use after: 187.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3394.
+Total: 1.434833 ms (FindLiveObjects: 0.153834 ms CreateObjectMapping: 0.059375 ms MarkObjects: 1.208166 ms  DeleteObjects: 0.012583 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.428205 seconds.
+  path: Assets/Scenes/ch2/2-2.unity
+  artifactKey: Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-2.unity using Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8083a6fa3f3a62ce58f5b882074800') in 0.020328 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004387 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.393 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.8 MB.
+System memory in use after: 188.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3397.
+Total: 1.613167 ms (FindLiveObjects: 0.158833 ms CreateObjectMapping: 0.123208 ms MarkObjects: 1.301375 ms  DeleteObjects: 0.028875 ms)
+

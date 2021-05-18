@@ -853,8 +853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97.0064, y: -3.8495}
-  m_SizeDelta: {x: 354.0129, y: 37.6989}
+  m_AnchoredPosition: {x: 151.34259, y: -3.8495}
+  m_SizeDelta: {x: 245.3405, y: 37.6989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478953548
 MonoBehaviour:
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_: {fileID: 752808673}
   m_Speed: 0
-  theonlychoice: {fileID: 1478953543}
+  theonlychoice: {fileID: 0}
 --- !u!1 &1609705369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1753363230}
   - component: {fileID: 1753363229}
   m_Layer: 5
-  m_Name: Text
+  m_Name: theonlychoice_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
