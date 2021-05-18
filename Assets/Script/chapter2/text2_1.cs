@@ -69,12 +69,14 @@ public class text2_1 : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
 
             if(num%3==1){
-                Debug.Log("num은 짝수입니다.");
+                Debug.Log("coroutine is stopped");
                 num++;
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
+            }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면?
+           
             }
-
+            num++;
             //button_skip.onClick.AddListener(StopCoroutine(coroutine));
                 // button_skip = transform.Find("skipButton").GetComponent<Button>() ;
                 // button_skip.onClick.AddListener(StopCoroutine("Typing",text_1)) ;
@@ -82,7 +84,7 @@ public class text2_1 : MonoBehaviour
             //     StopCoroutine("Typing");
             // }
             // else continue;
-        }
+        
     } 
 
     public void theonlychoiceF(){
@@ -93,9 +95,9 @@ public class text2_1 : MonoBehaviour
     }
     
     public void coroutine_stop(){
-        Debug.Log("skipbutton is clicked!");
+        Debug.Log("skipbutton is clicked! num = "+num);
         num+=1;
-        Debug.Log("you clicked skipbutton"+num+"times!");
+        
     }
 
 
@@ -189,7 +191,7 @@ public class text2_1 : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        Debug.Log(num);
+        //Debug.Log(num);
         if(num==2){
             Debug.Log("coroutine1 is started!");
             StartCoroutine(coroutine1); 
@@ -211,15 +213,17 @@ public class text2_1 : MonoBehaviour
             Debug.Log("coroutine3 is started!");
             num++;
         }
-        if(num==13){
+        if(num==14){
             Debug.Log("<theonlychoice>버튼활성화");
             theonlychoice.SetActive(true);//activate button
         }
         if(num==100){
             Debug.Log("철컥철컥");
             StartCoroutine(coroutine5);
-            num++;
-
+            
+        }
+        if(num==102){
+            
         }
        
 
