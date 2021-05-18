@@ -338,6 +338,7 @@
 "Assets/Script/chapter2/fadeeffect_2_1.cs"
 "Assets/Script/chapter2/skip_button.cs"
 "Assets/Script/chapter2/text2_1.cs"
+"Assets/Script/chapter2/text2_1_fadeout.cs"
 "Assets/Script/chapter2/text2_2.cs"
 "Assets/Script/chapter2/text2_2_fadeout.cs"
 "Assets/Script/chapter2/theonlybutton.cs"

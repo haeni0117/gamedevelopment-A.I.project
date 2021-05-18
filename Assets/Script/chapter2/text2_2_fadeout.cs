@@ -20,8 +20,6 @@ public class text2_2_fadeout : MonoBehaviour
 
     private void Awake(){
         image = GetComponent<Image>();
-        // text1_7 text1_7_ = GameObject.Find("GameObject").GetComponent<text1_7>;//text1_7의 변수 불러오기 
-        // cnt = text1_7.cnt;
     }
 
     private IEnumerator Fade(float start, float end){

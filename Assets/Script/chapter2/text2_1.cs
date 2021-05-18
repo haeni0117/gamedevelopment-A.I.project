@@ -9,6 +9,7 @@ public class text2_1 : MonoBehaviour
     public GameObject button_;
     public static int cnt = 0; //st atic 변수로 수정 
     public static Text typingText; 
+    public GameObject fadeout;
     public static string message;
     public float m_Speed;
     private static int num=0;
@@ -231,7 +232,10 @@ public class text2_1 : MonoBehaviour
         if(num==32){
             Debug.Log("coroutine6 is started+num"+num);
             StartCoroutine(coroutine6);
-            num++;
+            fadeout.SetActive(true);
+            
+            
+
             
         }
        
