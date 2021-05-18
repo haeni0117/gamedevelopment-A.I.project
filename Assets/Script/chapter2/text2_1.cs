@@ -15,18 +15,27 @@ public class text2_1 : MonoBehaviour
     //시간지연
     private double timer = 0.0;
     private double waitingTime = 0.5;
+    //B U T T O N
+    public GameObject theonlychoice; //안방문을 연다(1개선택)
+    
+
     
     //private IEnumerator coroutine;
     //public Text generaltext;
     //아까 구글링한 방법
     //Coroutine coroutine_stop = StopCoroutine("Typing");
     
-    public Button button_skip;//skipbutton
+    
     private static string text_1="온기가 전혀 돌지 않는 \n안방이 서늘하다.\n반쯤 열린 창문 틈으로 \n무채색의 눈보라가 휘날린다.\n안방은 늘 그렇듯 \n기계적으로 정돈되어 있고, \n흐트러진 이부자리만이 \n사람의 흔적을 알린다.";
     private static string text_2 ="나는 안방에서 다시 한번 \n카라를 소리쳐 불렀지만,\n여전히 카라는 아무런 답이 없다.";
     private static string text_3 = "스마트홈 중앙 통제 시스템이\n어디에 있더라…….\n카라를 이식한 첫날 받은 \n사용 설명서에 적혀 있을 텐데.";
     private static string text_4 = "한참을 고민했지만, \n중앙 통제 시스템의 위치도,\n사용 설명서의 위치도 \n생각나지 않는다.\n누군가 기억을 \n깨끗하게 지워버린 것 같다.\n10년이 넘도록 \n스마트홈 인공지능에 \n익숙해진 탓이겠지.";
     private static string text_5 = "카라를 복구하려면 \n일단은 이 우중충한 안방을 \n어서 벗어나야 한다.";
+    private static string text_6 = "\"철컥, 철컥\"\n\n예상과는 달리,\n거실로 나가는 문은 잠겨 있다.";
+
+
+
+
    // private static string text_6 
     
     //==========================================================================
@@ -37,7 +46,8 @@ public class text2_1 : MonoBehaviour
     static IEnumerator coroutine1 = Typing(text_2);
     static IEnumerator coroutine2 = Typing(text_3);
     static IEnumerator coroutine3 = Typing(text_4);
-    static IEnumerator coroutine4 = Typing(text_5); 
+    static IEnumerator coroutine4 = Typing(text_5);
+    static IEnumerator coroutine5 = Typing(text_6); 
     // static IEnumerator coroutine5 = Typing(text_6);
     //identifier : IEnumerator
 
@@ -74,6 +84,13 @@ public class text2_1 : MonoBehaviour
             // else continue;
         }
     } 
+
+    public void theonlychoiceF(){
+        Debug.Log("you clicked <theonlybutton>");
+        num=100;
+        theonlychoice.SetActive(false);
+
+    }
     
     public void coroutine_stop(){
         Debug.Log("skipbutton is clicked!");
@@ -193,6 +210,16 @@ public class text2_1 : MonoBehaviour
             StartCoroutine(coroutine4);
             Debug.Log("coroutine3 is started!");
             num++;
+        }
+        if(num==13){
+            Debug.Log("<theonlychoice>버튼활성화");
+            theonlychoice.SetActive(true);//activate button
+        }
+        if(num==100){
+            Debug.Log("철컥철컥");
+            StartCoroutine(coroutine5);
+            num++;
+
         }
        
 

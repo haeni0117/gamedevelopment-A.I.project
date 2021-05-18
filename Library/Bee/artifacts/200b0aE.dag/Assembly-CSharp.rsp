@@ -340,6 +340,7 @@
 "Assets/Script/chapter2/text2_1.cs"
 "Assets/Script/chapter2/text2_2.cs"
 "Assets/Script/chapter2/text2_2_fadeout.cs"
+"Assets/Script/chapter2/theonlybutton.cs"
 -langversion:8.0
 
 /deterministic
