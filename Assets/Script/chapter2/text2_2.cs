@@ -26,6 +26,11 @@ public class text2_2 : MonoBehaviour
     public float m_Speed;
     public Text typingText;
 
+    //scenario text
+    private static string m1="모던한 방 분위기와는\n어울리지 않는 서랍장이다.\n마음에 들지 않았지만,\n부모님이 골라주신 거라\n어쩔 수 없이\n침대 바로 옆에 뒀다."; 
+    private static string m2="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다."; 
+    private static string m3="이 집으로 이사 올 때 \n안전을 위해서 사 둔 호신용품이다. \n다행히 아직 사용할 일이 없어서 \n서랍장에 넣어 두고 잊고 있었다"; 
+
     IEnumerator Typing(string message) 
     { 
         for (int i = 0; i < message.Length; i++) 
@@ -33,16 +38,16 @@ public class text2_2 : MonoBehaviour
             typingText.text = message.Substring(0, i + 1); 
             yield return new WaitForSeconds(0.05f); 
         } 
-        yield break;
+        yield break;//ㅅ시발 왜 두번 돌아가?
     }
+
     public void narr(){
         Debug.Log("narration_start");
-        m_Speed = 0.05f; 
-        m_Message="모던한 방 분위기와는 \n어울리지 않는 서랍장이다. \n마음에 들지 않았지만, \n부모님이 골라주신 거라 \n어쩔 수 없이 \n침대 바로 옆에 뒀다."; 
+        
         //generaltext.text=m_Message;
-        StartCoroutine(Typing(m_Message));
-         Debug.Log("coroutine is finished");
-        Invoke("buttonsetactive",5);
+        StartCoroutine(Typing(m1));
+        Debug.Log("coroutine is finished");
+        Invoke("buttonsetactive",3);
     }
     // private void buttonactivating(){
     //     first_drawer.SetActive(true);
@@ -57,16 +62,14 @@ public class text2_2 : MonoBehaviour
 
     //the first_floor of drawer investigation
     public void first(){
-        m_Message="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다."; 
-        StartCoroutine(Typing(m_Message));
+        StartCoroutine(Typing(m2));
         text2_2.first_bool=true;
         //bool 변수 값 확인목적 디버그
 
     }
     //the second_floor of drawer investigation
     public void second(){ 
-        m_Message="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다."; 
-        StartCoroutine(Typing( m_Message));
+        StartCoroutine(Typing(m2));
         text2_2.second_bool = true;
         //bool&int 변수 값 확인목적 디버그
         // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
@@ -74,8 +77,7 @@ public class text2_2 : MonoBehaviour
     }
     //the third_floor of drawer investigation
     public void third(){
-        m_Message="이 집으로 이사 올 때 \n안전을 위해서 사 둔 호신용품이다. \n다행히 아직 사용할 일이 없어서 \n서랍장에 넣어 두고 잊고 있었다"; 
-        StartCoroutine(Typing( m_Message));
+        StartCoroutine(Typing(m3));
         text2_2.third_bool = true;
         //bool 변수 값 확인목적 디버그
         // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
