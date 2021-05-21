@@ -105,7 +105,7 @@ public class text2_1 : MonoBehaviour
 
     }
     
-    public void coroutine_stop(){
+    public static void coroutine_stop(){
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
         

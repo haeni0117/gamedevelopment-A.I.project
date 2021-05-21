@@ -14,9 +14,17 @@ public class text_2_3 : MonoBehaviour
     public float m_Speed;
     private static int num=0;
     public GameObject 안방조사;
-    //B U T T O N
-    public GameObject theonlychoice; //안방문을 연다(1개선택)
-    //public Text theonlychoice_; //<안방문을 연다> 텍스트무효화 -> text를 gameobject안에 넣어도 되나?
+
+
+    
+    //필통탐색??
+
+
+    private GameObject 옷장;
+    private GameObject 수납대;
+    private GameObject 쓰레기통;
+    private GameObject 가방걸이;
+
 
 
 
@@ -76,12 +84,23 @@ public class text_2_3 : MonoBehaviour
     }
     void Start()
     {
+        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+        스킵.onClick.AddListener(text2_1.coroutine_stop);
+        Button 옷장b =GameObject.Find("(1)옷장").GetComponent<Button>();
+        Button 수납대b = GameObject.Find("(2)수납대").GetComponent<Button>();
+        Button 쓰레기통b = GameObject.Find("(3)쓰레기통").GetComponent<Button>();
+        Button 가방걸이b = GameObject.Find("(4)가방걸이").GetComponent<Button>();
         Debug.Log("coroutin is started! #2-3 num"+num);
         StartCoroutine(coroutine);
     }
-    public void 안방조사하기(){
+    public void 안방조사활성화(){
         안방조사.SetActive(true);
-
+    }
+    public void 안방조사하기(){
+        옷장.SetActive(true);
+        수납대.SetActive(true);
+        쓰레기통.SetActive(true);
+        가방걸이.SetActive(true);
     }
 
     // Update is called once per frame
@@ -97,7 +116,7 @@ public class text_2_3 : MonoBehaviour
             Debug.Log("coroutine2 is started!  num"+num);
             StartCoroutine(coroutine2);
             num++;
-            Invoke("안방조사하기",3.0f);
+            Invoke("안방조사활성화",3.0f);
         }
         // if(num==8){
         //     Debug.Log("coroutine3 is started!  num"+num);
