@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 75000343}
   - component: {fileID: 75000342}
   - component: {fileID: 75000341}
+  - component: {fileID: 75000345}
   m_Layer: 5
   m_Name: "Button_\uC548\uBC29\uC870\uC0AC "
   m_TagString: Untagged
@@ -329,9 +330,26 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 128.6882, y: 31.009}
+  m_SizeDelta: {x: 125.8755, y: 32.018}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &75000345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75000340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256adc204575a453aa8b41912cd7ca93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button_: {fileID: 75000340}
+  fadeout: {fileID: 0}
+  m_Speed: 0
+  "\uC548\uBC29\uC870\uC0AC": {fileID: 0}
+  theonlychoice: {fileID: 0}
 --- !u!1 &258649864
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,14 +523,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 307611483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59ae9236d03b47c0b3b791abd929024, type: 3}
+  m_Script: {fileID: 11500000, guid: 256adc204575a453aa8b41912cd7ca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button_: {fileID: 854945362}
   fadeout: {fileID: 0}
   m_Speed: 0
+  "\uC548\uBC29\uC870\uC0AC": {fileID: 75000340}
   theonlychoice: {fileID: 0}
-  "\uC548\uBC29\uC870\uC0AC\uD558\uAE30": {fileID: 0}
 --- !u!4 &307611485
 Transform:
   m_ObjectHideFlags: 0
@@ -1074,12 +1092,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 854945362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38e0d491c89e34dc28040c1b018ec37b, type: 3}
+  m_Script: {fileID: 11500000, guid: 256adc204575a453aa8b41912cd7ca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button_: {fileID: 258649864}
+  button_: {fileID: 854945362}
   fadeout: {fileID: 0}
   m_Speed: 0
+  "\uC548\uBC29\uC870\uC0AC": {fileID: 0}
   theonlychoice: {fileID: 0}
 --- !u!114 &854945365
 MonoBehaviour:
@@ -1126,7 +1145,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 854945364}
-        m_TargetAssemblyTypeName: text2_1, Assembly-CSharp
+        m_TargetAssemblyTypeName: text_2_3, Assembly-CSharp
         m_MethodName: coroutine_stop
         m_Mode: 1
         m_Arguments:
@@ -1594,10 +1613,10 @@ RectTransform:
   m_Father: {fileID: 75000344}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.2481542, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: -3.8495}
-  m_SizeDelta: {x: 640, y: 680}
+  m_AnchoredPosition: {x: 6.3793945, y: -7.0090027}
+  m_SizeDelta: {x: 239.38576, y: 57.1168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569017332
 MonoBehaviour:
@@ -1632,7 +1651,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: 
+  m_Text: "\u25B6 \uC548\uBC29 \uC870\uC0AC\uD558\uAE30"
 --- !u!222 &1569017333
 CanvasRenderer:
   m_ObjectHideFlags: 0
