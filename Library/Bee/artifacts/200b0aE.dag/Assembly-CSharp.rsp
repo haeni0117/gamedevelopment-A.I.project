@@ -343,6 +343,7 @@
 "Assets/Script/chapter2/text2_2_fadeout.cs"
 "Assets/Script/chapter2/text_2_3.cs"
 "Assets/Script/chapter2/theonlybutton.cs"
+"Assets/Script/test_script/fadeout_test.cs"
 -langversion:8.0
 
 /deterministic
