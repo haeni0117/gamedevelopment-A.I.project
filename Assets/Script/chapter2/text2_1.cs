@@ -196,7 +196,7 @@ public class text2_1 : MonoBehaviour
 
     void Start()
     {
-        
+         Debug.Log("coroutin is started! #2-1 num"+num);
         StartCoroutine(coroutine);
     }
 
