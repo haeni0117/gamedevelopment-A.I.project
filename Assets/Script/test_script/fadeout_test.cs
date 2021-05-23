@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class fadeout_test : MonoBehaviour
 {
+   
     public Image image;
 
-    private IEnumerator Fade(float start, float end){
+    public IEnumerator Fade(float start, float end){
+        
+
         
         float currentTime = 0.0f; //현재시간
         float percent = 0.0f;
@@ -41,7 +44,7 @@ public class fadeout_test : MonoBehaviour
         Debug.Log("coroutine is finished");
         Invoke("nextscene",1.5f);
     }
-    public void nextscene(){
+    public static void nextscene(){
         SceneManager.LoadScene("2-2");
     }
 

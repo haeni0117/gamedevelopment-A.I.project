@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class text2_1_fadeout : MonoBehaviour
 {
+    
     public Image image;
 
     private IEnumerator Fade(float start, float end){
