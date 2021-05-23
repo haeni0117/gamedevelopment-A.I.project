@@ -11,13 +11,7 @@ public class text_2_3 : MonoBehaviour
     public static string message;
     public float m_Speed;
     private static int num=0;
-    // private static GameObject 옷장;
-    // private static GameObject 수납대;
-    // private static GameObject 쓰레기통;
-    // private static GameObject 가방걸이;
-    // private static GameObject fadeout;//fadeout
-    // private static GameObject 안방조사;
-       
+  
 
 
 
@@ -75,83 +69,82 @@ public class text_2_3 : MonoBehaviour
 
 
     
-    public static void coroutine_stop(){
+    public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
         
     }
-    void Awake(){
-        //description) original name = just gameobject || b+original name = gameobject with button component
-        //allocating gameobjects
+
+    void Start()
+    {
+         //gamaobjects
         GameObject 옷장= GameObject.Find("옷장");
         GameObject 수납대= GameObject.Find("수납대");
         GameObject 쓰레기통= GameObject.Find("쓰레기통");
         GameObject 가방걸이= GameObject.Find("가방걸이");
         GameObject fadeout= GameObject.Find("fadeout");
         GameObject 안방조사= GameObject.Find("안방조사");
+
+
+        //buttons
+        Button 수납대b = 수납대.GetComponent<Button>();
+        Button 쓰레기통b = 쓰레기통.GetComponent<Button>();
+        Button 가방걸이b = 가방걸이.GetComponent<Button>();
+        Button 안방조사b = 안방조사.GetComponent<Button>();
+        Button 옷장b = 옷장.GetComponent<Button>();
+
+        //emptytext
+        Text 옷장t = GameObject.Find("옷장_text").GetComponent<Text>();
+        Text 수납대t = GameObject.Find("수납대_text").GetComponent<Text>();
+        Text 쓰레기통t = GameObject.Find("쓰레기통_text").GetComponent<Text>();
+        Text 가방걸이t = GameObject.Find("가방걸이_text").GetComponent<Text>();
+        Text 안방조사t =GameObject.Find("안방조사_text").GetComponent<Text>();
+
+        옷장t.text = "";
+        수납대t.text = "";
+        쓰레기통t.text = "";
+        가방걸이t.text = "";
+        안방조사t.text = "";
+
+
+        수납대b.interactable = false;
+        쓰레기통b.interactable = false;
+        가방걸이b.interactable = false;
+        안방조사b.interactable = false;
+        옷장b.interactable = false;
+
+
+
+
+        //allocation gameobjects' component
+        Text typingText = GameObject.Find("general text").GetComponent<Text>();
+        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+        스킵.onClick.AddListener(text_2_3.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        //base.image = GameObject.Find("skipButton").GetComponent<Image>();
+        Text 스킵_text = GameObject.Find("skipButton").GetComponent<Text>();
+        Debug.Log("dwhy"); 
+        Debug.Log("coroutin is started! #2-3 "); 
+        StartCoroutine(coroutine);
+    }
+    public void 안방조사활성화(){
+        GameObject 옷장= GameObject.Find("옷장");
+        GameObject 수납대= GameObject.Find("수납대");
+        GameObject 쓰레기통= GameObject.Find("쓰레기통");
+        GameObject 가방걸이= GameObject.Find("가방걸이");
+        GameObject fadeout= GameObject.Find("fadeout");
+        GameObject 안방조사= GameObject.Find("안방조사");
+        Debug.Log(안방조사);
 
         옷장.SetActive(false);
         수납대.SetActive(false);
         쓰레기통.SetActive(false);
         가방걸이.SetActive(false);
         안방조사.SetActive(false);
-
-        Debug.Log("SetActive(false)"); 
-
-        
-
-
-        //allocation gameobjects' component
-        Text typingText = GameObject.Find("general text").GetComponent<Text>();
-        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-        스킵.onClick.AddListener(text_2_3.coroutine_stop);//adlistner로 불러오려면 static void여야 한다.
-        //base.image = GameObject.Find("skipButton").GetComponent<Image>();
-        Text 스킵_text = GameObject.Find("skipButton").GetComponent<Text>();
-
-
-        
-        Button 수납대b = 수납대.GetComponent<Button>();
-        Button 쓰레기통b = 쓰레기통.GetComponent<Button>();
-        Button 가방걸이b = 가방걸이.GetComponent<Button>();
-        Button 안방조사b = 안방조사.GetComponent<Button>();
-        Button 옷장b = 옷장.GetComponent<Button>();
-        
-        
-        //still inactivated
-        //Button fadeout_ = GameObject.Find("fadeoutButton").GetComponent<Button>();
-        //fadeout_.onClick.AddListener(base.fadeoutstart);
-
-        Debug.Log(옷장); 
-
     }
-    void Start()
-    {
-        //inactivating options
-        // GameObect 옷장.SetActive(false);
-        // 수납대.SetActive(false);
-        // 쓰레기통.SetActive(false);
-        // 가방걸이.SetActive(false);
-        // 안방조사.SetActive(false);
-        // Debug.Log("SetActive(false)"); 
-
-
-        Debug.Log("coroutin is started! #2-3 "); 
-        StartCoroutine(coroutine);
-    }
-    public void 안방조사활성화(){
-        //계속 가르쳐 줘야함
-        GameObject 옷장= GameObject.Find("옷장");
-        GameObject 수납대= GameObject.Find("수납대");
-        GameObject 쓰레기통= GameObject.Find("쓰레기통");
-        GameObject 가방걸이= GameObject.Find("가방걸이");
-        GameObject fadeout= GameObject.Find("fadeout");
-        GameObject 안방조사= GameObject.Find("안방조사");
-        안방조사.SetActive(true);
-    }
-    public void 테스트(){
-        Debug.Log("test case button is clicked");
-    }
-    public void 안방조사하기(){
+    
+    
+    public static void 안방조사하기(){
+        //reasons : those objects were inactivated!
         GameObject 옷장= GameObject.Find("옷장");
         GameObject 수납대= GameObject.Find("수납대");
         GameObject 쓰레기통= GameObject.Find("쓰레기통");
@@ -162,10 +155,18 @@ public class text_2_3 : MonoBehaviour
         수납대.SetActive(true);
         쓰레기통.SetActive(true);
         가방걸이.SetActive(true);
+
     }
 
     // Update is called once per frame
     void Update(){
+        if(num==0){
+            StartCoroutine(coroutine);
+        }
+        // GameObject skipButton= GameObject.Find("skipButton");
+        // Button skipButtonb = skipButton.GetComponent<Button>();
+        // skipButtonb.onClick.AddListener(스킵버튼누르기);
+
         //Debug.Log(num);
         if(num==2){
             Debug.Log("coroutine1 is started!  num"+num);
