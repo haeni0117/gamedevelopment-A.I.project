@@ -16,10 +16,10 @@ public class text_2_3 : MonoBehaviour
   
 
 
-
-    private static string text_1="서랍장을 샅샅이 뒤졌지만,\n스페어 키가 보이지 않는다.\n혹시나 하는 마음에 \n서랍장 뒤편과 아래도 살펴봤지만, \n결과는 마찬가지다. ";
-    private static string text_2 ="하지만 이대로 주저앉아 \n있을 수는 없다.\n번호 패드로라도 \n안방을 탈출해야 한다.";
-    private static string text_3 = "안방에 드라이버로 \n쓸 만한 것이 있으려나? ";
+    //기본텍스트
+    private static string text_1="서랍장을 샅샅이 뒤졌지만, \n스페어 키가 보이지 않는다.\n혹시나 하는 마음에 \n서랍장 뒤편과 아래도 살펴봤지만, \n결과는 마찬가지다. ";
+    private static string text_2="하지만 이대로 주저앉아\n있을 수는 없다.\n번호 패드로라도 \n안방을 탈출해야 한다.";
+    private static string text_3="안방에 드라이버로 \n쓸 만한 것이 있으려나?";
 
     //안방조사하기
     private static string 옷장text = "옷장에는 평소에 자주 입는 \n옷들이 걸려 있다.";
@@ -173,10 +173,14 @@ public class text_2_3 : MonoBehaviour
 
 
         //allocation gameobjects' component
+        //main text 출력 오브젝트
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
+
+        //스킵버튼
         Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
         스킵.onClick.AddListener(text_2_3.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
-        //base.image = GameObject.Find("skipButton").GetComponent<Image>();
+
+        //skip_text
         Text 스킵_text = GameObject.Find("skipButton").GetComponent<Text>();
         Debug.Log("dwhy"); 
         Debug.Log("coroutin is started! #2-3 "); 
