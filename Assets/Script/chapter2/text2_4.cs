@@ -7,7 +7,13 @@ using UnityEngine.SceneManagement;
 public class text2_4 : MonoBehaviour
 {
     private static int num=0;
-    
+
+    //스킵버튼
+    public static void 스킵버튼클릭(){
+        Debug.Log("skipbutton is clicked! num="+num);
+        num+=1; 
+    }
+
 
     static IEnumerator Typing(string message)
     { 
