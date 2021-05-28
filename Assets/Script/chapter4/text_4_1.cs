@@ -18,7 +18,7 @@ public class text_4_1 : MonoBehaviour
 //     //string -> narration
     private static string text_1="작업실 문이 열리자마자 빠른 속도로 1층으로 가는 계단을 내려갔다.";
     private static string text_2="생명을 책임진다는 생각 하나만으로 버텨왔는데……. \n시루에게 무슨 일이 생긴다면 정말 무너질지도 몰라.";
-    private static string text_3="[ 지금 청주로 와 줄 수 있어? 급해🥺 ]";
+    private static string text_3="[ 지금 청주로 와 줄 수 있어? 급해 ㅠㅠ ]";
     private static string text_4="무슨 일인데?";
     private static string text_5="아빠가 차고 뒤에 숨어있는 새끼고양이를 발견했는데 \n엄마 아들놈이 알레르기가 있어서 우리 집에선 못 키우거든 \n혹시 키울 생각 있나 하고ㅠㅠ";
     private static string text_6="실수로 메시지 창을 누르는 \n바람에 읽음 표시가 없어졌다.";
