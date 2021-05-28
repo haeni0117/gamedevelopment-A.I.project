@@ -346,6 +346,7 @@
 "Assets/Script/chapter2/theonlybutton.cs"
 "Assets/Script/chapter3/text_3_1.cs"
 "Assets/Script/chapter3/text_3_2.cs"
+"Assets/Script/chapter4/text_4_1.cs"
 "Assets/Script/test_script/fadeout_test.cs"
 -langversion:8.0
 
