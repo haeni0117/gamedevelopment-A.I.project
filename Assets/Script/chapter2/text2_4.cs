@@ -31,19 +31,11 @@ public class text2_4 : MonoBehaviour
                 Debug.Log("coroutine is stopped+num"+num);
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
-            }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면?
+            }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
            
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
-            //button_skip.onClick.AddListener(StopCoroutine(coroutine));
-                // button_skip = transform.Find("skipButton").GetComponent<Button>() ;
-                // button_skip.onClick.AddListener(StopCoroutine("Typing",text_1)) ;
-                // Debug.Log("buttonisclicked");
-            //     StopCoroutine("Typing");
-            // }
-            // else continue;
-        
         
     } 
 
@@ -60,6 +52,7 @@ public class text2_4 : MonoBehaviour
     void Start()
     {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
+        
         StartCoroutine(coroutine);
     }
 
