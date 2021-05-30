@@ -2733,3 +2733,99 @@ System memory in use after: 204.9 MB.
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3542.
 Total: 1.846208 ms (FindLiveObjects: 0.183500 ms CreateObjectMapping: 0.062208 ms MarkObjects: 1.583459 ms  DeleteObjects: 0.016125 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004228 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.445 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2693 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 204.9 MB.
+System memory in use after: 205.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3545.
+Total: 1.702208 ms (FindLiveObjects: 0.271666 ms CreateObjectMapping: 0.063000 ms MarkObjects: 1.352292 ms  DeleteObjects: 0.014250 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 683.006714 seconds.
+  path: Assets/Scenes/ch6/6-1.unity
+  artifactKey: Guid(27cc5d0d23260467d80442930243983c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch6/6-1.unity using Guid(27cc5d0d23260467d80442930243983c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d00b0a56c72fdc295467f5a16ba0aac') in 0.328010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 415.304353 seconds.
+  path: Assets/image/#1-1안방 (1).png
+  artifactKey: Guid(ffb279f415ab04b2ebdf73e67ad3d297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#1-1안방 (1).png using Guid(ffb279f415ab04b2ebdf73e67ad3d297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f47076a14b491c8334e2f63074d195') in 0.490817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3384.095344 seconds.
+  path: Assets/Script/chapter6/text6_1_1.cs
+  artifactKey: Guid(84d025a3356dd447480c052fa712a256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter6/text6_1_1.cs using Guid(84d025a3356dd447480c052fa712a256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64d67b4cd7024f010b40794e1860a64') in 0.082379 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001812 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.864 seconds
+Platform modules already initialized, skipping
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Obtained 42 stack frames.
+#0  0x007fff203ef462 in __pthread_kill
+#1  0x007fff20370720 in abort
+#2  0x00000102af724e in CrashDontLaunchBugReporter()
+#3  0x000001016db9d9 in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry&)
+#4  0x000001016db029 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x000001016dbf9e in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x00000102644bb2 in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x0000010264543f in DebugStringToFile(DebugStringToFileData const&)
+#8  0x000001005e2107 in CallbackArrayBase<void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform)>::Register(void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform), void const*)
+#9  0x00000101b09fd2 in LoadDomainAndUserAssemblies()
+#10 0x00000101b0beb6 in LoadUserAssemblies()
+#11 0x00000101d235c9 in AssetImportWorkerClient::ReloadMonoDomain(AssetResolver&)
+#12 0x00000101d449f2 in core::mutable_function<void ()>::DispatchT<void IOService::PostHelper<AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_8>(AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_8&&, IOService::WrapCallableInFunctionTag)::'lambda'()>::Dispatch()
+#13 0x00000101dac4f0 in asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::__1::error_code const&, unsigned long)
+#14 0x00000101da9595 in asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::__1::error_code const&)
+#15 0x00000101da9031 in asio::detail::task_io_service::run(std::__1::error_code&)
+#16 0x00000101da4cfa in IOService::Run(bool)
+#17 0x00000101d18cf7 in RunAssetImporterV2()
+#18 0x000001017f36a9 in Application::InitializeProject()
+#19 0x00000102b02a7d in -[EditorApplication applicationDidFinishLaunching:]
+#20 0x007fff2050a895 in __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+#21 0x007fff205a6224 in ___CFXRegistrationPost_block_invoke
+#22 0x007fff205a61a7 in _CFXRegistrationPost
+#23 0x007fff204db546 in _CFXNotificationPost
+#24 0x007fff2117fabe in -[NSNotificationCenter postNotificationName:object:userInfo:]
+#25 0x007fff22c6ef6d in -[NSApplication _postDidFinishNotification]
+#26 0x007fff22c6ecbb in -[NSApplication _sendFinishLaunchingNotification]
+#27 0x007fff22c6beb2 in -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]
+#28 0x007fff22c6bb07 in -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]
+#29 0x007fff211ab056 in -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]
+#30 0x007fff211aaec6 in _NSAppleEventManagerGenericHandler
+#31 0x007fff26252ed9 in _AppleEventsCheckInAppWithBlock
+#32 0x007fff262525f4 in _AppleEventsCheckInAppWithBlock
+#33 0x007fff2624b260 in aeProcessAppleEvent
+#34 0x007fff289f0612 in AEProcessAppleEvent
+#35 0x007fff22c66276 in _DPSNextEvent
+#36 0x007fff22c645af in -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+#37 0x007fff22c56b0a in -[NSApplication run]
+#38 0x007fff22c2adf2 in NSApplicationMain
+#39 0x00000102b1f610 in EditorMain(int, char const**)
+#40 0x00000102b1f849 in main
+#41 0x007fff20438621 in start
