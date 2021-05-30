@@ -2017,3 +2017,23 @@ System memory in use after: 191.0 MB.
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3439.
 Total: 2.506792 ms (FindLiveObjects: 0.146834 ms CreateObjectMapping: 0.058875 ms MarkObjects: 2.288416 ms  DeleteObjects: 0.011834 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001216 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.597 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2691 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.1 MB.
+System memory in use after: 191.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3442.
+Total: 3.388167 ms (FindLiveObjects: 0.170375 ms CreateObjectMapping: 0.059584 ms MarkObjects: 3.133334 ms  DeleteObjects: 0.023833 ms)
+

@@ -177,7 +177,19 @@ public class textfourtwo : MonoBehaviour
     private static string text_16="나는 바로 시루에게 물과 사료를 먹이고 피가 나는 부위를 확인했다.\n앞 다리가 살짝 부어있는 것이 날카로운 물체에 긁힌 것 같았다.";
     private static string text_17="날카로운 물체에 긁힌 것 같았다.\n당장 생명에 지장이 있을 것 같지는 않지만 만약 금속 물체에 찔린 거라면 파상풍의 위험이 있었다.";
     private static string text_18="빨리 병원에 데리고 가야겠어.";
-    
+
+    private static string text_19="아까부터 의수 쪽에서 지속적인 잡음이 들리는데,이게 무슨 소리지?";
+    private static string text_20="설마… 고장 난 건 아니겠지?";
+    //1층현관문 // 나는 시루를 품에 안고 재빨리 현관문으로 달렸다.
+    private static string text_21="나는 시루를 품에 안고 재빨리 현관문으로 달렸다.";
+    private static string text_22="‘접근이 거절되었습니다.’";
+    private static string text_23="처음부터 열릴 거라고 기대하지 않았다.\n지금 이 집은 모든 문이 잠겨서 꼼짝도 하지 않으니까.";
+    private static string text_24="통신은 먹통이고, 전기는 수동으로 통제할 수 없다.\n자동 온도 조절 기능도 중단됐는지 점점 추워지는 게 느껴졌다.";
+    private static string text_25="시루를 안은 팔에 피가 묻어 비릿한 냄새가 났다.";
+    private static string text_26="나는 계속해서 신경질적으로 문고리를 돌렸지만, \n세계 최초 3중 보안 시스템으로 독신 여성에게 최적화된 안전을 제공한다는 자이나 사의 광고만 귓가에 맴돌았다.";
+    private static string text_27="\"카라! 내 말 들려?\n아직 깨어있다면 제발 도와줘... 카라…\"";
+    private static string text_28="\"놀라워요.여기까지도 못 올 줄 알았는데. 자, 이제 무엇을 도와드릴까요?\"";
+    //chapter4 end
     
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
@@ -187,7 +199,7 @@ public class textfourtwo : MonoBehaviour
     static IEnumerator coroutine5 = Typing(text_6);
     static IEnumerator coroutine6 = Typing(text_7);
     static IEnumerator coroutine7 = Typing(text_8);
-    static IEnumerator coroutine8 =  Typing(text_9);
+    static IEnumerator coroutine8 = Typing(text_9);
     static IEnumerator coroutine9 = Typing(text_10);
     static IEnumerator coroutine10 = Typing(text_11);       
     static IEnumerator coroutine11 = Typing(text_12);
@@ -197,10 +209,17 @@ public class textfourtwo : MonoBehaviour
     static IEnumerator coroutine15 = Typing(text_16);
     static IEnumerator coroutine16 = Typing(text_17);
     static IEnumerator coroutine17 = Typing(text_18);       
-    // static IEnumerator coroutine18 = Typing(text_19);
-    // static IEnumerator coroutine19 = Typing(text_20);
-    // static IEnumerator coroutine20 = Typing(text_21);
-    // static IEnumerator coroutine21 = Typing(text_22);
+    static IEnumerator coroutine18 = Typing(text_19);
+    static IEnumerator coroutine19 = Typing(text_20);
+    static IEnumerator coroutine20 = Typing(text_21);
+    static IEnumerator coroutine21 = Typing(text_22);
+    static IEnumerator coroutine22 = Typing(text_23);       
+    static IEnumerator coroutine23 = Typing(text_24);
+    static IEnumerator coroutine24 = Typing(text_25);
+    static IEnumerator coroutine25 = Typing(text_26);
+    static IEnumerator coroutine26 = Typing(text_27);
+    static IEnumerator coroutine27 = Typing(text_28);
+
    
 
 
@@ -369,8 +388,57 @@ public class textfourtwo : MonoBehaviour
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button    
         }
+        if(num==62){
+            StartCoroutine(coroutine18);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==65){
+            StartCoroutine(coroutine19);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==68){
+            StartCoroutine(coroutine20);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==71){
+            StartCoroutine(coroutine21);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==74){
+            StartCoroutine(coroutine22);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==77){
+            StartCoroutine(coroutine23);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==80){
+            StartCoroutine(coroutine24);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==83){
+            StartCoroutine(coroutine25);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==86){
+            StartCoroutine(coroutine26);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==89){
+            StartCoroutine(coroutine27);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button    
+        }
         
-    
        
         
        
