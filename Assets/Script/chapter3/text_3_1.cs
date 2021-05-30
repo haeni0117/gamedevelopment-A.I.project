@@ -16,7 +16,8 @@ public class text_3_1 : MonoBehaviour
     
 
 //     //string -> narration
-    private static string text_1="드디어 안방을 \n빠져나오는 데 성공했다.\n쪽지에 번호를 \n적어뒀기에 망정이지 하마터면 \n고층아파트 안방에 꼼짝없이 \n갇힐 뻔했다.";
+    private static string text_1="시루를 처음 만난 순간이 머릿속을 빠르게 스쳤다.\n마음이 점점 급해진다..";
+
     private static string text_2="다른 사람이었다면 \n상황이 심각해지기 전에 \n가까운 누군가 연락을 했겠지만,\n그래, 나 같은 걸 누가 찾겠어.";
     private static string text_3="쪽지가 없었다면 \n내 집 안방에서 쓸쓸하게 \n죽음을 맞이했을거라 \n생각하니 아찔했다.";
     private static string text_4="‘경고: 즉시 대피하십시오.’";
@@ -34,6 +35,8 @@ public class text_3_1 : MonoBehaviour
     static IEnumerator coroutine6 = Typing(text_7);
     static IEnumerator coroutine7 = Typing(text_8);
 
+
+    
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
@@ -70,10 +73,11 @@ public class text_3_1 : MonoBehaviour
     // Start is called before the first frame update
    void Start()
     {
+        //스킵버튼
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
        스킵.onClick.AddListener(text_2_3.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
-
-
+       //1층계단
+       
 
         Debug.Log("coroutin is started! #3-1 num"+num);
         StartCoroutine(coroutine);
@@ -89,6 +93,7 @@ public class text_3_1 : MonoBehaviour
             num++;
             //StartCoroutine(coroutine1);
         }
+        //skip  -> 새로운선택지보여주기
         if(num==5){
             Debug.Log("coroutine2 is started!  num"+num);
             StartCoroutine(coroutine2);
