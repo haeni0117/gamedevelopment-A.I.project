@@ -352,8 +352,10 @@
 "Assets/Script/chapter5/text5_1.cs"
 "Assets/Script/chapter6/text6_1.cs"
 "Assets/Script/chapter6/text6_1_1.cs"
+"Assets/Script/chapter7/text7_5.cs"
 "Assets/Script/test_script/fadeout_test.cs"
 "Assets/text4_2.cs"
+"Assets/text_7_5.cs"
 -langversion:8.0
 
 /deterministic
