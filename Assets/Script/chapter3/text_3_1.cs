@@ -11,7 +11,45 @@ public class text_3_1 : MonoBehaviour
     public static int cnt = 0; //st atic 변수로 수정 
     public static Text typingText; 
     public static GameObject fadeout;
-    public int i;
+
+
+    //다음씬설정만하면된다.
+    public void nextscene(){
+        SceneManager.LoadScene("3-2");
+    }
+
+
+
+    //최종페이드아웃함수
+    public void fadeoutstart(){
+        Debug.Log("3-1 -> 3-2");
+        StartCoroutine(Fade(0,1));
+        Invoke("nextscene",1.5f);
+    }
+
+
+
+    //fadeout coroutine
+    private IEnumerator Fade(float start, float end){
+        //이미지지정(검은화면 -> 페이드아웃)
+        Image image= GameObject.Find("fadeout").GetComponent<Image>();
+
+    
+        float currentTime = 0.0f; //현재시간
+        float percent = 0.0f;
+        // float start = 0.0f;
+        // float end = 1.0f;
+
+        while(percent <1){//완전히 불투명한 상태가 아니라면
+            currentTime += Time.deltaTime ;//원래 0.0f으로 초기화된 상태의 currentTime값에서 시간의 흐름 만들어줌
+            percent = currentTime / 1.5f; //default값은 1s이지만 fadetime이라는 변수를 활용해서 얼마동안 페이드 인/아웃할 것인지를 정해줌
+            //알파값은 start~end :: during fadetime 
+            Color color = image.color;
+            color.a = Mathf.Lerp(start,end,percent);
+            image.color = color;
+            yield return null;
+        }
+    }
 
     
 
@@ -41,6 +79,7 @@ public class text_3_1 : MonoBehaviour
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
     }
+   
 
     static IEnumerator Typing(string message)
     { 
@@ -73,14 +112,17 @@ public class text_3_1 : MonoBehaviour
     // Start is called before the first frame update
    void Start()
     {
-        //스킵버튼
+        //스킵버튼 
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
        스킵.onClick.AddListener(text_2_3.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
        //1층계단
-       
-
-        Debug.Log("coroutin is started! #3-1 num"+num);
+        Image image= GameObject.Find("fadeout").GetComponent<Image>();
+        Color color = image.color;
+        color.a = 0;
+        //fadeout 비활성화상태
+        Debug.Log("coroutine is started! #3-1 num"+num);
         StartCoroutine(coroutine);
+        
         
     }
 
@@ -123,6 +165,10 @@ public class text_3_1 : MonoBehaviour
         if(num==20){
             StartCoroutine(coroutine7);
             Debug.Log("coroutine5 is started!  num"+num);
+            num++;//activate button    
+        }
+        if(num==23){
+            fadeoutstart();
             num++;//activate button    
         }
     }

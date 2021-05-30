@@ -156,6 +156,10 @@ public class text_8_1 : MonoBehaviour
             Debug.Log("coroutine is started!  num"+num);
             num++;
         }
+        if(num==14){
+            어떻게할까활성화();
+            num++;
+        }
        
 
     }

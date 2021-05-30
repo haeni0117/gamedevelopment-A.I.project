@@ -12,7 +12,7 @@ public class text6_1_1 : MonoBehaviour
         num++;
     }
     public static void 선택지1이동(){
-        
+
         
     }
     public static void 선택지2이동(){
@@ -265,7 +265,7 @@ public class text6_1_1 : MonoBehaviour
         Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
         선택지1t.text=" ";
         선택지1B.interactable=false;
-        선택지1B.onClick.AddListener();
+        //선택지1B.onClick.AddListener();
         
         //선택지2
         GameObject 선택지2 = GameObject.Find("선택지2");
@@ -273,7 +273,7 @@ public class text6_1_1 : MonoBehaviour
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
         선택지2t.text=" ";
         선택지2B.interactable=false;
-        선택지2B.onClick.AddListener();
+       // 선택지2B.onClick.AddListener();
         
     }
 
