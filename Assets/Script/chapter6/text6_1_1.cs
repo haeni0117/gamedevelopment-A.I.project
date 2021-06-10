@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class text6_1_1 : MonoBehaviour
 {
+
+    public static void desk(){
+
+    }
     //스킵버튼
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num++;
     }
     public static void 선택지1이동(){
-        
+        SceneManager.LoadScene("6-1");//탐색할 장소 선택하기
         
     }
     public static void 선택지2이동(){
@@ -40,14 +44,14 @@ public class text6_1_1 : MonoBehaviour
         GameObject 선택지1 = GameObject.Find("선택지1");
         Button 선택지1B =선택지1.GetComponent<Button>();
         Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
-        선택지1t.text="▷ 다른 장소 탐색하기";
+        선택지1t.text="▶ 다른 장소 탐색하기";
         선택지1B.interactable=true;
         
         //선택지2
         GameObject 선택지2 = GameObject.Find("선택지2");
         Button 선택지2B =선택지2.GetComponent<Button>();
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
-        선택지2t.text="▷ 아니다, 더 찾아보자.";
+        선택지2t.text="▶ 아니다, 더 찾아보자.";
         선택지2B.interactable=true;
         
     }
@@ -188,9 +192,26 @@ public class text6_1_1 : MonoBehaviour
         GameObject 다른장소탐색 = GameObject.Find("다른장소탐색");
         Button 다른장소탐색B =다른장소탐색.GetComponent<Button>();
         Text 다른장소탐색t = GameObject.Find("다른장소탐색Text").GetComponent<Text>();
-        다른장소탐색t.text="▶ 다른 장소 탐색하기";
+        다른장소탐색t.text="▷ 다른 장소로 가본다.";
         다른장소탐색B.interactable=true;
         num=26;
+
+         //선택지1
+        GameObject 선택지1 = GameObject.Find("선택지1");
+        Button 선택지1B =선택지1.GetComponent<Button>();
+        Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
+        선택지1t.text="▷ 다른 곳을 둘러본다.";
+        선택지1B.interactable=true;
+        
+        선택지1.SetActive(true);
+        //선택지2
+        GameObject 선택지2 = GameObject.Find("선택지2");
+        Button 선택지2B =선택지2.GetComponent<Button>();
+        Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
+        선택지2t.text="▷ 아니다, 더 찾아보자.";
+        선택지2B.interactable=true;
+        
+        선택지2.SetActive(true);
     }
 
 
@@ -263,17 +284,19 @@ public class text6_1_1 : MonoBehaviour
         GameObject 선택지1 = GameObject.Find("선택지1");
         Button 선택지1B =선택지1.GetComponent<Button>();
         Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
-        선택지1t.text=" ";
+        선택지1t.text="▷ 다른 곳을 둘러본다.";
         선택지1B.interactable=false;
-        선택지1B.onClick.AddListener();
+        선택지1B.onClick.AddListener(text6_1_1.선택지1이동);
+        선택지1.SetActive(false);
         
         //선택지2
         GameObject 선택지2 = GameObject.Find("선택지2");
         Button 선택지2B =선택지2.GetComponent<Button>();
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
-        선택지2t.text=" ";
+        선택지2t.text="▷ 아니다, 더 찾아보자.";
         선택지2B.interactable=false;
-        선택지2B.onClick.AddListener();
+        선택지2B.onClick.AddListener(text6_1_1.선택지2이동);
+        선택지2.SetActive(false);
         
     }
 
