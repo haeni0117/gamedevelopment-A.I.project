@@ -13,7 +13,7 @@ public class text6_1_1 : MonoBehaviour
     }
     public static void 선택지1이동(){
 
-        
+        //gg
     }
     public static void 선택지2이동(){
         //아니다, 더 찾아보자
