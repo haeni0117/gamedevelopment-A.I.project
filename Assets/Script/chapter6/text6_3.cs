@@ -6,6 +6,51 @@ using UnityEngine.SceneManagement;
 
 public class text6_3 : MonoBehaviour
 {
+    public void FadeIn(float fadeOutTime, System.Action nextEvent = null){
+		StartCoroutine(CoFadeIn(fadeOutTime,nextEvent));
+	}
+
+	public void FadeOut(float fadeOutTime, System.Action nextEvent = null){
+		StartCoroutine(CoFadeOut(fadeOutTime, nextEvent));
+	}
+    public static void scenechange(){
+        SceneManager.LoadScene("6-3-1");
+    }
+
+	// 투명 -> 불투명
+	IEnumerator CoFadeIn(float fadeOutTime, System.Action nextEvent = null){
+		SpriteRenderer sr = GameObject.Find("fadein").GetComponent<SpriteRenderer>();
+		Color tempColor = sr.color;
+		while(tempColor.a < 1f){
+			tempColor.a += Time.deltaTime / fadeOutTime;
+			sr.color = tempColor;
+
+			if(tempColor.a >= 1f) tempColor.a = 1f;
+
+			yield return null;
+		}
+
+		sr.color = tempColor;
+		if(nextEvent != null) nextEvent();
+	}
+
+	// 불투명 -> 투명
+	IEnumerator CoFadeOut(float fadeOutTime, System.Action nextEvent = null){
+		SpriteRenderer sr =  GameObject.Find("fadeout").GetComponent<SpriteRenderer>();
+		Color tempColor = sr.color;
+		while(tempColor.a > 0f){
+			tempColor.a -= Time.deltaTime / fadeOutTime;
+			sr.color = tempColor;
+
+			if(tempColor.a <= 0f) tempColor.a = 0f;
+
+			yield return null;
+		}
+		sr.color = tempColor;
+		if(nextEvent != null) nextEvent();
+	}
+
+
     public static int num = 0;
     public static GameObject button_;
     public static int cnt = 0; //st atic 변수로 수정 
@@ -133,7 +178,10 @@ public class text6_3 : MonoBehaviour
             num++;
         }
         if(num==32){
-            //fadeout
+            FadeOut(1.0f);
+            Invoke("scenechange",1.1f);
         }
+
+
     }
 }
