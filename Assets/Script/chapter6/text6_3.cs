@@ -19,7 +19,8 @@ public class text6_3 : MonoBehaviour
 
 	// 투명 -> 불투명
 	IEnumerator CoFadeIn(float fadeOutTime, System.Action nextEvent = null){
-		SpriteRenderer sr = GameObject.Find("fadein").GetComponent<SpriteRenderer>();
+        GameObject srr = GameObject.Find("fadeout");
+		Image sr = srr.GetComponent<Image>();
 		Color tempColor = sr.color;
 		while(tempColor.a < 1f){
 			tempColor.a += Time.deltaTime / fadeOutTime;
@@ -36,7 +37,8 @@ public class text6_3 : MonoBehaviour
 
 	// 불투명 -> 투명
 	IEnumerator CoFadeOut(float fadeOutTime, System.Action nextEvent = null){
-		SpriteRenderer sr =  GameObject.Find("fadeout").GetComponent<SpriteRenderer>();
+		GameObject srr = GameObject.Find("fadeout");
+		Image sr = srr.GetComponent<Image>();
 		Color tempColor = sr.color;
 		while(tempColor.a > 0f){
 			tempColor.a -= Time.deltaTime / fadeOutTime;
@@ -114,13 +116,18 @@ public class text6_3 : MonoBehaviour
     static IEnumerator coroutine9 = Typing(text_10);
     static IEnumerator coroutine10 = Typing(text_11);
     // Start is called before the first frame update
+    void Awake(){
+        FadeOut(1.0f);
+        Debug.Log("fadein : awake function");
+        //fadein
+    }
     void Start()
     {
         Debug.Log("Scene 6-3 is started");
         //오피스텔 화장실 .img
    
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-       스킵.onClick.AddListener(text6_0.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+       스킵.onClick.AddListener(text6_3.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
        StartCoroutine(coroutine);
     }
 
@@ -178,7 +185,7 @@ public class text6_3 : MonoBehaviour
             num++;
         }
         if(num==32){
-            FadeOut(1.0f);
+            FadeIn(1.0f);
             Invoke("scenechange",1.1f);
         }
 
