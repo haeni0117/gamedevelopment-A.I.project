@@ -637,3 +637,71 @@ Received Import Request.
   path: Assets/Scenes/ch6/6-3.unity
   artifactKey: Guid(681c0c52192014e9a9fb0de63fb4f27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/ch6/6-3.unity using Guid(681c0c52192014e9a9fb0de63fb4f27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6cf24a14c7f8bbc54d59b34bbf0bbc8') in 0.119443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.418671 seconds.
+  path: Assets/image/#3 게스트룸 화장실.png
+  artifactKey: Guid(4335516bba4c84750b48f100154c2ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3 게스트룸 화장실.png using Guid(4335516bba4c84750b48f100154c2ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf094972a170ff68462eee544c4c6504') in 1.427935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/image/#3-B 작업실 조사.png
+  artifactKey: Guid(22b84976ef08b44788f0a35141ca2063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3-B 작업실 조사.png using Guid(22b84976ef08b44788f0a35141ca2063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc30dfc8b5cb3038c73bfd33ee17621') in 0.032617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/image/#3-B(작업실 조사 후) 베란다 커튼+밧줄.png
+  artifactKey: Guid(7864c274ee2fc4e5985d32b920f71067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3-B(작업실 조사 후) 베란다 커튼+밧줄.png using Guid(7864c274ee2fc4e5985d32b920f71067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0973ee250fec61fc408d998cba775292') in 0.011111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/image/#3-B(작업실 조사 후) 베란다 암막커튼 획득.png
+  artifactKey: Guid(6e7d66691fd8d422fb765fbc03cc79b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3-B(작업실 조사 후) 베란다 암막커튼 획득.png using Guid(6e7d66691fd8d422fb765fbc03cc79b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32998f8e3e23b8e726f55f95dc15a27c') in 0.022693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/image/#3-B(작업실 조사 후) 베란다 커튼.png
+  artifactKey: Guid(3f54e229a2f9f46cb8a26fe810d6cda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3-B(작업실 조사 후) 베란다 커튼.png using Guid(3f54e229a2f9f46cb8a26fe810d6cda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bead391b165ac4d55ad3c7841c1d48') in 0.014015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/image/#3-B(작업실 조사 후)-B 1층 베란다로 내려가기.png
+  artifactKey: Guid(a50980f346f3b42618a61ac613993414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/#3-B(작업실 조사 후)-B 1층 베란다로 내려가기.png using Guid(a50980f346f3b42618a61ac613993414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a165bf36221ad0cb5738c5319c3c902') in 0.010242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.915210 seconds.
+  path: Assets/Script/chapter6/text6_3.cs
+  artifactKey: Guid(47a1adea59e2440f6ab197752a53ce41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter6/text6_3.cs using Guid(47a1adea59e2440f6ab197752a53ce41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe853553e2e887d040f79343fad4f254') in 0.019407 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.585 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2705 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 218.7 MB.
+System memory in use after: 218.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3335.
+Total: 1.852000 ms (FindLiveObjects: 0.145542 ms CreateObjectMapping: 0.058334 ms MarkObjects: 1.628292 ms  DeleteObjects: 0.018958 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.432070 seconds.
+  path: Assets/Script/chapter6/text6_0.cs
+  artifactKey: Guid(7c096eddec74446278b877a5d3b32583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter6/text6_0.cs using Guid(7c096eddec74446278b877a5d3b32583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5ba76e5c0fa531391fe367b523a6b9') in 0.051860 seconds 
