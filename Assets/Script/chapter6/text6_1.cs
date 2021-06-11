@@ -150,7 +150,10 @@ public class text6_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Scene 5-1 is started");
+        어디서부터찾아볼까();
+        Debug.Log("어디서부터 찾아볼까 클릭");
+        num++;
+        Debug.Log("Scene 6-1 is started");
     //skipButton -> definition
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
        스킵.onClick.AddListener(text6_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
