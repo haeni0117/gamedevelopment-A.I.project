@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class text6_1_1 : MonoBehaviour
 {
+   
     //스킵버튼
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num++;
+    }
+    public static void 다른장소탐색으로돌아가기(){
+        SceneManager.LoadScene("6-1");
     }
     public static void 선택지1이동(){
 
@@ -36,21 +40,62 @@ public class text6_1_1 : MonoBehaviour
 
 
     public static void 다른장소탐색활성화(){
-         //선택지1
+        //선택지1
+        
         GameObject 선택지1 = GameObject.Find("선택지1");
         Button 선택지1B =선택지1.GetComponent<Button>();
         Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
         선택지1t.text="▷ 다른 장소 탐색하기";
         선택지1B.interactable=true;
+        선택지1.SetActive(true);
+        
+        
         
         //선택지2
+        
         GameObject 선택지2 = GameObject.Find("선택지2");
         Button 선택지2B =선택지2.GetComponent<Button>();
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
         선택지2t.text="▷ 아니다, 더 찾아보자.";
         선택지2B.interactable=true;
+        선택지2.SetActive(true);
+        
+
+        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+       스킵.onClick.AddListener(text6_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        //(1)침대
+        GameObject 침대 = GameObject.Find("침대");
+        침대.SetActive(false);
+
+        //(2)서랍장
+        GameObject 서랍장 = GameObject.Find("서랍장");
+        서랍장.SetActive(false);
+
+        //(3)옷장
+        GameObject 옷장 = GameObject.Find("옷장");
+        옷장.SetActive(false);
+
+        //(4)사이드테이블
+        GameObject 사이드테이블 = GameObject.Find("사이드테이블");
+        사이드테이블.SetActive(false);
+
+        //(5)가방걸이
+        GameObject 가방걸이 = GameObject.Find("가방걸이");
+        가방걸이.SetActive(false);
+
+        //(6)안방화장실
+        GameObject 안방화장실 = GameObject.Find("안방화장실");
+        안방화장실.SetActive(false);
+
+        //(7)다른장소탐색
+        GameObject 다른장소탐색 = GameObject.Find("다른장소탐색");
+        Button 다른장소탐색B =다른장소탐색.GetComponent<Button>();
+        다른장소탐색B.interactable=false;
+        
+        
         
     }
+
 
     public static int num = 0;
     public static GameObject button_;
@@ -62,26 +107,70 @@ public class text6_1_1 : MonoBehaviour
 
     static IEnumerator Typing(string message)
     { 
+        // //(1)침대
+        // GameObject 침대 = GameObject.Find("침대");
+        // Button 침대B =침대.GetComponent<Button>();
+        // 침대B.interactable=false;
+
+        // //(2)서랍장
+        // GameObject 서랍장 = GameObject.Find("서랍장");
+        // Button 서랍장B =서랍장.GetComponent<Button>();
+        // 서랍장B.interactable=false;
+    
+        // //(3)옷장
+        // GameObject 옷장 = GameObject.Find("옷장");
+        // Button 옷장B =옷장.GetComponent<Button>();
+        // 옷장B.interactable=false;
+
+        // //(4)사이드테이블
+        // GameObject 사이드테이블 = GameObject.Find("사이드테이블");
+        // Button 사이드테이블B =사이드테이블.GetComponent<Button>();
+        // 사이드테이블B.interactable=false;
+
+        // //(5)가방걸이
+        // GameObject 가방걸이 = GameObject.Find("가방걸이");
+        // Button 가방걸이B =가방걸이.GetComponent<Button>();
+        // 가방걸이B.interactable=false;
+
+        // //(6)안방화장실
+        // GameObject 안방화장실 = GameObject.Find("안방화장실");
+        // Button 안방화장실B =안방화장실.GetComponent<Button>();
+        // 안방화장실B.interactable=false;
+
+        // //(7)다른장소탐색
+        // GameObject 다른장소탐색 = GameObject.Find("다른장소탐색");
+        // Button 다른장소탐색B =다른장소탐색.GetComponent<Button>();
+        // 다른장소탐색B.interactable=false;
+
+        //  //선택지1 -> 일단비활성화
+        // GameObject 선택지1 = GameObject.Find("선택지1");
+        // Button 선택지1B =선택지1.GetComponent<Button>();
+        // 선택지1B.interactable=false;
+        
+        // //선택지2-> 일단비활성화
+        // GameObject 선택지2 = GameObject.Find("선택지2");
+        // Button 선택지2B =선택지2.GetComponent<Button>();
+        // Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
+        // 선택지2t.text=" ";
+        // 선택지2B.interactable=false;
+        // 선택지2B.onClick.AddListener(Start);
+        // Text typingText = GameObject.Find("general text").GetComponent<Text>();
+        // Debug.Log("typingtext"+typingText);
+        // Debug.Log("message"+message);
+
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log("typingtext"+typingText);
         Debug.Log("message"+message);
-        
         //message=text_1;
         for (int i = 0; i < message.Length; i++) 
         { 
             typingText.text = message.Substring(0, i + 1); 
             yield return new WaitForSeconds(0.05f);
 
-            if(num%3==1){
-                num++;
-                Debug.Log("coroutine is stopped+num"+num);
-                yield break; //코루틴종료
-                //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
-            }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
-           
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
+            
         
     
     }
@@ -131,6 +220,7 @@ public class text6_1_1 : MonoBehaviour
     }
 
     public static void 서랍장조사하기(){
+
         Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
         스킵.interactable=false;
         GameObject 서랍장 = GameObject.Find("서랍장");
@@ -139,6 +229,7 @@ public class text6_1_1 : MonoBehaviour
         서랍장t.text="● 서랍장";
         서랍장B.interactable=false;
         num=5;
+       
     }
 
     public static void 옷장조사하기(){
@@ -182,16 +273,16 @@ public class text6_1_1 : MonoBehaviour
         안방화장실B.interactable=false;
         num=23;
     }
-    public static void 다른장소탐색하기(){
-        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-        스킵.interactable=false;
-        GameObject 다른장소탐색 = GameObject.Find("다른장소탐색");
-        Button 다른장소탐색B =다른장소탐색.GetComponent<Button>();
-        Text 다른장소탐색t = GameObject.Find("다른장소탐색Text").GetComponent<Text>();
-        다른장소탐색t.text="▶ 다른 장소 탐색하기";
-        다른장소탐색B.interactable=true;
-        num=26;
-    }
+    // public static void 다른장소탐색하기(){
+    //     Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+    //     스킵.interactable=false;
+    //     GameObject 다른장소탐색 = GameObject.Find("다른장소탐색");
+    //     Button 다른장소탐색B =다른장소탐색.GetComponent<Button>();
+    //     Text 다른장소탐색t = GameObject.Find("다른장소탐색Text").GetComponent<Text>();
+    //     다른장소탐색t.text="▶ 다른 장소 탐색하기";
+    //     다른장소탐색B.interactable=true;
+    //     num=26;
+    // }
 
 
 
@@ -202,7 +293,7 @@ public class text6_1_1 : MonoBehaviour
     void Start()
     {
         Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-       스킵.onClick.AddListener(text6_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        스킵.onClick.AddListener(text6_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
         //(1)침대
         GameObject 침대 = GameObject.Find("침대");
         Button 침대B =침대.GetComponent<Button>();
@@ -257,22 +348,25 @@ public class text6_1_1 : MonoBehaviour
         Text 다른장소탐색t = GameObject.Find("다른장소탐색Text").GetComponent<Text>();
         다른장소탐색t.text="▷ 다른 장소 탐색하기";
         다른장소탐색B.interactable=true;
-        다른장소탐색B.onClick.AddListener(text6_1_1.다른장소탐색하기);
+        다른장소탐색B.onClick.AddListener(text6_1_1.다른장소탐색활성화);
 
-         //선택지1
+         //선택지1 -> 일단비활성화
         GameObject 선택지1 = GameObject.Find("선택지1");
         Button 선택지1B =선택지1.GetComponent<Button>();
         Text 선택지1t = GameObject.Find("선택지1Text").GetComponent<Text>();
         선택지1t.text=" ";
         선택지1B.interactable=false;
+        선택지1B.onClick.AddListener(다른장소탐색으로돌아가기);
         //선택지1B.onClick.AddListener();
         
-        //선택지2
+        //선택지2-> 일단비활성화
         GameObject 선택지2 = GameObject.Find("선택지2");
         Button 선택지2B =선택지2.GetComponent<Button>();
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
         선택지2t.text=" ";
         선택지2B.interactable=false;
+        선택지2B.onClick.AddListener(Start);
+        
        // 선택지2B.onClick.AddListener();
         
     }
