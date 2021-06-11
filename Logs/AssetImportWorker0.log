@@ -75,3 +75,29 @@ Received Import Request.
   path: Assets/video/가로 ➔ 세로 - Copy.mp4
   artifactKey: Guid(60416827afe6f4e2abf06ac3156fadf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/video/가로 ➔ 세로 - Copy.mp4 using Guid(60416827afe6f4e2abf06ac3156fadf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70b597d1d9ca320be2c3742915772ce') in 0.671620 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001620 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.147 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2697 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 175.6 MB.
+System memory in use after: 175.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3163.
+Total: 2.249916 ms (FindLiveObjects: 0.145083 ms CreateObjectMapping: 0.054458 ms MarkObjects: 2.033041 ms  DeleteObjects: 0.016291 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17086.633085 seconds.
+  path: Assets/Script/chapter6/text6_1_1.cs
+  artifactKey: Guid(84d025a3356dd447480c052fa712a256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter6/text6_1_1.cs using Guid(84d025a3356dd447480c052fa712a256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab4a8ee2f5a197e1a3a720bfc5f4f33') in 0.019109 seconds 
