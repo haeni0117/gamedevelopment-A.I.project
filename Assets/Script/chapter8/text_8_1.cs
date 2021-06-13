@@ -45,7 +45,7 @@ public class text_8_1 : MonoBehaviour
     private static string text_1="10분의 1도 안 되는 확률에 \n나와 시루의 목숨을 걸 수는 없어.";
     private static string text_2="나는 결국 사라를 컴퓨터에 \n연결하려는 계획을 포기했다.\n나는 인터넷이 끊긴 컴퓨터에 \n앞에 앉아 멍하니 의수를 \n바라보았다.";
     private static string text_3="그런데 묘하게 이상한 냄새가 난다.\n이게 도대체 무슨 냄새지…?";
-    private static string text_4="갑자기 1층 거실에서 휴대전화 소리가 울렸다. \n설마 다시 통신이 터지는 건가?\n가슴이 뛰었다. \n이건 하늘이 내려주신 기회야.";
+    private static string text_4="갑자기 1층 거실에서 \n휴대전화 소리가 울렸다. \n설마 다시 통신이 터지는 건가?\n가슴이 뛰었다. \n이건 하늘이 내려주신 기회야.";
     private static string text_5="벌떡 일어나 시루를 안고\n1층으로 내려가는 계단 \n앞에 섰다.\n그런데…. \n계단을 내려갈수록 냄새가 \n점점 짙어진다. \n이대로 내려가도 괜찮은 걸까?";
 
 
@@ -90,7 +90,7 @@ public class text_8_1 : MonoBehaviour
         Button 선택지2B = 선택지2.GetComponent<Button>();
         Text 선택지2t = GameObject.Find("선택지2Text").GetComponent<Text>();
         선택지2t.text="▷ 섣불리 움직이지 않는 게 좋겠어. \n    내려가지 않는다.";
-        선택지2B.interactable=false;
+        선택지2B.interactable=true;
     }
 
 
@@ -108,7 +108,7 @@ public class text_8_1 : MonoBehaviour
         Text 어떻게할까t = GameObject.Find("어떻게할까Text").GetComponent<Text>();
         어떻게할까t.text=" ";
         어떻게할까B.interactable=false;
-        어떻게할까B.onClick.AddListener(text_8_1.어떻게할까);
+        어떻게할까B.onClick.AddListener(text_8_1.어떻게할까활성화);
 
         //선택지1
         GameObject 선택지1 = GameObject.Find("선택지1");
@@ -157,7 +157,8 @@ public class text_8_1 : MonoBehaviour
             num++;
         }
         if(num==14){
-            어떻게할까활성화();
+            Debug.Log("어떻게 할까 ()");
+            어떻게할까();
             num++;
         }
        
