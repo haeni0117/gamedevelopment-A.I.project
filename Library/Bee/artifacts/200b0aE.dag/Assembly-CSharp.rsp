@@ -360,6 +360,7 @@
 "Assets/Script/chapter7/text_7_5.cs"
 "Assets/Script/chapter8/text_8_1.cs"
 "Assets/Script/chapter8/text_8_1_1.cs"
+"Assets/Script/chapter8/text_8_1_2.cs"
 "Assets/Script/test_script/fadeout_test.cs"
 "Assets/text4_2.cs"
 -langversion:8.0
