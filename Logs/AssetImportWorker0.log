@@ -1737,3 +1737,23 @@ Received Import Request.
   path: Assets/image/#2(조사 완료 후) 작업실.png
   artifactKey: Guid(362e3300e766443abaa013fc87e80a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/image/#2(조사 완료 후) 작업실.png using Guid(362e3300e766443abaa013fc87e80a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa5367c01e0266a24bee20b301a639f') in 0.019336 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002109 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.732 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2713 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.2 MB.
+System memory in use after: 268.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3604.
+Total: 3.528833 ms (FindLiveObjects: 0.563833 ms CreateObjectMapping: 0.064042 ms MarkObjects: 2.550250 ms  DeleteObjects: 0.349791 ms)
+
