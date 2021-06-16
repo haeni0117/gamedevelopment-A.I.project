@@ -16,6 +16,8 @@ public class VideoController : MonoBehaviour
     void Update(){
         if((ulong)videoClip.frame == (ulong)videoClip.frameCount){
             SceneManager.LoadScene("1-1");
+            Debug.Log("scene is changed");
         }
+        
     }
 }
