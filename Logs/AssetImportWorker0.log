@@ -3141,3 +3141,171 @@ System memory in use after: 238.6 MB.
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3664.
 Total: 1.909334 ms (FindLiveObjects: 0.258083 ms CreateObjectMapping: 0.071500 ms MarkObjects: 1.562334 ms  DeleteObjects: 0.015958 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003968 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.755 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2719 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 238.6 MB.
+System memory in use after: 238.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3667.
+Total: 1.571625 ms (FindLiveObjects: 0.195541 ms CreateObjectMapping: 0.064292 ms MarkObjects: 1.295458 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 640.355578 seconds.
+  path: Assets/Scenes/ch1/1-1.unity
+  artifactKey: Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-1.unity using Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970854f737e4a3ba4b6dda6171803863') in 0.037954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.136833 seconds.
+  path: Assets/Script/chapter1/1-1/_text.cs
+  artifactKey: Guid(b758114291dd0496c896870dd380c476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-1/_text.cs using Guid(b758114291dd0496c896870dd380c476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c0df7b4442e50b0c66ed9494aad655') in 0.010357 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007652 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.505 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2719 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 238.9 MB.
+System memory in use after: 239.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3670.
+Total: 2.240709 ms (FindLiveObjects: 0.530833 ms CreateObjectMapping: 0.085541 ms MarkObjects: 1.599875 ms  DeleteObjects: 0.023750 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.470465 seconds.
+  path: Assets/Scenes/ch12/12-1.unity
+  artifactKey: Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch12/12-1.unity using Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c132e71d064258ab48909bb1ae4dcce') in 0.172755 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003523 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.701 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2719 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 239.1 MB.
+System memory in use after: 239.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3673.
+Total: 1.952500 ms (FindLiveObjects: 0.208125 ms CreateObjectMapping: 0.065459 ms MarkObjects: 1.665083 ms  DeleteObjects: 0.012916 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.590497 seconds.
+  path: Assets/Scenes/ch1/1-1.unity
+  artifactKey: Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-1.unity using Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4689a3af22ff34f22e74bb0d9f38db08') in 0.032091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.337335 seconds.
+  path: Assets/Script/chapter1/1-1/text1_1.cs
+  artifactKey: Guid(f0f246caff9bd4a2b96a5095e14922d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-1/text1_1.cs using Guid(f0f246caff9bd4a2b96a5095e14922d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7582c7e3716aaf16454d371b41cbb29') in 0.021810 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.485 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2720 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 239.3 MB.
+System memory in use after: 239.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3677.
+Total: 1.654750 ms (FindLiveObjects: 0.247417 ms CreateObjectMapping: 0.062459 ms MarkObjects: 1.324792 ms  DeleteObjects: 0.019042 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002737 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.871 seconds
+Platform modules already initialized, skipping
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Obtained 42 stack frames.
+#0  0x007fff2036f462 in __pthread_kill
+#1  0x007fff202f0720 in abort
+#2  0x0000010715924e in CrashDontLaunchBugReporter()
+#3  0x00000105d3d9d9 in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry&)
+#4  0x00000105d3d029 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x00000105d3df9e in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x00000106ca6bb2 in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x00000106ca743f in DebugStringToFile(DebugStringToFileData const&)
+#8  0x00000104c44107 in CallbackArrayBase<void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform)>::Register(void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform), void const*)
+#9  0x0000010616bfd2 in LoadDomainAndUserAssemblies()
+#10 0x0000010616deb6 in LoadUserAssemblies()
+#11 0x000001063855c9 in AssetImportWorkerClient::ReloadMonoDomain(AssetResolver&)
+#12 0x000001063a69f2 in core::mutable_function<void ()>::DispatchT<void IOService::PostHelper<AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_8>(AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_8&&, IOService::WrapCallableInFunctionTag)::'lambda'()>::Dispatch()
+#13 0x0000010640e4f0 in asio::detail::completion_handler<core::mutable_function<void ()> >::do_complete(asio::detail::task_io_service*, asio::detail::task_io_service_operation*, std::__1::error_code const&, unsigned long)
+#14 0x0000010640b595 in asio::detail::task_io_service::do_run_one(asio::detail::scoped_lock<asio::detail::posix_mutex>&, asio::detail::task_io_service_thread_info&, std::__1::error_code const&)
+#15 0x0000010640b031 in asio::detail::task_io_service::run(std::__1::error_code&)
+#16 0x00000106406cfa in IOService::Run(bool)
+#17 0x0000010637acf7 in RunAssetImporterV2()
+#18 0x00000105e556a9 in Application::InitializeProject()
+#19 0x00000107164a7d in -[EditorApplication applicationDidFinishLaunching:]
+#20 0x007fff2048a895 in __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+#21 0x007fff20526224 in ___CFXRegistrationPost_block_invoke
+#22 0x007fff205261a7 in _CFXRegistrationPost
+#23 0x007fff2045b546 in _CFXNotificationPost
+#24 0x007fff210ffabe in -[NSNotificationCenter postNotificationName:object:userInfo:]
+#25 0x007fff22beef6d in -[NSApplication _postDidFinishNotification]
+#26 0x007fff22beecbb in -[NSApplication _sendFinishLaunchingNotification]
+#27 0x007fff22bebeb2 in -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]
+#28 0x007fff22bebb07 in -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]
+#29 0x007fff2112b056 in -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]
+#30 0x007fff2112aec6 in _NSAppleEventManagerGenericHandler
+#31 0x007fff261d2ed9 in _AppleEventsCheckInAppWithBlock
+#32 0x007fff261d25f4 in _AppleEventsCheckInAppWithBlock
+#33 0x007fff261cb260 in aeProcessAppleEvent
+#34 0x007fff28970612 in AEProcessAppleEvent
+#35 0x007fff22be6276 in _DPSNextEvent
+#36 0x007fff22be45af in -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+#37 0x007fff22bd6b0a in -[NSApplication run]
+#38 0x007fff22baadf2 in NSApplicationMain
+#39 0x00000107181610 in EditorMain(int, char const**)
+#40 0x00000107181849 in main
+#41 0x007fff203b8621 in start
