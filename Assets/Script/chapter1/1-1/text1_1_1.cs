@@ -5,18 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 //#8-1-2
 
-public class text1_1: MonoBehaviour
+public class text1_1_1: MonoBehaviour
 {
     static IEnumerator Typing(string message)
-    { 
+    {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log("typingtext"+typingText);
         Debug.Log("message"+message);
-        
+
         //message=text_1;
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
             yield return new WaitForSeconds(0.05f);
 
             if(num%3==1){
@@ -25,7 +25,7 @@ public class text1_1: MonoBehaviour
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
             }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
-           
+
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
@@ -34,8 +34,8 @@ public class text1_1: MonoBehaviour
     //basic component
     public static int num = 0;
     public static GameObject button_;
-    public static int cnt = 0; //st atic 변수로 수정 
-    public static Text typingText; 
+    public static int cnt = 0; //st atic 변수로 수정
+    public static Text typingText;
     public static GameObject fadeout;
 
 
@@ -45,9 +45,9 @@ public class text1_1: MonoBehaviour
         num++;
     }
     //choice1activation
- 
+
     public static void 선택지활성화(){
-        
+
 
         //objects are showed
         //a
@@ -57,7 +57,7 @@ public class text1_1: MonoBehaviour
         at.text="A. 5분만 더.... ";
         aB.interactable=true;
         aB.onClick.AddListener(text1_1.a활성화);
-        
+
         //b
         GameObject b = GameObject.Find("b");
         Button bB =b.GetComponent<Button>();
@@ -67,15 +67,15 @@ public class text1_1: MonoBehaviour
         bB.onClick.AddListener(text1_1.b활성화);
     }
 
-    
-    
+
+
     public static void a활성화(){
         num=5;
     }
     public static void b활성화(){
        num=11;
     }
-  
+
 
 
     private static string text_1="\"그래....... 이제 일어나야지\"";
@@ -83,12 +83,12 @@ public class text1_1: MonoBehaviour
     private static string text_3="\"스무 살 때 겪었던 \n숙취를 다시 겪는 기분이네.\"";
     private static string text_4="스무 살 때와 차이가 있다면 \n더는 퀴퀴하고 좁은 기숙사 방에서 \n밤새 토사물을 치우느라 \n화난 룸메이트를 \n마주하지 않아도 된다는 것? ";
     private static string text_5="항상 혼자 살기에는 \n집이 너무 넓다고 불평을 해왔지만, \n인공지능이 설정한 최적 온도와 습도는 \n언제나 상쾌하고, \n퀸사이즈 침대 위에 놓인 \n새하얀 침구는 오늘따라 더 눈부시다.";
-    
+
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
-    static IEnumerator coroutine2 = Typing(text_3);       
+    static IEnumerator coroutine2 = Typing(text_3);
     static IEnumerator coroutine3 = Typing(text_4);
-         
+
     // Start is called before the first frame update
     void Start()
     {
@@ -112,7 +112,7 @@ public class text1_1: MonoBehaviour
         at.text=" ";
         aB.interactable=false;
         aB.onClick.AddListener(text1_1.a활성화);
-        
+
         //b
         GameObject b = GameObject.Find("b");
         Button bB =b.GetComponent<Button>();
@@ -120,7 +120,7 @@ public class text1_1: MonoBehaviour
         bt.text=" ";
         bB.interactable=false;
         bB.onClick.AddListener(text1_1.b활성화);
-    
+
     }
 
     // Update is called once per frame
@@ -140,16 +140,13 @@ public class text1_1: MonoBehaviour
             num++;
         }
         if(num==11){
-            StartCoroutine(coroutine4);
-            num++;
-        }
-        if(num==14){
             SceneManager.LoadScene("1-2");
         }
       
-       
-        
-       
+
+
+
+
 
     }
 }

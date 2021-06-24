@@ -8,15 +8,15 @@ using UnityEngine.SceneManagement;
 public class text_8_1 : MonoBehaviour
 {
     static IEnumerator Typing(string message)
-    { 
+    {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log("typingtext"+typingText);
         Debug.Log("message"+message);
-        
+
         //message=text_1;
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
             yield return new WaitForSeconds(0.05f);
 
             if(num%3==1){
@@ -25,17 +25,17 @@ public class text_8_1 : MonoBehaviour
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
             }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
-           
+
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
     }
 
-    
+
     public static int num = 0;
     public static GameObject button_;
-    public static int cnt = 0; //st atic 변수로 수정 
-    public static Text typingText; 
+    public static int cnt = 0; //st atic 변수로 수정
+    public static Text typingText;
     public static GameObject fadeout;
 
     public static void 스킵버튼클릭(){
@@ -51,10 +51,10 @@ public class text_8_1 : MonoBehaviour
 
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
-    static IEnumerator coroutine2 = Typing(text_3);       
+    static IEnumerator coroutine2 = Typing(text_3);
     static IEnumerator coroutine3 = Typing(text_4);
     static IEnumerator coroutine4 = Typing(text_5);
-    
+
     public static void 어떻게할까(){
         GameObject 어떻게할까 = GameObject.Find("어떻게할까");
         Button 어떻게할까B =어떻게할까.GetComponent<Button>();
@@ -92,8 +92,7 @@ public class text_8_1 : MonoBehaviour
         선택지2t.text="▷ 섣불리 움직이지 않는 게 좋겠어. \n    내려가지 않는다.";
         선택지2B.interactable=true;
     }
-
-
+  
 
 
     // Start is called before the first frame update
@@ -130,7 +129,7 @@ public class text_8_1 : MonoBehaviour
 
         Debug.Log("coroutin is started! #3-1 num"+num);
         StartCoroutine(coroutine);
-        
+
     }
 
     // Update is called once per frame
@@ -161,7 +160,7 @@ public class text_8_1 : MonoBehaviour
             어떻게할까();
             num++;
         }
-       
+
 
     }
 }

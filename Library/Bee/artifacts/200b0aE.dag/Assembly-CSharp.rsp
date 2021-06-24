@@ -326,6 +326,7 @@
 "Assets/Script/chapter1/1-1/Fadein.cs"
 "Assets/Script/chapter1/1-1/text1_1.cs"
 "Assets/Script/chapter1/1-1/text1_1_1.cs"
+"Assets/Script/chapter1/1-1/_text.cs"
 "Assets/Script/chapter1/1-2/_text1_2.cs"
 "Assets/Script/chapter1/1-3/text2_3.cs"
 "Assets/Script/chapter1/1-4/kjj.cs"
@@ -341,7 +342,6 @@
 "Assets/Script/chapter10/text_10_2.cs"
 "Assets/Script/chapter10/text_10_3.cs"
 "Assets/Script/chapter10/text_10_4.cs"
-"Assets/Script/chapter12/text_12.cs"
 "Assets/Script/chapter2/fadeeffect_2_1.cs"
 "Assets/Script/chapter2/skip_button.cs"
 "Assets/Script/chapter2/text2_1.cs"
@@ -378,6 +378,7 @@
 "Assets/Script/chapter8/text_8_3_2.cs"
 "Assets/Script/chapter8/text_8_3_3_a.cs"
 "Assets/Script/chapter8/text_8_3_3_b.cs"
+"Assets/Script/fixedResolution.cs"
 "Assets/Script/test_script/fadeout_test.cs"
 "Assets/text4_2.cs"
 -langversion:8.0
