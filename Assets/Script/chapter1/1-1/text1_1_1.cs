@@ -46,36 +46,6 @@ public class text1_1_1: MonoBehaviour
     }
     //choice1activation
 
-    public static void 선택지활성화(){
-
-
-        //objects are showed
-        //a
-        GameObject a = GameObject.Find("a");
-        Button aB =a.GetComponent<Button>();
-        Text at = GameObject.Find("aText").GetComponent<Text>();
-        at.text="A. 5분만 더.... ";
-        aB.interactable=true;
-        aB.onClick.AddListener(text1_1.a활성화);
-
-        //b
-        GameObject b = GameObject.Find("b");
-        Button bB =b.GetComponent<Button>();
-        Text bt = GameObject.Find("bText").GetComponent<Text>();
-        bt.text="B. 지금 몇 시야 카라?";
-        bB.interactable=true;
-        bB.onClick.AddListener(text1_1.b활성화);
-    }
-
-
-
-    public static void a활성화(){
-        num=5;
-    }
-    public static void b활성화(){
-       num=11;
-    }
-
 
 
     private static string text_1="\"그래....... 이제 일어나야지\"";
@@ -93,7 +63,7 @@ public class text1_1_1: MonoBehaviour
     void Start()
     {
         Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-        스킵.onClick.AddListener(text1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        스킵.onClick.AddListener(text1_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
         Debug.Log("scene1 is started "+num);
         StartCoroutine(coroutine);
 
@@ -105,21 +75,7 @@ public class text1_1_1: MonoBehaviour
         // choice1B.interactable=false;
         // choice1B.onClick.AddListener(text_8_1_2.선택지활성화);
 
-       //a
-        GameObject a = GameObject.Find("a");
-        Button aB =a.GetComponent<Button>();
-        Text at = GameObject.Find("aText").GetComponent<Text>();
-        at.text=" ";
-        aB.interactable=false;
-        aB.onClick.AddListener(text1_1.a활성화);
 
-        //b
-        GameObject b = GameObject.Find("b");
-        Button bB =b.GetComponent<Button>();
-        Text bt = GameObject.Find("bText").GetComponent<Text>();
-        bt.text=" ";
-        bB.interactable=false;
-        bB.onClick.AddListener(text1_1.b활성화);
 
     }
 
@@ -142,7 +98,7 @@ public class text1_1_1: MonoBehaviour
         if(num==11){
             SceneManager.LoadScene("1-2");
         }
-      
+
 
 
 
