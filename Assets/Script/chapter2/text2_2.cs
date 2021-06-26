@@ -3,113 +3,200 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+//#1-2 부재중전화
 
-public class text2_2 : MonoBehaviour
+public class text2_2: MonoBehaviour
 {
-    public GameObject button_; //fadeout 용도
-    //모든 선택지를 확인했는지 -> bool로 체크
-    //Q bool 왜 안됨?okay
+    static IEnumerator Typing(string message)
+    {
+        Text typingText = GameObject.Find("general text").GetComponent<Text>();
+        Debug.Log("typingtext"+typingText);
+        Debug.Log("message"+message);
 
+        //message=text_1;
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
+            yield return new WaitForSeconds(0.05f);
 
-    static bool first_bool=false;
-    static bool second_bool = false;
-    static bool third_bool = false;
+            if(num%3==1){
+                num++;
+                Debug.Log("coroutine is stopped+num"+num);
+                yield break; //코루틴종료
+                //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
+            }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
 
-    //서랍장 조사 => 층별로 버튼 클릭 가능하게 구성
-    public GameObject first_drawer;
-    public GameObject second_drawer;
-    public GameObject third_drawer;
-
-    public int cnt = 0;
-    public Text m_TypingText; 
-    public string m_Message;
-    public float m_Speed;
-    public Text typingText;
-
-    //scenario text
-    private static string m1="모던한 방 분위기와는\n어울리지 않는 서랍장이다.\n마음에 들지 않았지만,\n부모님이 골라주신 거라\n어쩔 수 없이\n침대 바로 옆에 뒀다."; 
-    private static string m2="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다."; 
-    private static string m3="이 집으로 이사 올 때 \n안전을 위해서 사 둔 호신용품이다. \n다행히 아직 사용할 일이 없어서 \n서랍장에 넣어 두고 잊고 있었다"; 
-
-    IEnumerator Typing(string message) 
-    { 
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
-            yield return new WaitForSeconds(0.05f); 
-        } 
-        yield break;//ㅅ시발 왜 두번 돌아가?
+            }
+            num++;
+            Debug.Log("user didn't skip the text+num"+num);
     }
 
-    public void narr(){
-        Debug.Log("narration_start");
-        
-        //generaltext.text=m_Message;
-        StartCoroutine(Typing(m1));
-        Debug.Log("coroutine is finished");
-        Invoke("buttonsetactive",3);
+    //basic component
+    public static int num = 0;
+    public static GameObject button_;
+    public static int cnt = 0; //st atic 변수로 수정
+    public static Text typingText;
+    public static GameObject fadeout;
+    //서랍장 조사 여부
+    private static bool d1=false;
+    private static bool d2=false;
+    private static bool d3=false;
+
+
+    //skip button
+    public static void 스킵버튼클릭(){
+        Debug.Log("skipbutton is clicked! num="+num);
+        num++;
     }
-    // private void buttonactivating(){
-    //     first_drawer.SetActive(true);
-    //     second_drawer.SetActive(true);
-    //     third_drawer.SetActive(true);
-    // }
-    public void buttonsetactive(){
-        first_drawer.SetActive(true);
-        second_drawer.SetActive(true);
-        third_drawer.SetActive(true);
+    //choice1activation
+    public static void 선택지활성화(){
+        //objects are showed
+        //a
+        GameObject a = GameObject.Find("a");
+        Button aB =a.GetComponent<Button>();
+        Text at = GameObject.Find("aText").GetComponent<Text>();
+        at.text="(1) 서랍장 1층";
+        aB.interactable=true;
+        aB.onClick.AddListener(text2_2.a활성화);
+
+        //b
+        GameObject b = GameObject.Find("b");
+        Button bB =b.GetComponent<Button>();
+        Text bt = GameObject.Find("bText").GetComponent<Text>();
+        bt.text="(2) 서랍장 2층";
+        bB.interactable=true;
+        bB.onClick.AddListener(text2_2.b활성화);
+
+        //c
+        GameObject c = GameObject.Find("c");
+        Button cB =c.GetComponent<Button>();
+        Text ct = GameObject.Find("cText").GetComponent<Text>();
+        ct.text="(3) 서랍장 3층";
+        cB.interactable=true;
+        cB.onClick.AddListener(text2_2.c활성화);
     }
 
-    //the first_floor of drawer investigation
-    public void first(){
-        StartCoroutine(Typing(m2));
-        text2_2.first_bool=true;
-        //bool 변수 값 확인목적 디버그
 
+
+
+
+    public static void a활성화(){
+      //a - 1층 서랍장
+      GameObject a = GameObject.Find("a");
+      Button aB =a.GetComponent<Button>();
+      Text at = GameObject.Find("aText").GetComponent<Text>();
+      //b - 2층 서랍장
+      GameObject b = GameObject.Find("b");
+      Button bB =b.GetComponent<Button>();
+      Text bt = GameObject.Find("bText").GetComponent<Text>();
+      //c - 3층 서랍장
+      GameObject c = GameObject.Find("c");
+      Button cB =c.GetComponent<Button>();
+      Text ct = GameObject.Find("cText").GetComponent<Text>();
+      //서랍장 선택지
+      aB.interactable=false;
+      bB.interactable=false;
+      cB.interactable=false;
+      d1=true;
+
+      num=2;
     }
-    //the second_floor of drawer investigation
-    public void second(){ 
-        StartCoroutine(Typing(m2));
-        text2_2.second_bool = true;
-        //bool&int 변수 값 확인목적 디버그
-        // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
-        // Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
+
+    public static void b활성화(){
+      GameObject a = GameObject.Find("a");
+      Button aB =a.GetComponent<Button>();
+      Text at = GameObject.Find("aText").GetComponent<Text>();
+      GameObject b = GameObject.Find("b");
+      Button bB =b.GetComponent<Button>();
+      Text bt = GameObject.Find("bText").GetComponent<Text>();
+      GameObject c = GameObject.Find("c");
+      Button cB =c.GetComponent<Button>();
+      Text ct = GameObject.Find("cText").GetComponent<Text>();
+      aB.interactable=false;
+      bB.interactable=false;
+      cB.interactable=false;
+      d2=true;
+
+      num =5;
     }
-    //the third_floor of drawer investigation
-    public void third(){
-        StartCoroutine(Typing(m3));
-        text2_2.third_bool = true;
-        //bool 변수 값 확인목적 디버그
-        // Debug.Log("1 :" +first_num+"  /  2 :"+second_num+"  /  3 :"+third_num);
-        Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
+
+    public static void c활성화(){
+      GameObject a = GameObject.Find("a");
+      Button aB =a.GetComponent<Button>();
+      Text at = GameObject.Find("aText").GetComponent<Text>();
+      GameObject b = GameObject.Find("b");
+      Button bB =b.GetComponent<Button>();
+      Text bt = GameObject.Find("bText").GetComponent<Text>();
+      GameObject c = GameObject.Find("c");
+      Button cB =c.GetComponent<Button>();
+      Text ct = GameObject.Find("cText").GetComponent<Text>();
+      aB.interactable=false;
+      bB.interactable=false;
+      cB.interactable=false;
+      d3=true;
+
+      num = 8;
     }
+
+
+    //a. 카라에게 무슨 일인지 물어본다.
+    private static string text_1="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다.";
+    private static string text_2="사용하는 서랍이라고는 \n믿을 수 없을 정도로 \n텅 비어있다.";
+    private static string text_3="이 집으로 이사 올 때 \n안전을 위해서 사 둔 호신용품이다. \n다행히 아직 사용할 일이 없어서 \n서랍장에 넣어 두고 잊고 있었다.\n{전기 충격기를 획득했다.}";
+
+
+
+
+    static IEnumerator coroutine =  Typing(text_1);
+    static IEnumerator coroutine1 = Typing(text_2);
+    static IEnumerator coroutine2 = Typing(text_3);
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        narr();
-    }
-    void activating(){
-        button_.SetActive(true);
+        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+        스킵.onClick.AddListener(text_1_4_2.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        Debug.Log("scene1-4-2 is started "+num);
+        StartCoroutine(coroutine);
+
+       //a
+        GameObject a = GameObject.Find("a");
+        Button aB =a.GetComponent<Button>();
+        Text at = GameObject.Find("aText").GetComponent<Text>();
+        at.text="";
+        aB.interactable=false;
+        aB.onClick.AddListener(text_1_4_2.a활성화);
+
+        //b
+        GameObject b = GameObject.Find("b");
+        Button bB =b.GetComponent<Button>();
+        Text bt = GameObject.Find("bText").GetComponent<Text>();
+        bt.text="";
+        bB.interactable=false;
+        bB.onClick.AddListener(text_1_4_2.b활성화);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("1 :" +first_bool+"  /  2 :"+second_bool+"  /  3 :"+third_bool);
-        if(first_bool==true&&second_bool==true&&third_bool==true){
-            Invoke("activating",3);
+        if(num==2){
+          StartCoroutine(coroutine1);
+          num++;
+            //StartCoroutine(coroutine1);
         }
-        //bool값 변경 -> 다음 씬 연결 버튼 활성화(SetActive)
-        // if(first_num!=0){
-        //     first_bool=true;
-        // }
-        // if(second_num!=0){
-        //     second_bool=true;
-        // }
-        // if(third_num!=0){
-        //     third_bool=true;
-        // }
-        
+        if(num==5){
+            StartCoroutine(coroutine2);
+            num++;
+        }
+        if(d1&&d2&&d3){
+          SceneManager.LoadScene("2-3");
+        }
+
+
     }
-}
+    }

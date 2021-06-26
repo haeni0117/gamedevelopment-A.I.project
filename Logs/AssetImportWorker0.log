@@ -1505,3 +1505,1507 @@ Total: 54.147000 ms (FindLiveObjects: 2.132000 ms CreateObjectMapping: 0.243333 
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.118 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 377.5 MB.
+System memory in use after: 377.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3945.
+Total: 2.981000 ms (FindLiveObjects: 0.780959 ms CreateObjectMapping: 0.081000 ms MarkObjects: 1.789959 ms  DeleteObjects: 0.328333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 18638.802764 seconds.
+  path: Assets/Scenes/ch1/1-3.unity
+  artifactKey: Guid(36a33423f6ae3479887e22945172dc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-3.unity using Guid(36a33423f6ae3479887e22945172dc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140662afe78ac9545f7814c8207fc297') in 0.148247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.740843 seconds.
+  path: Assets/Scenes/ch1/1-1.unity
+  artifactKey: Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-1.unity using Guid(84f663b19bb7b4f9ab7d8096bbacd799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78dce79ecd7936ccb971351a9f610601') in 0.002869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.326657 seconds.
+  path: Assets/Script/chapter1/1-4/kjj.cs
+  artifactKey: Guid(f3d1e44b650854b718efef91d407d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/kjj.cs using Guid(f3d1e44b650854b718efef91d407d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33750003124eaffb02b74e6d2a4367bc') in 0.019891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.534346 seconds.
+  path: Assets/Script/chapter1/1-4/text_4.cs
+  artifactKey: Guid(057c22fd73377460193f0516f6af9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_4.cs using Guid(057c22fd73377460193f0516f6af9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f88cbefb6b0b9af121c05392d447ada') in 0.003183 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001606 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.836 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 377.6 MB.
+System memory in use after: 377.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3947.
+Total: 2.294333 ms (FindLiveObjects: 0.228875 ms CreateObjectMapping: 0.069834 ms MarkObjects: 1.702333 ms  DeleteObjects: 0.292375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001592 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.292 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2724 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 377.8 MB.
+System memory in use after: 378.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3949.
+Total: 1.676375 ms (FindLiveObjects: 0.229292 ms CreateObjectMapping: 0.067458 ms MarkObjects: 1.361250 ms  DeleteObjects: 0.017125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 121.504938 seconds.
+  path: Assets/Script/chapter1/1-4
+  artifactKey: Guid(03f27395e1c244439925e62a1b24807a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4 using Guid(03f27395e1c244439925e62a1b24807a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2936607170ae9bcf622ad89d5e86ec62') in 0.019149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.107954 seconds.
+  path: Assets/Script/chapter1/1-4/text_1_4.cs
+  artifactKey: Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_1_4.cs using Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3058586f99655878a7d92035c1c11153') in 0.017116 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003203 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.846 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 378.0 MB.
+System memory in use after: 378.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3953.
+Total: 3.677292 ms (FindLiveObjects: 0.655709 ms CreateObjectMapping: 0.073417 ms MarkObjects: 2.632500 ms  DeleteObjects: 0.314792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002907 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.544 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 378.2 MB.
+System memory in use after: 378.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3956.
+Total: 4.577584 ms (FindLiveObjects: 0.454125 ms CreateObjectMapping: 0.099334 ms MarkObjects: 3.993834 ms  DeleteObjects: 0.029417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 644.732236 seconds.
+  path: Assets/Script/chapter1/1-4/text_1_4.cs
+  artifactKey: Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_1_4.cs using Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fdf65249f3d07f8767494214be1727e') in 0.017578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27661.318178 seconds.
+  path: Assets/Script/chapter1/1-4/text_1_4.cs
+  artifactKey: Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_1_4.cs using Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed93fce77078ef3ed7459bf7b978626') in 0.026730 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.028 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 378.7 MB.
+System memory in use after: 378.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3959.
+Total: 6.254459 ms (FindLiveObjects: 2.466500 ms CreateObjectMapping: 0.077333 ms MarkObjects: 3.686459 ms  DeleteObjects: 0.023167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 68.589132 seconds.
+  path: Assets/Script/chapter1/1-4/text_1_4.cs
+  artifactKey: Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_1_4.cs using Guid(20c438990b1c443d081a1f20d958215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2342dbaec723cf0a112cf93b2aca4157') in 0.016193 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003591 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.637 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 378.8 MB.
+System memory in use after: 379.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3962.
+Total: 1.860917 ms (FindLiveObjects: 0.213667 ms CreateObjectMapping: 0.077583 ms MarkObjects: 1.538500 ms  DeleteObjects: 0.030333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 210.195883 seconds.
+  path: Assets/Scenes/ch1/1-4-1.unity
+  artifactKey: Guid(f1ed933c36de6428da045ae3ce7ac41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-4-1.unity using Guid(f1ed933c36de6428da045ae3ce7ac41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51725648a10b05423a6caf3b5fa3456') in 0.022776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.443269 seconds.
+  path: Assets/Scenes/ch1/1-4-2.unity
+  artifactKey: Guid(5fafe2ca478b8499a9ad64ffc4e08e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-4-2.unity using Guid(5fafe2ca478b8499a9ad64ffc4e08e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c855519f354d985e73570ef69cc596') in 0.002029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 666.162726 seconds.
+  path: Assets/Script/chapter1/1-6
+  artifactKey: Guid(b7ca9be38d07c4cfd89320b72a1390f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-6 using Guid(b7ca9be38d07c4cfd89320b72a1390f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52fe30a6998ea2c1d8a1d16d3a51bbf3') in 0.006498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.413588 seconds.
+  path: Assets/Script/chapter1/1-6/text1_6.cs
+  artifactKey: Guid(e2671afdd36544f9c97f1761686d0db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-6/text1_6.cs using Guid(e2671afdd36544f9c97f1761686d0db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f9512b40736e72328272e240ed5697') in 0.011441 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.563 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 379.0 MB.
+System memory in use after: 379.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3965.
+Total: 1.790750 ms (FindLiveObjects: 0.193417 ms CreateObjectMapping: 0.072333 ms MarkObjects: 1.506334 ms  DeleteObjects: 0.017750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.408 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 379.2 MB.
+System memory in use after: 379.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3968.
+Total: 1.743541 ms (FindLiveObjects: 0.217000 ms CreateObjectMapping: 0.069542 ms MarkObjects: 1.437542 ms  DeleteObjects: 0.018208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023624 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.181 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 379.4 MB.
+System memory in use after: 379.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3971.
+Total: 2.020916 ms (FindLiveObjects: 0.262167 ms CreateObjectMapping: 0.070833 ms MarkObjects: 1.674417 ms  DeleteObjects: 0.012709 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 445.747183 seconds.
+  path: Assets/Scenes/ch1/1-6.unity
+  artifactKey: Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-6.unity using Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7473a0b30e930e186e62b1d4651be84') in 0.031035 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.566 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 379.6 MB.
+System memory in use after: 379.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3974.
+Total: 1.831834 ms (FindLiveObjects: 0.229291 ms CreateObjectMapping: 0.071417 ms MarkObjects: 1.512375 ms  DeleteObjects: 0.017667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 507.800202 seconds.
+  path: Assets/Script/chapter1/1-6/text1_6.cs
+  artifactKey: Guid(e2671afdd36544f9c97f1761686d0db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-6/text1_6.cs using Guid(e2671afdd36544f9c97f1761686d0db4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b4eff9ba7f5365537b7a39a152caf9') in 0.013515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.040869 seconds.
+  path: Assets/Scenes/ch1/1-6.unity
+  artifactKey: Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-6.unity using Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d38f9b44b56679b81d23b4a192f337') in 0.081531 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003639 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.661 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 379.8 MB.
+System memory in use after: 380.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3977.
+Total: 2.412541 ms (FindLiveObjects: 0.229667 ms CreateObjectMapping: 0.074708 ms MarkObjects: 2.093042 ms  DeleteObjects: 0.014166 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004466 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.207 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 380.1 MB.
+System memory in use after: 380.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3980.
+Total: 1.962250 ms (FindLiveObjects: 0.227625 ms CreateObjectMapping: 0.068583 ms MarkObjects: 1.330458 ms  DeleteObjects: 0.334708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 387.863222 seconds.
+  path: Assets/Scenes/ch1/1-3.unity
+  artifactKey: Guid(36a33423f6ae3479887e22945172dc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-3.unity using Guid(36a33423f6ae3479887e22945172dc0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed007a0e74b26cb6cc817e830756bae') in 0.037262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.674160 seconds.
+  path: Assets/Scenes/ch1/anim.unity
+  artifactKey: Guid(9bee37b1f19a3409ea946c5f1a829b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/anim.unity using Guid(9bee37b1f19a3409ea946c5f1a829b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571e9bcabbb0aea4d9752e40de75fc1f') in 0.003134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.541174 seconds.
+  path: Assets/Scenes/ch1/1-4.unity
+  artifactKey: Guid(bee3c9b0ab4534d8d843635626a43f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-4.unity using Guid(bee3c9b0ab4534d8d843635626a43f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01413a2c5de296022f85685066e817a9') in 0.002601 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001321 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.498 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 380.3 MB.
+System memory in use after: 380.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3983.
+Total: 1.706958 ms (FindLiveObjects: 0.213542 ms CreateObjectMapping: 0.066459 ms MarkObjects: 1.408541 ms  DeleteObjects: 0.017458 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003795 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.266 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 380.4 MB.
+System memory in use after: 380.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3986.
+Total: 1.558250 ms (FindLiveObjects: 0.188042 ms CreateObjectMapping: 0.066834 ms MarkObjects: 1.286792 ms  DeleteObjects: 0.015750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 972.952954 seconds.
+  path: Assets/Scenes/ch1/1-4.unity
+  artifactKey: Guid(bee3c9b0ab4534d8d843635626a43f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-4.unity using Guid(bee3c9b0ab4534d8d843635626a43f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43dfe66df7926c8cef9858c12a9e966') in 0.428512 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003365 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.084 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2725 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 380.6 MB.
+System memory in use after: 380.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3989.
+Total: 2.126667 ms (FindLiveObjects: 0.215584 ms CreateObjectMapping: 0.070958 ms MarkObjects: 1.824125 ms  DeleteObjects: 0.014833 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022488 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.579 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 381.2 MB.
+System memory in use after: 381.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3993.
+Total: 7.358666 ms (FindLiveObjects: 0.297541 ms CreateObjectMapping: 0.146167 ms MarkObjects: 6.870375 ms  DeleteObjects: 0.043167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 225.380758 seconds.
+  path: Assets/Script/chapter1/1-4/text_1_4_2.cs
+  artifactKey: Guid(c84bcd7befafc4399ab73736a76cd977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-4/text_1_4_2.cs using Guid(c84bcd7befafc4399ab73736a76cd977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97889a8651dc0de4a8c5e5e8af5f07f3') in 0.029558 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003681 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.685 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 381.4 MB.
+System memory in use after: 381.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3996.
+Total: 1.642166 ms (FindLiveObjects: 0.184375 ms CreateObjectMapping: 0.067667 ms MarkObjects: 1.369166 ms  DeleteObjects: 0.020041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1366.112363 seconds.
+  path: Assets/Scenes/ch1/1-8.unity
+  artifactKey: Guid(d27708e6c09c64da3900243cd587c3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-8.unity using Guid(d27708e6c09c64da3900243cd587c3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36824cd8715d06194ad68bf52201424b') in 0.253768 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009408 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.245 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 381.7 MB.
+System memory in use after: 381.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3999.
+Total: 2.467667 ms (FindLiveObjects: 0.574417 ms CreateObjectMapping: 0.073791 ms MarkObjects: 1.802584 ms  DeleteObjects: 0.015708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.059071 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.416 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 381.9 MB.
+System memory in use after: 382.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4002.
+Total: 1.588791 ms (FindLiveObjects: 0.226208 ms CreateObjectMapping: 0.067875 ms MarkObjects: 1.282333 ms  DeleteObjects: 0.011500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 183.061230 seconds.
+  path: Assets/Scenes/ch1/1-4-2.unity
+  artifactKey: Guid(5fafe2ca478b8499a9ad64ffc4e08e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-4-2.unity using Guid(5fafe2ca478b8499a9ad64ffc4e08e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53074e14a1899dd5ccbd44bf647b054') in 0.019667 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001433 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.909 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 382.1 MB.
+System memory in use after: 382.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4005.
+Total: 1.656708 ms (FindLiveObjects: 0.212791 ms CreateObjectMapping: 0.071125 ms MarkObjects: 1.351417 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.049054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.400 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2726 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 382.3 MB.
+System memory in use after: 382.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4008.
+Total: 1.637209 ms (FindLiveObjects: 0.215959 ms CreateObjectMapping: 0.067959 ms MarkObjects: 1.334666 ms  DeleteObjects: 0.017875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 144.766318 seconds.
+  path: Assets/Scenes/ch1/1-7.unity
+  artifactKey: Guid(88cae62c96bcd4e06b6eb140dd5104f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-7.unity using Guid(88cae62c96bcd4e06b6eb140dd5104f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba77a0727a42fc104c3c745629048f20') in 0.016541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.999553 seconds.
+  path: Assets/Script/chapter1/1-8
+  artifactKey: Guid(48d9ddf05fa5f4916a58d969c0cc1ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-8 using Guid(48d9ddf05fa5f4916a58d969c0cc1ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88505d62d036537652d7892b570494d') in 0.001316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.874562 seconds.
+  path: Assets/Script/chapter1/1-8/text_1_8.cs
+  artifactKey: Guid(dc50989d636964fefbfeb0f063fc387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-8/text_1_8.cs using Guid(dc50989d636964fefbfeb0f063fc387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9196b29fe18e94a7ab324f2cd2a420') in 0.017745 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001591 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.846 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 382.5 MB.
+System memory in use after: 382.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4012.
+Total: 1.638042 ms (FindLiveObjects: 0.188958 ms CreateObjectMapping: 0.070959 ms MarkObjects: 1.358083 ms  DeleteObjects: 0.019250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 405.241575 seconds.
+  path: Assets/Script/chapter1/1-8/text_1_8.cs
+  artifactKey: Guid(dc50989d636964fefbfeb0f063fc387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/1-8/text_1_8.cs using Guid(dc50989d636964fefbfeb0f063fc387d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d526596e4e4a0aa4376d0362ef4714d') in 0.258202 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001429 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.018 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 382.7 MB.
+System memory in use after: 383.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4015.
+Total: 1.875542 ms (FindLiveObjects: 0.217416 ms CreateObjectMapping: 0.074792 ms MarkObjects: 1.550833 ms  DeleteObjects: 0.031542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004108 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.785 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 382.9 MB.
+System memory in use after: 383.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4018.
+Total: 1.613500 ms (FindLiveObjects: 0.233708 ms CreateObjectMapping: 0.066125 ms MarkObjects: 1.298958 ms  DeleteObjects: 0.013750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.392 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 383.1 MB.
+System memory in use after: 383.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4021.
+Total: 1.973000 ms (FindLiveObjects: 0.266250 ms CreateObjectMapping: 0.076208 ms MarkObjects: 1.609125 ms  DeleteObjects: 0.020291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 213.699645 seconds.
+  path: Assets/Scenes/ch1/1-8.unity
+  artifactKey: Guid(d27708e6c09c64da3900243cd587c3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-8.unity using Guid(d27708e6c09c64da3900243cd587c3c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e12341948de4c5e916380a8d4e34516') in 0.025124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.032477 seconds.
+  path: Assets/Scenes/ch1/1-9.unity
+  artifactKey: Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-9.unity using Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7497c54eeeecaab4f7ccfe48a76d3fca') in 0.003213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 235.196482 seconds.
+  path: Assets/Scenes/ch2/2-4.unity
+  artifactKey: Guid(273687d43331d42bc9c5a147482acca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-4.unity using Guid(273687d43331d42bc9c5a147482acca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5131903215729f614ce1de585b12b6') in 0.037097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.436841 seconds.
+  path: Assets/Scenes/ch1/1-9.unity
+  artifactKey: Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-9.unity using Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3740fd7ac35120ff07a79b4a4d79a86') in 0.009753 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001614 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.374 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 383.3 MB.
+System memory in use after: 383.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4024.
+Total: 1.620209 ms (FindLiveObjects: 0.187000 ms CreateObjectMapping: 0.064917 ms MarkObjects: 1.346541 ms  DeleteObjects: 0.020958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 258.678149 seconds.
+  path: Assets/Script/NewBehaviourScript.cs
+  artifactKey: Guid(4fc0fa429ee9a49deacbbda8bf45b91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/NewBehaviourScript.cs using Guid(4fc0fa429ee9a49deacbbda8bf45b91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843db09daeb55339b0a1430890ee18ec') in 0.446244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.925509 seconds.
+  path: Assets/Script/chapter1/text_1-9.cs
+  artifactKey: Guid(73da43a6b77034b4da8b508b14432051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/text_1-9.cs using Guid(73da43a6b77034b4da8b508b14432051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a56d689758f16a53458ef2fe7c7edb') in 0.002098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.245737 seconds.
+  path: Assets/Script/chapter1/text_1_0.cs
+  artifactKey: Guid(ac32a8a0583754f72b1da0ad45faea86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/text_1_0.cs using Guid(ac32a8a0583754f72b1da0ad45faea86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5de93a90050616292446c4ae97e3d2c') in 0.006481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.417711 seconds.
+  path: Assets/Script/chapter1/te.unity
+  artifactKey: Guid(4d19b5411788743b0b3112d88058da84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/te.unity using Guid(4d19b5411788743b0b3112d88058da84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0747bcfbf75bcfa5753dc3dcf3dca1a5') in 0.155782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.612721 seconds.
+  path: Assets/Script/chapter1/text_1_9.cs
+  artifactKey: Guid(08a979733799046408b801be4c1678a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/text_1_9.cs using Guid(08a979733799046408b801be4c1678a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e1df9bcd5941d264a78ff5f394bd12') in 0.001834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2198.103937 seconds.
+  path: Assets/Script/chapter1/text_1_9.cs
+  artifactKey: Guid(08a979733799046408b801be4c1678a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter1/text_1_9.cs using Guid(08a979733799046408b801be4c1678a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033d2d2f9f9cec486be6ba1ff26dd1a5') in 0.054441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 271.757632 seconds.
+  path: Assets/Scenes/ch1/1-9.unity
+  artifactKey: Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-9.unity using Guid(134c52786120049f7931a1ac098257a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b9cbc90cbb40556fe0f54d0fd24b39') in 0.079146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.020363 seconds.
+  path: Assets/Scenes/ch1/1-6.unity
+  artifactKey: Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch1/1-6.unity using Guid(9b43ead62364a45c287e76908fe258d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9889eb1c02fbfa156d8f8ff94259a995') in 0.005269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.463936 seconds.
+  path: Assets/Scenes/ch2/2-1.unity
+  artifactKey: Guid(f05ae90f4ea954db7aa2e8ea7ffb464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-1.unity using Guid(f05ae90f4ea954db7aa2e8ea7ffb464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180dd4708057c2dcfdfa2f0fd9d0a500') in 0.014115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 413.268667 seconds.
+  path: Assets/Script/chapter2/text2_1.cs
+  artifactKey: Guid(38e0d491c89e34dc28040c1b018ec37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter2/text2_1.cs using Guid(38e0d491c89e34dc28040c1b018ec37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b6388669a977aab83247a1add12b692') in 0.018735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 283.180999 seconds.
+  path: Assets/Scenes/ch2/2-2.unity
+  artifactKey: Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-2.unity using Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6d5bddf15ca0c6479e93b4aad85311') in 0.022571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.986352 seconds.
+  path: Assets/Scenes/ch2/2-1.unity
+  artifactKey: Guid(f05ae90f4ea954db7aa2e8ea7ffb464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-1.unity using Guid(f05ae90f4ea954db7aa2e8ea7ffb464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7544de693a9851d8896145dae61657') in 0.013847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 201.342526 seconds.
+  path: Assets/Script/chapter2/text2_1.cs
+  artifactKey: Guid(38e0d491c89e34dc28040c1b018ec37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter2/text2_1.cs using Guid(38e0d491c89e34dc28040c1b018ec37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc5dba259cea3c3d0c7218097421e32') in 0.020429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3210.159710 seconds.
+  path: Assets/Script/chapter2/text2_2.cs
+  artifactKey: Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter2/text2_2.cs using Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06497c766912162460d9a2c5b13d59a6') in 0.027414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2355.796081 seconds.
+  path: Assets/Script/chapter2/text2_2.cs
+  artifactKey: Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter2/text2_2.cs using Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08659867cd0c75835114d2d4b355ba0') in 0.023526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 132.828134 seconds.
+  path: Assets/Script/chapter2/text2_2.cs
+  artifactKey: Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter2/text2_2.cs using Guid(11fd203a2f4f3440cb5d894aeffd28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e52621c27439ba12e8d78bff28e34ba') in 0.026781 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001601 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.521 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 384.0 MB.
+System memory in use after: 384.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4028.
+Total: 3.790875 ms (FindLiveObjects: 0.241500 ms CreateObjectMapping: 0.109375 ms MarkObjects: 3.417750 ms  DeleteObjects: 0.021500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1349.826230 seconds.
+  path: Assets/Scenes/ch2/2-2.unity
+  artifactKey: Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch2/2-2.unity using Guid(cfd57b6d906b84d899e95293f896c901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280d3c993927e93bc99326a43fa8d28a') in 0.039518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 125.304678 seconds.
+  path: Assets/Scenes/ch3/3-1.unity
+  artifactKey: Guid(d024ae6cf523f4426adecdf821c4e2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch3/3-1.unity using Guid(d024ae6cf523f4426adecdf821c4e2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e49258845263ab2d86cb03ec18834b4') in 0.026936 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.440 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 384.2 MB.
+System memory in use after: 384.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4031.
+Total: 1.758708 ms (FindLiveObjects: 0.214500 ms CreateObjectMapping: 0.072750 ms MarkObjects: 1.444375 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 63.928539 seconds.
+  path: Assets/Script/chapter3/text_3_2.cs
+  artifactKey: Guid(cf2098510c13d47caa562c60c44e737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text_3_2.cs using Guid(cf2098510c13d47caa562c60c44e737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4935f920a6a25b04ea4af10267ad0360') in 0.099009 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003455 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.128 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 384.4 MB.
+System memory in use after: 384.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4034.
+Total: 2.150042 ms (FindLiveObjects: 0.214042 ms CreateObjectMapping: 0.068666 ms MarkObjects: 1.465167 ms  DeleteObjects: 0.401000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 566.093678 seconds.
+  path: Assets/Script/chapter3/text_3_1.cs
+  artifactKey: Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text_3_1.cs using Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f4bf98fc7e54bb685dfc9c69236330') in 0.009938 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001873 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.676 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 384.6 MB.
+System memory in use after: 384.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4037.
+Total: 1.710334 ms (FindLiveObjects: 0.224125 ms CreateObjectMapping: 0.067958 ms MarkObjects: 1.393500 ms  DeleteObjects: 0.023625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 344.334429 seconds.
+  path: Assets/Script/chapter3/text_3_1.cs
+  artifactKey: Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text_3_1.cs using Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6d75ffe526b9157e863530822b6fce') in 0.040745 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.033319 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.948 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 384.8 MB.
+System memory in use after: 385.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4040.
+Total: 3.607292 ms (FindLiveObjects: 0.299750 ms CreateObjectMapping: 0.073958 ms MarkObjects: 3.208375 ms  DeleteObjects: 0.024167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001547 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.934 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 385.1 MB.
+System memory in use after: 385.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4043.
+Total: 4.207084 ms (FindLiveObjects: 0.255875 ms CreateObjectMapping: 0.125250 ms MarkObjects: 3.797584 ms  DeleteObjects: 0.027000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.537 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 385.3 MB.
+System memory in use after: 385.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4046.
+Total: 1.771125 ms (FindLiveObjects: 0.246959 ms CreateObjectMapping: 0.068458 ms MarkObjects: 1.429917 ms  DeleteObjects: 0.024834 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004132 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.202 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 385.5 MB.
+System memory in use after: 385.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4049.
+Total: 7.235416 ms (FindLiveObjects: 1.735459 ms CreateObjectMapping: 0.108916 ms MarkObjects: 5.358000 ms  DeleteObjects: 0.032209 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001690 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.765 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 385.7 MB.
+System memory in use after: 386.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4052.
+Total: 1.846666 ms (FindLiveObjects: 0.329250 ms CreateObjectMapping: 0.067958 ms MarkObjects: 1.424167 ms  DeleteObjects: 0.024084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016641 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.450 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 385.9 MB.
+System memory in use after: 386.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4055.
+Total: 1.772250 ms (FindLiveObjects: 0.231750 ms CreateObjectMapping: 0.069750 ms MarkObjects: 1.445959 ms  DeleteObjects: 0.023500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001539 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.906 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 386.1 MB.
+System memory in use after: 386.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4058.
+Total: 1.906541 ms (FindLiveObjects: 0.189291 ms CreateObjectMapping: 0.063000 ms MarkObjects: 1.631750 ms  DeleteObjects: 0.021791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004897 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.606 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 386.3 MB.
+System memory in use after: 386.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4061.
+Total: 1.620500 ms (FindLiveObjects: 0.187542 ms CreateObjectMapping: 0.064875 ms MarkObjects: 1.344458 ms  DeleteObjects: 0.022709 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003896 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.640 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 386.5 MB.
+System memory in use after: 386.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4064.
+Total: 2.114667 ms (FindLiveObjects: 0.361917 ms CreateObjectMapping: 0.090916 ms MarkObjects: 1.636334 ms  DeleteObjects: 0.023417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.658 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 386.7 MB.
+System memory in use after: 386.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4067.
+Total: 2.181250 ms (FindLiveObjects: 0.597959 ms CreateObjectMapping: 0.074250 ms MarkObjects: 1.484458 ms  DeleteObjects: 0.023958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.632 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 386.9 MB.
+System memory in use after: 387.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4070.
+Total: 1.694334 ms (FindLiveObjects: 0.210750 ms CreateObjectMapping: 0.069375 ms MarkObjects: 1.401292 ms  DeleteObjects: 0.011917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.659 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 387.1 MB.
+System memory in use after: 387.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4073.
+Total: 2.430041 ms (FindLiveObjects: 0.234125 ms CreateObjectMapping: 0.070250 ms MarkObjects: 2.099416 ms  DeleteObjects: 0.025084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003265 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.406 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 387.3 MB.
+System memory in use after: 387.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4076.
+Total: 6.651583 ms (FindLiveObjects: 0.379041 ms CreateObjectMapping: 0.147458 ms MarkObjects: 6.088125 ms  DeleteObjects: 0.036125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2074.686975 seconds.
+  path: Assets/Script/chapter3/text_3_1.cs
+  artifactKey: Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text_3_1.cs using Guid(299ebc99874b647ff8589265350c0698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddecbad50d98d55b7f9710444671ccb5') in 0.042740 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001795 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.710 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2727 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 387.5 MB.
+System memory in use after: 387.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4078.
+Total: 1.723625 ms (FindLiveObjects: 0.226958 ms CreateObjectMapping: 0.071375 ms MarkObjects: 1.398125 ms  DeleteObjects: 0.026291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 30.605980 seconds.
+  path: Assets/Script/chapter3/text3_1.cs
+  artifactKey: Guid(b33f96d8c18a04a3590902be906ea145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text3_1.cs using Guid(b33f96d8c18a04a3590902be906ea145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ec571a8ff87a6835ef4aaf86df08ff') in 0.011247 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.030096 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.947 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 387.7 MB.
+System memory in use after: 387.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4082.
+Total: 1.909083 ms (FindLiveObjects: 0.241500 ms CreateObjectMapping: 0.071500 ms MarkObjects: 1.571125 ms  DeleteObjects: 0.023250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002241 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.613 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 387.9 MB.
+System memory in use after: 388.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4085.
+Total: 1.765500 ms (FindLiveObjects: 0.250166 ms CreateObjectMapping: 0.068542 ms MarkObjects: 1.427250 ms  DeleteObjects: 0.018667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 68.740506 seconds.
+  path: Assets/Script/chapter3/text3_1.cs
+  artifactKey: Guid(b33f96d8c18a04a3590902be906ea145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter3/text3_1.cs using Guid(b33f96d8c18a04a3590902be906ea145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad47b8483fa4ffa93ae09a332ef7870') in 0.013689 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004083 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.407 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 388.1 MB.
+System memory in use after: 388.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4088.
+Total: 2.034875 ms (FindLiveObjects: 0.224625 ms CreateObjectMapping: 0.125500 ms MarkObjects: 1.655000 ms  DeleteObjects: 0.028583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 906.123261 seconds.
+  path: Assets/Scenes/ch3/3-1.unity
+  artifactKey: Guid(d024ae6cf523f4426adecdf821c4e2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch3/3-1.unity using Guid(d024ae6cf523f4426adecdf821c4e2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bef1b279a202deb53b98309d082755f') in 0.295716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.454279 seconds.
+  path: Assets/Scenes/ch3/3-2.unity
+  artifactKey: Guid(2d4034a9c5a3940eeb73df7bd6c8a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch3/3-2.unity using Guid(2d4034a9c5a3940eeb73df7bd6c8a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f62f73aa827c59d0e11197ba75e61e70') in 0.003607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 393.513448 seconds.
+  path: Assets/Scenes/ch3/3-2.unity
+  artifactKey: Guid(2d4034a9c5a3940eeb73df7bd6c8a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch3/3-2.unity using Guid(2d4034a9c5a3940eeb73df7bd6c8a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5ea28834a0c00750ce8a7a8fe27248') in 0.118390 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001755 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.581 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 388.6 MB.
+System memory in use after: 388.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4091.
+Total: 2.029625 ms (FindLiveObjects: 0.453791 ms CreateObjectMapping: 0.084584 ms MarkObjects: 1.471333 ms  DeleteObjects: 0.018875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022836 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.668 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2728 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 388.6 MB.
+System memory in use after: 388.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4094.
+Total: 1.599041 ms (FindLiveObjects: 0.179416 ms CreateObjectMapping: 0.067125 ms MarkObjects: 1.337208 ms  DeleteObjects: 0.014541 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 734.801437 seconds.
+  path: Assets/Scenes/ch4/New Scene.unity
+  artifactKey: Guid(d5b962601382a4d719559769bba557ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch4/New Scene.unity using Guid(d5b962601382a4d719559769bba557ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30331aae847b410f8a0f253c2788bc8f') in 0.048209 seconds 
