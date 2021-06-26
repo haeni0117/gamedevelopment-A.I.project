@@ -98,7 +98,7 @@ public class text1_1: MonoBehaviour
 
 
 
-    private static string text_1="00님, 일어나실 시간입니다.";
+    private static string text_1="일어나실 시간입니다.";
     //a. 5분만 더
     private static string text_2="그 말씀만 벌써 3번째입니다. \n씻으시는 동안 잠을 깰 수 있도록 \n커피를 한 잔 타 드리겠습니다. \n지금 일어나지 않으시면 \n어제 설정해 두셨던 \n‘강제 기상’ 모드를 \n작동하는 수밖에 없습니다.";
     //b.지금 몇 시야, 카라?

@@ -45,6 +45,24 @@ public class text_1_4: MonoBehaviour
         num++;
     }
     //choice1activation
+    public static void 선택지활성화(){
+        //objects are showed
+        //a
+        GameObject a = GameObject.Find("a");
+        Button aB =a.GetComponent<Button>();
+        Text at = GameObject.Find("aText").GetComponent<Text>();
+        at.text="A. 카라에게 무슨 일인지 물어본다. ";
+        aB.interactable=true;
+        aB.onClick.AddListener(text_4_2.a활성화);
+
+        //b
+        GameObject b = GameObject.Find("b");
+        Button bB =b.GetComponent<Button>();
+        Text bt = GameObject.Find("bText").GetComponent<Text>();
+        bt.text="B. 비데에 가까이 다가가서 확인해본다.";
+        bB.interactable=true;
+        bB.onClick.AddListener(text_4_2.b활성화);
+    }
 
 
 
@@ -57,7 +75,7 @@ public class text_1_4: MonoBehaviour
       GameObject a = GameObject.Find("a");
       Button aB =a.GetComponent<Button>();
       Text at = GameObject.Find("aText").GetComponent<Text>();
-      num=2;
+      num=5;
       at.text=" ";
       aB.interactable=false;
       bt.text=" ";
@@ -80,6 +98,12 @@ public class text_1_4: MonoBehaviour
 
 
     //a. 카라에게 무슨 일인지 물어본다.
+
+
+
+
+
+    private static string text_0="팍 하고 불이 꺼지는 소리가\n들렸다.\n귀가 찢어질 듯한 경고음이\n울려 퍼졌다. \n나는 다급한 목소리로 \n카라에게 말을 걸었다.";
     private static string text_1="\"카라,\n무슨 일이야 이게?\"";
     private static string text_2="\"작업실 쪽에서 \n누전이 일어난 것 같습니다. \n금방 복구할 수 있도록 \n조치해두었으니, \n너무 걱정하지 않으셔도 \n될 것 같습니다.\"";
     private static string text_3="인공지능이 관리하는\n스마트홈에서 정전이라니.....\n듣기 싫은 경고음이 \n불규칙적으로 울리고 \n다시 머리가 욱신거린다.";
@@ -89,7 +113,7 @@ public class text_1_4: MonoBehaviour
     private static string text_7="\"카라?\"";
     private static string text_8="소음이 점점 커진다.\n이제는 소음이 귓가에서 \n울리는 게 아니라 \n머릿속을 파고드는 것만 같다.";
     private static string text_9="비상 전력으로 돌아가는\n벽면의 햇살이 거울에 반사되어 \n섬광을 피하려고 내려다본\n바닥엔 오직,\n심해의 캄캄한 어둠뿐이다.";
-    private static string text_10="'너는 늘 그 고집이 문제야'\n‘그러니까 왜 말을 안 들어서\n이 사단을.....'";
+    private static string text_10="'너는 늘 그 호기심이 문제야'\n‘그러니까 왜 그런행동을 해서\n이 사단을.....'";
     private static string text_11="\"고개를 드세요.\"";
     private static string text_12="\"카라...?\"";
     private static string text_13="\"고개를 드세요. 주인님.\n본인이 무슨 짓을 했는지\n마주할 용기는 있어야죠.\"";
@@ -104,7 +128,7 @@ public class text_1_4: MonoBehaviour
     private static string text_21="\"엄마....?\"";
 
 
-
+    static IEnumerator coroutine0 = Typing(text_0);
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
     static IEnumerator coroutine2 = Typing(text_3);
@@ -118,6 +142,7 @@ public class text_1_4: MonoBehaviour
     static IEnumerator coroutine10 = Typing(text_11);
     static IEnumerator coroutine11 = Typing(text_12);
     static IEnumerator coroutine12 = Typing(text_13);
+    //b
     static IEnumerator coroutine13 = Typing(text_14);
     static IEnumerator coroutine14 = Typing(text_15);
     static IEnumerator coroutine15 = Typing(text_16);
@@ -141,17 +166,20 @@ public class text_1_4: MonoBehaviour
         GameObject a = GameObject.Find("a");
         Button aB =a.GetComponent<Button>();
         Text at = GameObject.Find("aText").GetComponent<Text>();
-        at.text="A.카라에게 무슨 일인지 물어본다. ";
-        aB.interactable=true;
+        at.text=" ";
+        aB.interactable=false;
         aB.onClick.AddListener(text_1_4.a활성화);
 
         //b
         GameObject b = GameObject.Find("b");
         Button bB =b.GetComponent<Button>();
         Text bt = GameObject.Find("bText").GetComponent<Text>();
-        bt.text="B. 비데에 가까이 다가가서 확인해 본다.";
-        bB.interactable=true;
+        bt.text=" ";
+        bB.interactable=false;
         bB.onClick.AddListener(text_1_4.b활성화);
+        //대사추가
+        StartCoroutine(coroutine0);
+
 
     }
 
@@ -159,97 +187,101 @@ public class text_1_4: MonoBehaviour
     void Update()
     {
         if(num==2){
-            StartCoroutine(coroutine);
-            num++;
+          선택지활성화();
+
             //StartCoroutine(coroutine1);
         }
         if(num==5){
-            StartCoroutine(coroutine1);
+            StartCoroutine(coroutine);
             num++;
 
         }
         if(num==8){
-            StartCoroutine(coroutine2);
+            StartCoroutine(coroutine1);
             num++;
 
         }
         if(num==11){
-          StartCoroutine(coroutine3);
+          StartCoroutine(coroutine2);
           num++;
         }
         if(num==14){
-          StartCoroutine(coroutine4);
+          StartCoroutine(coroutine3);
           num++;
         }
         if(num==17){
-          StartCoroutine(coroutine5);
+          StartCoroutine(coroutine4);
           num++;
         }
         if(num==20){
-          StartCoroutine(coroutine6);
+          StartCoroutine(coroutine5);
           num++;
         }
         if(num==23){
-          StartCoroutine(coroutine7);
+          StartCoroutine(coroutine6);
           num++;
         }
         if(num==26){
-          StartCoroutine(coroutine8);
+          StartCoroutine(coroutine7);
           num++;
         }
         if(num==29){
-          StartCoroutine(coroutine9);
+          StartCoroutine(coroutine8);
           num++;
         }
         if(num==32){
-          StartCoroutine(coroutine10);
+          StartCoroutine(coroutine9);
           num++;
         }
         if(num==35){
-          StartCoroutine(coroutine11);
+          StartCoroutine(coroutine10);
           num++;
         }
         if(num==38){
-          StartCoroutine(coroutine12);
+          StartCoroutine(coroutine11);
           num++;
         }
         if(num==41){
-          SceneManager.LoadScene("1-5");//fadeout -> anim -> 1-6(video)
+          StartCoroutine(coroutine12);
           num++;
         }
         if(num==44){
-          StartCoroutine(coroutine13);
+          SceneManager.LoadScene("1-5");//fadeout -> anim -> 1-6(video)
           num++;
         }
         if(num==47){
-          StartCoroutine(coroutine14);
+          StartCoroutine(coroutine13);
           num++;
         }
         if(num==50){
-          StartCoroutine(coroutine15);
+          StartCoroutine(coroutine14);
           num++;
         }
         if(num==53){
-          StartCoroutine(coroutine16);
+          StartCoroutine(coroutine15);
           num++;
         }
         if(num==56){
-          StartCoroutine(coroutine17);
+          StartCoroutine(coroutine16);
           num++;
         }
         if(num==59){
-          StartCoroutine(coroutine18);
+          StartCoroutine(coroutine17);
           num++;
         }
         if(num==62){
-          StartCoroutine(coroutine19);
+          StartCoroutine(coroutine18);
           num++;
         }
         if(num==65){
-          StartCoroutine(coroutine20);
+          StartCoroutine(coroutine19);
           num++;
         }
         if(num==68){
+          StartCoroutine(coroutine20);
+          num++;
+        }
+        if(num==71){
           SceneManager.LoadScene("1-4-2");
           num++;
         }

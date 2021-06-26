@@ -97,7 +97,7 @@ public class text_1_2: MonoBehaviour
 
 
 
-    private static string text_1="드디어 일어나셨군요.\n주무시는 동안, 어머니께\n전화가 왔습니다.\n지금 확인하시겠습니까?";
+    private static string text_1="드디어 일어나셨군요.\n어머니께 전화가 왔습니다.\n지금 확인하시겠습니까?";
     //a. 그래 고마워.
     private static string text_2="<부재중 기록 확인>";
     private static string text_3="\"왜 오늘 같은 날 \n전화를 안 받니?\n설마 평일인데 7시 넘어서까지 \n자는 건 아니겠지?\n\n추모식이 4시부터 \n시립묘지에서 열리니까 \n오늘은 연차를 내든지 해서 \n꼭 오도록 해라.";
