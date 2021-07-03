@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class text_2_3 : MonoBehaviour
 {
-    public static int cnt = 0; //st atic 변수로 수정 
-    //public static Text typingText; 
+    public static int cnt = 0; //st atic 변수로 수정
+    //public static Text typingText;
     public static string message;
     public float m_Speed;
     private static int num=0;
     private static int N=0;
-    
-  
+
+
 
 
     //기본텍스트
@@ -23,10 +23,11 @@ public class text_2_3 : MonoBehaviour
 
     //안방조사하기
     private static string 옷장text = "옷장에는 평소에 자주 입는 \n옷들이 걸려 있다.";
-    private static string 수납대text = "침대 머리맡에 있는 수납대이다. \n읽을거리들과 잡동사니를 정리해두었다.";
+    private static string 수납대text = "침대 머리맡에 있는 수납대이다. \n읽을거리와 잡동사니를 정리해두었다.";
     private static string 쓰레기통text = "자동으로 뚜껑이 열리는 \n철제 쓰레기통이다. \n쓰레기통까지 뒤지고 싶진 않지만 \n구겨진 메모지가 눈에 띈다";
+    private static string 구겨진메모지text = "잔뜩 구겨지고 젖어서 \n원래 적혀 있던 메시지를 \n제대로 알아볼 수 없다.\n\"너는... 속고...어\"\n이게 무슨 말이지?";
     private static string 가방걸이text = "자주 쓰는 가방과 모자를\n걸어 놓았다. 집을 나서기 전에\n바로 가져갈 수 있어서 편리하다.";
-    
+    private static string 필통text = "필기구가 들어있는 봉제 필통이다. \n작업할 때는 주로 패드를 쓰지만, \n갑자기 아이디어가 떠오르면 \n필기구로 메모하기도 한다.\n\n{필통을 획득했다.}\n\n필통을 열어서 \n필요한 것을 찾아보자.";
 
     //scenario!
     static IEnumerator coroutine =  Typing(text_1);
@@ -38,21 +39,21 @@ public class text_2_3 : MonoBehaviour
     static IEnumerator coroutine5 = Typing0(쓰레기통text);
     static IEnumerator coroutine6 = Typing0(가방걸이text);
 
-    
+
 
 
 
 
 
     static IEnumerator Typing(string message)
-    { 
+    {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
-        
-        
+
+
         //message=text_1;
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
             yield return new WaitForSeconds(0.05f);
 
             if(num%3==1){
@@ -61,7 +62,7 @@ public class text_2_3 : MonoBehaviour
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
             }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면?
-           
+
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
@@ -72,30 +73,30 @@ public class text_2_3 : MonoBehaviour
             //     StopCoroutine("Typing");
             // }
             // else continue;
-        
-        
-    } 
+
+
+    }
 
     static IEnumerator Typing0(string message)
-    { 
+    {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
-        
-        
+
+
         //message=text_1;
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
             yield return new WaitForSeconds(0.05f);
 
             if(N==1002||N==2002||N==3002||N==4002){
                 N++;
                 Debug.Log("coroutine is stopped N="+N);
-                yield break; 
+                yield break;
             }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면?
-           
+
         }
             Debug.Log("user didn't skip the text+num"+num);
-    } 
+    }
     //각각의 오브젝트들에 대한 설명
     public static void 옷장설명(){
         GameObject 옷장= GameObject.Find("옷장");
@@ -116,7 +117,7 @@ public class text_2_3 : MonoBehaviour
         Text 수납대t = GameObject.Find("쓰레기통_text").GetComponent<Text>();
         수납대t.text = "● 쓰레기통";
          N=3000;
-        
+
     }
 
     public static void 가방걸이설명(){
@@ -128,7 +129,7 @@ public class text_2_3 : MonoBehaviour
     //=====================================================================
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
-        num+=1; 
+        num+=1;
     }
 
     void Start()//텍스트비어있는 상태, interactable = false
@@ -162,7 +163,7 @@ public class text_2_3 : MonoBehaviour
         가방걸이t.text = "";
         안방조사t.text = "";
 
-        //interatable 
+        //interatable
         수납대b.interactable = false;
         쓰레기통b.interactable = false;
         가방걸이b.interactable = false;
@@ -182,12 +183,12 @@ public class text_2_3 : MonoBehaviour
 
         //skip_text
         Text 스킵_text = GameObject.Find("skipButton").GetComponent<Text>();
-        Debug.Log("dwhy"); 
-        Debug.Log("coroutin is started! #2-3 "); 
+        Debug.Log("dwhy");
+        Debug.Log("coroutin is started! #2-3 ");
         StartCoroutine(coroutine);
     }
     public void 안방조사활성화(){//<안방조사하기>버튼이 생긴다
-        
+
 
         GameObject 옷장= GameObject.Find("옷장");
         GameObject 수납대= GameObject.Find("수납대");
@@ -210,7 +211,7 @@ public class text_2_3 : MonoBehaviour
         Button 안방조사b = 안방조사.GetComponent<Button>();
         Button 옷장b = 옷장.GetComponent<Button>();
 
-        
+
 
         //text
         // 옷장t.text = "◎ 옷장";
@@ -226,20 +227,20 @@ public class text_2_3 : MonoBehaviour
         // 가방걸이.SetActive(false);
         // 안방조사.SetActive(false);
 
-        //interatable 
+        //interatable
         수납대b.interactable = false;
         쓰레기통b.interactable = false;
         가방걸이b.interactable = false;
         안방조사b.interactable = true;
         옷장b.interactable = false;
 
-       
+
         안방조사b.onClick.AddListener(text_2_3.안방조사하기);
     }
-    
-    
+
+
     public static void 안방조사하기(){//<안방조사하기> 이후 선택지가 나온다.
-        
+
         GameObject 옷장= GameObject.Find("옷장");
         GameObject 수납대= GameObject.Find("수납대");
         GameObject 쓰레기통= GameObject.Find("쓰레기통");
@@ -255,13 +256,13 @@ public class text_2_3 : MonoBehaviour
         Button 가방걸이b = 가방걸이.GetComponent<Button>();
         가방걸이b.onClick.AddListener(가방걸이설명);
         Button 안방조사b = 안방조사.GetComponent<Button>();
-        
-        
+
+
         수납대b.interactable = true;
         쓰레기통b.interactable = true;
         가방걸이b.interactable = true;
         옷장b.interactable = true;
-        
+
 
         Text 옷장t = GameObject.Find("옷장_text").GetComponent<Text>();
         Text 수납대t = GameObject.Find("수납대_text").GetComponent<Text>();
@@ -269,7 +270,7 @@ public class text_2_3 : MonoBehaviour
         Text 가방걸이t = GameObject.Find("가방걸이_text").GetComponent<Text>();
         Text 안방조사t =GameObject.Find("안방조사_text").GetComponent<Text>();
         //reasons : those objects were inactivated!
-        
+
         // 옷장.SetActive(true);
         // 수납대.SetActive(true);
         // 쓰레기통.SetActive(true);
@@ -297,15 +298,15 @@ public class text_2_3 : MonoBehaviour
         if(num==2){
             num++;
             Debug.Log("coroutine1 is started!  num"+num);
-            StartCoroutine(coroutine1); 
-            
+            StartCoroutine(coroutine1);
+
             //StartCoroutine(coroutine1);
         }
         if(num==5){
             num++;
             Debug.Log("coroutine2 is started!  num"+num);
             StartCoroutine(coroutine2);
-            
+
             Invoke("안방조사활성화",1.0f);
         }
         //옷장설명코루틴함수 N=1000일때 활성화/ N=1001
@@ -313,14 +314,14 @@ public class text_2_3 : MonoBehaviour
             N++;
             Debug.Log("옷장설명");
             StartCoroutine(coroutine3);
-            
+
         }
         //수납대설명코루틴함수 N=2000일때 활성화 / N=2001
         if(N==2000){
             N++;
             Debug.Log("수납대설명");
             StartCoroutine(coroutine4);
-           
+
         }
         //쓰레기통설명코루틴함수 N=3000일때 활성화 / N=3001
         if(N==3000){
@@ -334,17 +335,17 @@ public class text_2_3 : MonoBehaviour
             Debug.Log("가방걸이설명");
             StartCoroutine(coroutine6);
         }
-        
+
         // if(num==32){
         //     Debug.Log("coroutine6 is started+num"+num);
         //     StartCoroutine(coroutine6);
         //     fadeout.SetActive(true);
-            
-            
 
-            
+
+
+
         // }
-       
+
 
     }
 

@@ -73,12 +73,13 @@ public class text_1_3: MonoBehaviour
         Debug.Log("scene1 is started "+num);
         StartCoroutine(coroutine);
 
-       
+
     }
 
     // Update is called once per frame
     void Update()
     {
+      Debug.Log(num);
         if(num==2){
             StartCoroutine(coroutine1);
             num++;

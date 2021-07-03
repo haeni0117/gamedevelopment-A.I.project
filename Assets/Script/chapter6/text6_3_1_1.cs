@@ -8,11 +8,11 @@ public class text6_3_1_1 : MonoBehaviour
 {
     public static int num = 0;
     public static GameObject button_;
-    public static int cnt = 0; //st atic 변수로 수정 
-    public static Text typingText; 
+    public static int cnt = 0; //st atic 변수로 수정
+    public static Text typingText;
     public static GameObject fadeout;
     //scenechange
-    
+
      public void FadeIn(float fadeOutTime, System.Action nextEvent = null){
 		StartCoroutine(CoFadeIn(fadeOutTime,nextEvent));
 	}
@@ -81,14 +81,14 @@ public class text6_3_1_1 : MonoBehaviour
         Text choice1t = GameObject.Find("choice1Text").GetComponent<Text>();
         choice1t.text="▷ 침착하게 생각한다.";
         choice1B.interactable=false;
-        
+
         //choice 2 : B. 카라를 부른다.
         GameObject choice2 = GameObject.Find("choice2");
         Button choice2B =choice2.GetComponent<Button>();
         Text choice2t = GameObject.Find("choice2Text").GetComponent<Text>();
         choice2t.text="▶ 카라를 부른다.";
         choice2B.interactable=false;
-        
+
     }
 
     public static void 선택지활성화(){
@@ -110,18 +110,18 @@ public class text6_3_1_1 : MonoBehaviour
         choice2B.interactable=true;
         choice2B.onClick.AddListener(text6_3_1.choice2);
     }
-    
+
 
     static IEnumerator Typing(string message)
-    { 
+    {
         Text typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log("typingtext"+typingText);
         Debug.Log("message"+message);
-        
+
         //message=text_1;
-        for (int i = 0; i < message.Length; i++) 
-        { 
-            typingText.text = message.Substring(0, i + 1); 
+        for (int i = 0; i < message.Length; i++)
+        {
+            typingText.text = message.Substring(0, i + 1);
             yield return new WaitForSeconds(0.05f);
 
             if(num%3==1){
@@ -130,16 +130,16 @@ public class text6_3_1_1 : MonoBehaviour
                 yield break; //코루틴종료
                 //여기서 그냥 끊고, update에서 다음 시나리오 출력해주기
             }//코루틴이 중간에 끝나는 것이 아니라 그냥 나가면? ㅇㅋㅇㅋ
-           
+
             }
             num++;
             Debug.Log("user didn't skip the text+num"+num);
-        
-    
+
+
     }
     //스킵버튼
-   
-    
+
+
     //string -> narration
     private static string text_1="침착하게 생각한다.";
     private static string text_2="“침착해야 해. \n생각.....생각을 해보자. \n분명 여기를 탈출할 \n방법이 있을 거야.\"";
@@ -170,11 +170,16 @@ public class text6_3_1_1 : MonoBehaviour
     private static string text_24="하지만 정말 \n그 방법밖에 없는 걸까…?";
     private static string text_25="심호흡하면서 \n마음을 가다듬었다. \n분명 지금 상황을 해결할\n방법이 있을 것이다.";
 
+    // private static string text_25="도대체 누구지?";
+    // private static string text_25="하지만 정말 그 방법밖에 없는 걸까?";
+
+
+
     //chapter4 end
-    
+
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
-    static IEnumerator coroutine2 = Typing(text_3);       
+    static IEnumerator coroutine2 = Typing(text_3);
     static IEnumerator coroutine3 = Typing(text_4);
     static IEnumerator coroutine4 = Typing(text_5);
     static IEnumerator coroutine5 = Typing(text_6);
@@ -208,8 +213,8 @@ public class text6_3_1_1 : MonoBehaviour
         choice2t.text="";
         choice2B.interactable=false;
         choice2B.onClick.AddListener(text6_3_1.choice2);
-        
-   
+
+
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
        스킵.onClick.AddListener(text6_3_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
        StartCoroutine(coroutine);
@@ -236,7 +241,7 @@ public class text6_3_1_1 : MonoBehaviour
             num++;
             // FadeOut(1.0f);
             // Invoke("fadeout1",1.1f);
-            
+
         }
         if(num==11){
             StartCoroutine(coroutine4);//"text: 이제 어떡하지?"
@@ -248,11 +253,11 @@ public class text6_3_1_1 : MonoBehaviour
             선택지활성화();//choice1&choice2
             num++;//activate button
             Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-            스킵.interactable=false;//선택지 선택 중에는 스킵 액션비활성화 
+            스킵.interactable=false;//선택지 선택 중에는 스킵 액션비활성화
         }
         if(num==17){
             Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-            스킵.interactable=true;//선택지 선택 중에는 스킵 액션비활성화 
+            스킵.interactable=true;//선택지 선택 중에는 스킵 액션비활성화
             StartCoroutine(coroutine6);
             Debug.Log("coroutine is started!  num"+num);
             num++;
@@ -277,6 +282,6 @@ public class text6_3_1_1 : MonoBehaviour
             FadeIn(1.0f);
             //ending -> no scenechange!
         }
-        
+
     }
 }
