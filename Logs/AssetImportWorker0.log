@@ -837,3 +837,68 @@ Total: 2.094208 ms (FindLiveObjects: 0.162292 ms CreateObjectMapping: 0.076667 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 63613.354273 seconds.
+  path: Assets/Scenes/ch16
+  artifactKey: Guid(dd6df352ac0604eebb2eae68a7efed1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch16 using Guid(dd6df352ac0604eebb2eae68a7efed1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c57629a62b46c75793f4f237ff87aa') in 0.355263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.455097 seconds.
+  path: Assets/Scenes/ch16/13-0.unity
+  artifactKey: Guid(bd2fc7be448804964bb19db4d662b6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch16/13-0.unity using Guid(bd2fc7be448804964bb19db4d662b6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7231617ce2659f6e359a2f5b2002dca') in 0.189310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.263640 seconds.
+  path: Assets/Scenes/ch12/12-1.unity
+  artifactKey: Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch12/12-1.unity using Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cdd34913a0f4d3049e340e345345b9') in 0.002857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.907042 seconds.
+  path: Assets/Scenes/ch12/12-1.unity
+  artifactKey: Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ch12/12-1.unity using Guid(f1ae5a9f8f17043adbe8cd6c05068144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0b882e4c7d086a9c9fd3d834fa44d8') in 0.001959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.738952 seconds.
+  path: Assets/Script/chapter13
+  artifactKey: Guid(5a098202bb12d41ba9741b2f33400f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter13 using Guid(5a098202bb12d41ba9741b2f33400f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a401906b5814cf7cd869689136c548') in 0.001770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.494443 seconds.
+  path: Assets/Script/chapter13/text_13.cs
+  artifactKey: Guid(7a5e44e3b5dc3406e91e4e0485fc4d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter13/text_13.cs using Guid(7a5e44e3b5dc3406e91e4e0485fc4d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4874ada5785526549a4ab4158805267c') in 0.153780 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001486 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.022 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2735 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 233.8 MB.
+System memory in use after: 234.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3467.
+Total: 1.602125 ms (FindLiveObjects: 0.180584 ms CreateObjectMapping: 0.061125 ms MarkObjects: 1.344667 ms  DeleteObjects: 0.014625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 327.844690 seconds.
+  path: Assets/Script/chapter13/text_13.cs
+  artifactKey: Guid(7a5e44e3b5dc3406e91e4e0485fc4d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/chapter13/text_13.cs using Guid(7a5e44e3b5dc3406e91e4e0485fc4d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fab741469a01e9aec2e0721200e3909') in 0.186105 seconds 
