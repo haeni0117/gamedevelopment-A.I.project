@@ -62,7 +62,7 @@ public class text_13 : MonoBehaviour
   private static string text_10="저것도 나를 안심시키기 위해\n만들어진 코드일까.";
   private static string text_11="\"그래, 이제 너를 꺼내기만 하면 돼.\"";
   private static string text_12="{의수와 드라이버를 조합했다}\n드라이버를 이용해 코어를 보호하는 \n판을 해체하고 사라를 꺼냈다";
-  private static string text_13="{사라 코어를 획득했다}";
+  private static string text_13_="{사라 코어를 획득했다}";
   private static string text_14="작업실 컴퓨터는 \n최신식 AT젠더를 사용해서 \n둘 사이를 이어줄 \n변환 젠더가 필요하다.";
   private static string text_15="{사라 코어를 변환 젠더와 조합했다}";
   private static string text_16="고작 저 작은 코어에 \n사라가 들어있다니......";
@@ -113,7 +113,7 @@ public class text_13 : MonoBehaviour
   static IEnumerator coroutine9 =  Typing(text_10);
   static IEnumerator coroutine10 = Typing(text_11);
   static IEnumerator coroutine11 = Typing(text_12);
-  static IEnumerator coroutine12 =  Typing(text_13);
+  static IEnumerator coroutine12 =  Typing(text_13_);
   static IEnumerator coroutine13 = Typing(text_14);
   static IEnumerator coroutine14 = Typing(text_15);
   static IEnumerator coroutine15 =  Typing(text_16);

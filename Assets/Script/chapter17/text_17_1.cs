@@ -163,7 +163,7 @@ public class text_17_1 : MonoBehaviour
           if(num==29){
             num++;
             Debug.Log("coroutine2 is started!  num"+num);
-            StartCoroutine(coroutine10);
+            //StartCoroutine(coroutine10);
           }
           // if(num==32){
           //   num++;
