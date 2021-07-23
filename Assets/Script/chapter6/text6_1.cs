@@ -11,41 +11,51 @@ public class text6_1 : MonoBehaviour
     public static int cnt = 0; //st atic 변수로 수정
     public static Text typingText;
     public static GameObject fadeout;
+    //장소버튼 + 게임오브젝트
+    public static GameObject livingroom;
+    public static GameObject office;
+    public static GameObject guestroom;
+    public static GameObject bedroom;
 
-    //욕조로 간다
-    private static string text_1="머릿속에 떠오른 \n십대 시절 나를 안심시켜주던 \n사라의 차분한 목소리를 \n되뇌었다.요동치던 심장이 \n가라앉는 것이 느껴졌다. ";
-    private static string text_2="[ 웬만하면 믿을 수 있는 사람한테 맡기고 싶단 말이야. 이상한 사람한테 보냈다가 \n학대라도 당하면 어떡해? 평생 죄책감에 시달릴 거야. ]";
-    private static string text_9="혼자 사는 대학생치고 집이 좁지는 않지만, \n그래도 고양이를 키우기에 적합한 환경인지는 확신이 들지 않았다.";
-    private static string text_10="게다가 나는 아직 상담 치료도 받고 있고…. \n나 같은 사람이 동물을 키워도 되는 걸까?";
-    private static string text_11="하지만 걱정으로 가득한 머리와는 반대로 \n이미 내 손은 청주로 가는 기차표를 예매하고 있었다.";
-    private static string text_12="[ 알았어, 내려갈게. ]\n\n[ 진짜지? 잘 키워주기로 약속한 거다? ]\n\n[ 그렇다니깐 ]";
-    private static string text_13="[ 그럼 이름은 뭘로 할래? ]\n\n[ 이름? ]\n\n[ 시루. 시루로 할래. ]";
-    private static string text_14="허피스 때문에 눈곱이 잔뜩 껴서 \n눈도 제대로 못 뜨면서도 \n악착같이 우유를 \n받아먹는 모습이 꼭.....";
-    private static string text_15="[ 시루?? 그게 뭐야 - -;;\n원래 강아지 고양이 이름은 먹는 거로 하는 거 아니랬어 ]";
-    private static string text_16="[ 나 기차표 취소한다? ]";
-    private static string text_17="답이 없어서 다른 입양처를 찾았나 했더니 얼마 지나지 않아 \n시루라고 적힌 이름표를 단 삼색 고양이, \n그러니까 시루의 사진을 받았다.";
-    private static string text_18="밑에는 보라색 네온사인으로 ‘집사 너를 선택했다! 나를 잘 키워라냥! \n그렇지 않으면 고양이의 저주를 내리겠다냥!’이라고 적혀 있었다.";
-    private static string text_19="\"하여튼, 못 말린다니까.\"\n[ 그래 약속할게 ]";
-    //
-    // static IEnumerator coroutine =  Typing(text_1);
-    // static IEnumerator coroutine1 = Typing(text_2);
-    // static IEnumerator coroutine2 = Typing(text_3);
-    // static IEnumerator coroutine3 = Typing(text_4);
-    // static IEnumerator coroutine4 = Typing(text_5);
-    // static IEnumerator coroutine5 = Typing(text_6);
-    // static IEnumerator coroutine6 = Typing(text_7);
-    // static IEnumerator coroutine7 = Typing(text_8);
-    // static IEnumerator coroutine8=  Typing(text_9);
-    // static IEnumerator coroutine9 = Typing(text_10);
-    // static IEnumerator coroutine10 = Typing(text_11);
-    // static IEnumerator coroutine11 = Typing(text_12);
-    // static IEnumerator coroutine12 = Typing(text_13);
-    // static IEnumerator coroutine13 = Typing(text_14);
-    // static IEnumerator coroutine14 = Typing(text_15);
-    // static IEnumerator coroutine15 = Typing(text_16);
-    // static IEnumerator coroutine16 = Typing(text_17);
-    // static IEnumerator coroutine17 = Typing(text_18);
-    // static IEnumerator coroutine18 = Typing(text_19);
+    public static Button livingroom_b;
+    public static Button office_b;
+    public static Button guestroom_b;
+    public static Button bedroom_b;
+
+    public static Text livingroom_t;
+    public static Text office_t;
+    public static Text guestroom_t;
+    public static Text bedroom_t;
+
+
+
+    private static string text_1="어디부터 찾아볼까?";
+    static IEnumerator coroutine =  Typing(text_1);
+
+    public static void enterbedroom(){
+      SceneManager.LoadScene("6-1-1");
+    }
+    public static void enteroffice(){
+      SceneManager.LoadScene("6-1-2");
+    }
+    public static void enterlivingroom(){
+      SceneManager.LoadScene("6-1-3");
+    }
+    public static void enterguestroom(){
+      SceneManager.LoadScene("6-1-4");
+    }
+    public void choiceactivation(){
+      bedroom_t.text="1.안방에 들어간다.";
+      office_t.text="2.작업실에 들어간다.";
+      livingroom_t.text="3.거실에 들어간다.";
+      guestroom_t.text="4.게스트룸에 들어간다.";
+      livingroom_b.interactable=true;
+      office_b.interactable=true;
+      bedroom_b.interactable=true;
+      guestroom_b.interactable=true;
+    }
+
+
 
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
@@ -79,27 +89,47 @@ public class text6_1 : MonoBehaviour
     }
 
 
+  void Awake(){
+    livingroom_b = GameObject.Find("livingroom").GetComponent<Button>();
+    office_b = GameObject.Find("office").GetComponent<Button>();
+    bedroom_b = GameObject.Find("bedroom").GetComponent<Button>();
+    guestroom_b = GameObject.Find("guestroom").GetComponent<Button>();
+    livingroom_t = GameObject.Find("livingroomtext").GetComponent<Text>();
+    office_t = GameObject.Find("officetext").GetComponent<Text>();
+    bedroom_t = GameObject.Find("bedroomtext").GetComponent<Text>();
+    guestroom_t = GameObject.Find("guestroomtext").GetComponent<Text>();
+    livingroom_b.interactable=false;
+    office_b.interactable=false;
+    bedroom_b.interactable=false;
+    guestroom_b.interactable=false;
+    livingroom_b.onClick.AddListener(enterlivingroom);
+    office_b.onClick.AddListener(enterbedroom);
+    guestroom_b.onClick.AddListener(enterguestroom);
+    office_b.onClick.AddListener(enteroffice);
+    bedroom_t.text=" ";
+    office_t.text=" ";
+    livingroom_t.text=" ";
+    guestroom_t.text=" ";
 
+
+
+  }
     // Start is called before the first frame update
    void Start()
     {
        Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-       스킵.onClick.AddListener(textfourone.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
-
-
-
-        Debug.Log("coroutin is started! #3-1 num"+num);
-        // StartCoroutine(coroutine);
+       스킵.onClick.AddListener(text6_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+       스킵.interactable=false;
+        Debug.Log("coroutin is started! #6-1 num"+num);
+        StartCoroutine(coroutine);
+        Invoke("choiceactivation",2f);
 
     }
 
 //     // Update is called once per frame
     void Update(){
+
         //Debug.Log(num);
-        // if(num==2){
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     StartCoroutine(coroutine1);
-        //     num++;
         //     //StartCoroutine(coroutine1);
         // }
         // if(num==5){
