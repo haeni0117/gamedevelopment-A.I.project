@@ -38,7 +38,7 @@ public class text6_1_2 : MonoBehaviour
     public static Text another_t;
 
     
-    private static string text_1="책상 위를 훑어밨지만,\n구급상자는 보이지 않는다.";
+    private static string text_1="책상 위를 훑어봤지만,\n구급상자는 보이지 않는다.";
     private static string text_2="구급상자가 여기 있을 리 없다.";
     private static string text_3="구급상자는 여기 없다.\n공연히 다이어리만 펼쳐봤다.";
     private static string text_4="{2049.07.19. 월 \n오늘 회사 인사팀에서 \n이상한 연락을 받았다.\n지난주 토요일 연구실에 \n출근한 기록이 있으니\n휴일 수당을 \n따로 청구하라는 내용이었다.}";
@@ -70,7 +70,7 @@ public class text6_1_2 : MonoBehaviour
 
     }
     public void activate(){
-        스킵.interactable=true;
+        
         desk_b.interactable=true;
         cushion_b.interactable=true;
         table_b.interactable=true;
@@ -87,7 +87,7 @@ public class text6_1_2 : MonoBehaviour
         another_t.text="(7) 다른 장소로 가본다.";
     }
     public void inactivate(){
-        스킵.interactable=false;
+        
         desk_b.interactable=false;
         cushion_b.interactable=false;
         table_b.interactable=false;
@@ -221,38 +221,53 @@ public class text6_1_2 : MonoBehaviour
 
         Debug.Log(num);
         if(num==2){
+            스킵.interactable=false;
+            inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine1);
-            Invoke("activate",1f);
             num++;
+            Invoke("activate",1.8f);
         }
         if(num==5){
+            스킵.interactable=false;
+            inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine2);
             num++;
+            Invoke("activate",1f);
+            
         }
         if(num==8){
+            스킵.interactable=false;
+            inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine3);
             num++;
+            Invoke("activate",1.8f);
+            
         }
         if(num==11){
+            inactivate();
             StartCoroutine(coroutine4);
             Debug.Log("coroutine is started!  num"+num);
             num++;
+            
         }
         if(num==14){
+            inactivate();
             StartCoroutine(coroutine5);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
         }
         
         if(num==17){
+            inactivate();
             StartCoroutine(coroutine6);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
         }
         if(num==20){
+            
             StartCoroutine(coroutine7);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
@@ -261,26 +276,39 @@ public class text6_1_2 : MonoBehaviour
             StartCoroutine(coroutine8);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            
         }
         if(num==26){
+            스킵.interactable=false;
+            inactivate();
             StartCoroutine(coroutine9);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",1.8f);
         }
         if(num==29){
+            스킵.interactable=false;
+            inactivate();
             StartCoroutine(coroutine10);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",1.8f);
         }
         if(num==32){
+            스킵.interactable=false;
+            inactivate();
             StartCoroutine(coroutine11);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",1.8f);
         }
         if(num==35){
+            스킵.interactable=false;
+            inactivate();
             StartCoroutine(coroutine12);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",1.8f);
         }
         // if(num==38){
         //     StartCoroutine(coroutine13);
