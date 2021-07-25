@@ -9,7 +9,7 @@ public class text6_1_2 : MonoBehaviour
    public static int num = 0;
     public static GameObject button_;
     public static int cnt = 0; //st atic 변수로 수정
-    public static Text typingText;
+    
     public static GameObject fadeout;
     //조사할 오브젝트
     public static GameObject desk;
@@ -19,6 +19,7 @@ public class text6_1_2 : MonoBehaviour
     public static GameObject bookshelves;
     public static GameObject secondfloor;
     public static GameObject another;
+    
 
     public static Button desk_b;
     public static Button cushion_b;
@@ -28,6 +29,8 @@ public class text6_1_2 : MonoBehaviour
     public static Button secondfloor_b;
     public static Button another_b;
     public static Button 스킵;
+    public static Button achoice_b;
+    public static Button bchoice_b;
 
     public static Text desk_t;
     public static Text cushion_t;
@@ -36,6 +39,9 @@ public class text6_1_2 : MonoBehaviour
     public static Text bookshelves_t;
     public static Text secondfloor_t;
     public static Text another_t;
+    public static Text achoice_t;
+    public static Text bchoice_t;
+    public static Text typingText;
 
     
     private static string text_1="책상 위를 훑어봤지만,\n구급상자는 보이지 않는다.";
@@ -48,8 +54,7 @@ public class text6_1_2 : MonoBehaviour
     private static string text_8="책장에 꽂힌 박스를\n꺼내서 살펴봤다.\n오래된 의수 부품만\n잔뜩 들어있다.";
     private static string text_9="구급상자를 둘 공간도 없고 \n저기 둘 이유도 없다.";
     private static string text_10="다른 곳도 둘러볼까?";
-    private static string text_11="A.다른 곳을 둘러본다";
-    private static string text_12="B.아니다, 더 찾아보자.";
+   
 
     static IEnumerator coroutine1 =  Typing(text_1);
     static IEnumerator coroutine2 =  Typing(text_2);
@@ -61,8 +66,8 @@ public class text6_1_2 : MonoBehaviour
     static IEnumerator coroutine8 =  Typing(text_8);
     static IEnumerator coroutine9 =  Typing(text_9);
     static IEnumerator coroutine10 =  Typing(text_10);
-    static IEnumerator coroutine11 =  Typing(text_11);
-    static IEnumerator coroutine12 =  Typing(text_12);
+    
+   
 
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
@@ -78,6 +83,8 @@ public class text6_1_2 : MonoBehaviour
         bookshelves_b.interactable=true;
         secondfloor_b.interactable=true;
         another_b.interactable=true;
+        
+
         desk_t.text="(1) 책상";
         cushion_t.text="(2) 반려동물 방석";
         table_t.text="(3) 탁자";
@@ -85,6 +92,7 @@ public class text6_1_2 : MonoBehaviour
         bookshelves_t.text="(5) 책장";
         secondfloor_t.text="(6) 2층 베란다";
         another_t.text="(7) 다른 장소로 가본다.";
+        
     }
     public void inactivate(){
         
@@ -121,20 +129,39 @@ public class text6_1_2 : MonoBehaviour
     }
     public void click_bookshelves(){
         스킵.interactable=false;
-        num=26;
+        num=23;
     }
     public void click_secondfloor(){
         스킵.interactable=false;
-        num=29;
+        num=26;
     }
     public void click_another(){
         스킵.interactable=false;
-        num=32;
+        num=29;
+        
+    }
+    public void choiceAB_activate(){
+        achoice_b.interactable=true;
+        bchoice_b.interactable=true;
+        achoice_t.text="A. 다른 곳을 둘러본다.";
+        bchoice_t.text="B. 아니다. 더 찾아보자.";
+
+    }
+    public void click_achoice(){
+        SceneManager.LoadScene("6-1");
+    }
+    public void click_bchoice(){
+        achoice_b.interactable=false;
+        bchoice_b.interactable=false;
+        achoice_t.text=" ";
+        bchoice_t.text=" ";
+        activate();
+        typingText.text=" ";
     }
 
     static IEnumerator Typing(string message)
     {
-        Text typingText = GameObject.Find("general text").GetComponent<Text>();
+        typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log(typingText);
         Debug.Log(message);
 
@@ -168,7 +195,9 @@ public class text6_1_2 : MonoBehaviour
     bookshelves_b = GameObject.Find("bookshelves").GetComponent<Button>();
     secondfloor_b = GameObject.Find("secondfloor").GetComponent<Button>();
     another_b = GameObject.Find("another").GetComponent<Button>();
-
+    achoice_b = GameObject.Find("achoice").GetComponent<Button>();
+    bchoice_b = GameObject.Find("bchoice").GetComponent<Button>();
+    typingText = GameObject.Find("general text").GetComponent<Text>();
     //text
     desk_t = GameObject.Find("desktext").GetComponent<Text>();
     cushion_t = GameObject.Find("cushiontext").GetComponent<Text>();
@@ -177,6 +206,9 @@ public class text6_1_2 : MonoBehaviour
     bookshelves_t = GameObject.Find("bookshelvestext").GetComponent<Text>();
     secondfloor_t = GameObject.Find("secondfloortext").GetComponent<Text>();
     another_t = GameObject.Find("anothertext").GetComponent<Text>();
+    achoice_t = GameObject.Find("achoicetext").GetComponent<Text>();
+    bchoice_t = GameObject.Find("bchoicetext").GetComponent<Text>();
+
 
     //onclick -> function
     desk_b.onClick.AddListener(click_desk);
@@ -186,6 +218,8 @@ public class text6_1_2 : MonoBehaviour
     bookshelves_b.onClick.AddListener(click_bookshelves);
     secondfloor_b.onClick.AddListener(click_secondfloor);
     another_b.onClick.AddListener(click_another);
+    achoice_b.onClick.AddListener(click_achoice);
+    bchoice_b.onClick.AddListener(click_bchoice);
 
   }
     // Start is called before the first frame update
@@ -195,7 +229,8 @@ public class text6_1_2 : MonoBehaviour
        스킵.onClick.AddListener(text6_1_2.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
        스킵.interactable=false;
 
-       
+        achoice_b.interactable=false;
+        bchoice_b.interactable=false;
         desk_b.interactable=true;
         cushion_b.interactable=true;
         table_b.interactable=true;
@@ -203,6 +238,7 @@ public class text6_1_2 : MonoBehaviour
         bookshelves_b.interactable=true;
         secondfloor_b.interactable=true;
         another_b.interactable=true;
+
         desk_t.text="(1) 책상";
         cushion_t.text="(2) 반려동물 방석";
         table_t.text="(3) 탁자";
@@ -210,7 +246,9 @@ public class text6_1_2 : MonoBehaviour
         bookshelves_t.text="(5) 책장";
         secondfloor_t.text="(6) 2층 베란다";
         another_t.text="(7) 다른 장소로 가본다.";
-        Debug.Log("coroutin is started! #6-1 num"+num);
+        achoice_t.text=" ";
+        bchoice_t.text=" ";
+        Debug.Log("coroutin is started! #6-1-2 -> 작업실 조사 num"+num);
         
         
 
@@ -267,15 +305,19 @@ public class text6_1_2 : MonoBehaviour
             num++;//activate button
         }
         if(num==20){
-            
+            스킵.interactable=false;
             StartCoroutine(coroutine7);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",4.6f);
         }
         if(num==23){
+            inactivate();
             StartCoroutine(coroutine8);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            스킵.interactable=false;
+            Invoke("activate",3f);
             
         }
         if(num==26){
@@ -291,25 +333,27 @@ public class text6_1_2 : MonoBehaviour
             inactivate();
             StartCoroutine(coroutine10);
             Debug.Log("coroutine is started!  num"+num);
-            num++;//activate button
-            Invoke("activate",1.8f);
+            num++;
+            Invoke("choiceAB_activate",1f);
+            //activate button
+            
         }
-        if(num==32){
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine11);
-            Debug.Log("coroutine is started!  num"+num);
-            num++;//activate button
-            Invoke("activate",1.8f);
-        }
-        if(num==35){
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine12);
-            Debug.Log("coroutine is started!  num"+num);
-            num++;//activate button
-            Invoke("activate",1.8f);
-        }
+        // if(num==32){
+        //     스킵.interactable=false;
+        //     inactivate();
+        //     StartCoroutine(coroutine11);
+        //     Debug.Log("coroutine is started!  num"+num);
+        //     num++;//activate button
+        //     Invoke("activate",1.8f);
+        // }
+        // if(num==35){
+        //     스킵.interactable=false;
+        //     inactivate();
+        //     StartCoroutine(coroutine12);
+        //     Debug.Log("coroutine is started!  num"+num);
+        //     num++;//activate button
+        //     Invoke("activate",1.8f);
+        // }
         // if(num==38){
         //     StartCoroutine(coroutine13);
         //     Debug.Log("coroutine is started!  num"+num);
