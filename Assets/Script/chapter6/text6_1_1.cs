@@ -88,8 +88,8 @@ public class text6_1_1 : MonoBehaviour
         restroom_b.interactable=true;
         another_b.interactable=true;
         
-        drawer_t.text="(1) 서랍장";
-        bed_t.text="(2) 침대";
+        drawer_t.text="(2) 서랍장";
+        bed_t.text="(1) 침대";
         closet_t.text="(3) 옷장";
         sidetable_t.text="(4) 사이드테이블";
         organizer_t.text="(5) 수납대";
@@ -252,9 +252,9 @@ public class text6_1_1 : MonoBehaviour
         baghanger_b.interactable=true;
         restroom_b.interactable=true;
         another_b.interactable=true;
-
-        drawer_t.text="(1) 서랍장";
-        bed_t.text="(2) 침대";
+        
+        bed_t.text="(1) 침대";
+        drawer_t.text="(2) 서랍장";
         closet_t.text="(3) 옷장";
         sidetable_t.text="(4) 사이드테이블";
         organizer_t.text="(5) 수납대";
