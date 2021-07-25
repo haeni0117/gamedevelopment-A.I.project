@@ -49,9 +49,11 @@ public class text6_1_1 : MonoBehaviour
     
     private static string text_1="당장이라도 눕고 싶지만 \n그럴 여유는 없다.";
     private static string text_2="텅 빈 서랍장은 \n뒤져봐도 소용없다.";
+
     private static string text_3="옷을 헤치고 \n안쪽을 더듬어 봤지만, \n당연히 옷 말고는 \n아무것도 없다.";
     private static string text_4="옷장 밑 1단 서랍장은 \n잠금이 걸려 있다.";
     private static string text_5="역시 비밀번호는 \n기억나지 않는다.\n구급상자를 \n금고에 넣어뒀을 리는 없으니 \n일단 구급상자부터 찾아보자.";
+
     private static string text_6="구급상자는 보이지 않는다.";
     private static string text_7="수납장 위를 훑어봐도 \n구급상자는 보이지 않아.";
     private static string text_8="백팩을 한 번 더 뒤졌다.\n역시 쓸 만한 것은\n보이지 않아.";
@@ -127,12 +129,12 @@ public class text6_1_1 : MonoBehaviour
         num=5;
     }
     public void click_closet(){
-        스킵.interactable=false;
+        스킵.interactable=true;
         num=8;
     }
     public void click_sidetable(){
         num=17;
-        스킵.interactable=true;
+        스킵.interactable=false;
     }
     public void click_organizer(){
         스킵.interactable=false;
@@ -274,6 +276,7 @@ public class text6_1_1 : MonoBehaviour
 
         Debug.Log(num);
         if(num==2){
+            //(1)bed
             스킵.interactable=false;
             inactivate();
             Debug.Log("coroutine is started!  num"+num);
@@ -282,60 +285,73 @@ public class text6_1_1 : MonoBehaviour
             Invoke("activate",1.8f);
         }
         if(num==5){
+            //(2)drawer
             스킵.interactable=false;
             inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine2);
             num++;
-            Invoke("activate",1f);
+            Invoke("activate",1.8f);
             
         }
         if(num==8){
-            스킵.interactable=false;
+            //(3)closet-1
+            스킵.interactable=true;
             inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine3);
             num++;
-            Invoke("activate",1.8f);
+            //closet text 출력시작 
             
         }
         if(num==11){
+            //(3)closet-2
             inactivate();
             StartCoroutine(coroutine4);
             Debug.Log("coroutine is started!  num"+num);
             num++;
             
+            
         }
         if(num==14){
+            //(3)closet-3
+            스킵.interactable=false;
             inactivate();
             StartCoroutine(coroutine5);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",4.3f);
         }
         
         if(num==17){
+            //(4)sidetable
+            스킵.interactable=false;
             inactivate();
             StartCoroutine(coroutine6);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
+            Invoke("activate",1f);
         }
         if(num==20){
+            //(5)organizer
             스킵.interactable=false;
             StartCoroutine(coroutine7);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
-            Invoke("activate",4.6f);
+            Invoke("activate",1.8f);
         }
         if(num==23){
+            //(6)baghanger
             inactivate();
             StartCoroutine(coroutine8);
             Debug.Log("coroutine is started!  num"+num);
             num++;//activate button
             스킵.interactable=false;
-            Invoke("activate",3f);
+            Invoke("activate",2.5f);
             
         }
         if(num==26){
+            //(7)안방화장실
             스킵.interactable=false;
             inactivate();
             StartCoroutine(coroutine9);
@@ -344,12 +360,13 @@ public class text6_1_1 : MonoBehaviour
             Invoke("activate",1.8f);
         }
         if(num==29){
+            //(8)다른 장소로 가본다.
             스킵.interactable=false;
             inactivate();
             StartCoroutine(coroutine10);
             Debug.Log("coroutine is started!  num"+num);
             num++;
-            Invoke("choiceAB_activate",1f);
+            Invoke("choiceAB_activate",1.8f);
             //activate button
             
         }
