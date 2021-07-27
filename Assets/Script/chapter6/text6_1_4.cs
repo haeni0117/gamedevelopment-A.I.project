@@ -11,6 +11,7 @@ public class text6_1_4 : MonoBehaviour
     public static int cnt = 0; //static 변수로 수정
     public static bool bed_inspection = false;
     public static bool emergencypox_inspection = false;
+    public static bool drawer_inspection = false;
     public static GameObject fadeout;
     //조사할 오브젝트
     public static GameObject bed;
@@ -46,8 +47,11 @@ public class text6_1_4 : MonoBehaviour
     private static string text_5="화장대 위에는 아무것도 없다. \n서랍에는 뭐가 있으려나?";
     private static string text_6="놀랍게도 게스트룸 서랍장에서 \n구급상자를 발견했다! \n어쩌다가 이렇게 중요한 물품이 \n게스트룸 서랍장에 있는 거지?\n\n{구급상자를 얻었다}";
     private static string text_7="계속 시선이 \n침대로 향한다.";
+    private static string text_8="침대는 오랫동안 \n사용하지 않아 \n소복이 쌓인 먼지로 \n덮여 있다.";
+    private static string text_9="베개 틈 사이에 \n뭔가 있지만, 너무 작아서 \n확실히 구급상자는 아니다.\n사람 발처럼 생긴 게 꼭\n\n소름끼쳐.";
+    private static string text_10="신경 쓰이지만 일단은 \n어서 시루를 치료하자.";
    
-
+ 
     static IEnumerator coroutine1 =  Typing(text_1);
     static IEnumerator coroutine2 =  Typing(text_2);
     static IEnumerator coroutine3 =  Typing(text_3);
@@ -55,6 +59,9 @@ public class text6_1_4 : MonoBehaviour
     static IEnumerator coroutine5 =  Typing(text_5);
     static IEnumerator coroutine6 =  Typing(text_6);
     static IEnumerator coroutine7 =  Typing(text_7);
+    static IEnumerator coroutine8 =  Typing(text_8);
+    static IEnumerator coroutine9 =  Typing(text_9);
+    static IEnumerator coroutine10 =  Typing(text_10);
 
     
    
@@ -63,6 +70,9 @@ public class text6_1_4 : MonoBehaviour
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
 
+    }
+    public void after_bed_inspection(){
+        SceneManager.LoadScene("6-2");
     }
     public void activate(){
         
@@ -229,13 +239,32 @@ public class text6_1_4 : MonoBehaviour
 
         Debug.Log(num);
         if(num==2){
+            
             스킵.interactable=false;
             inactivate();
             Debug.Log("coroutine is started!  num"+num);
             StartCoroutine(coroutine1);
             num++;
-            Invoke("activate",6f);
+            if(drawer_inspection==true){
+                스킵.interactable=true;
+            }
+            else{
+                Invoke("activate",6f);
+            }
+            
         }
+        if(num==5){
+            스킵.interactable=false;
+            inactivate();
+            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine2);
+            num++;
+            Invoke("activate",2f);
+        }
+        if(drawer_inspection==true){
+                스킵.interactable=true;
+                num=41;
+            }
         if(num==5){
             스킵.interactable=false;
             inactivate();
@@ -287,34 +316,37 @@ public class text6_1_4 : MonoBehaviour
             
         }
         if(num==20){
-            //(5)organizer
-            스킵.interactable=false;
+            //침대를 다시 조사해보자..!
+            drawer_inspection=true;
+            스킵.interactable=true;
             inactivate();
             StartCoroutine(coroutine7);
             Debug.Log("coroutine is started!  num"+num);
             num++;
-            Invoke("activate",1f);
+            
         }
         
         
-        // if(num==35){
-        //     스킵.interactable=false;
-        //     inactivate();
-        //     StartCoroutine(coroutine12);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        //     Invoke("activate",1.8f);
-        // }
-        // if(num==38){
-        //     StartCoroutine(coroutine13);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==41){
-        //     StartCoroutine(coroutine14);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
+        if(num==23){
+            inactivate();
+            스킵.interactable=true;
+            StartCoroutine(coroutine8);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button
+            
+        }
+        if(num==26){
+            StartCoroutine(coroutine9);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button
+            Invoke("activate",3f);
+
+        if(num==41){
+            StartCoroutine(coroutine10);
+            Debug.Log("coroutine is started!  num"+num);
+            num++;//activate button
+            Invoke("after_bed_inspection",2f);
+        }
         // if(num==44){
         //     StartCoroutine(coroutine15);
         //     Debug.Log("coroutine is started!  num"+num);
@@ -342,4 +374,5 @@ public class text6_1_4 : MonoBehaviour
 
 
     }
+}
 }
