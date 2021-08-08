@@ -59,6 +59,15 @@ public class text_3_2 : MonoBehaviour
     public static Button hB;
     public static Text ht;
 
+//(8) a선택지 - 베란다 커튼을 걷어본다.
+public static GameObject choice_a;
+public static Button choice_aB;
+public static Text choice_at;
+//(8) b선택지 - 베란다 커튼을 걷어본다.
+public static GameObject choice_b;
+public static Button choice_bB;
+public static Text choice_bt;
+
 
 
 
@@ -73,6 +82,14 @@ public class text_3_2 : MonoBehaviour
     private static string text_6="시루가 숨어있기에는 \n공간이 턱없이 부족하다.           ";
     private static string text_7="책장 가장 윗부분까지 \n까치발을 들어서 살펴보았다. \n하지만 시루는 여기 없다.           ";
     private static string text_8="자동 조절 커튼이 걸려 있는 \n베란다 창문이다. \n잠깐! 커튼을 여니 \n시루 울음소리가\n더 크게 들려온다....!           ";
+
+    private static string text_9="전자동 커튼이라 뻑뻑해서 \n완전히 걷히지는 않지만 \n살짝 들린 사이로 \n시루의 울음소리가 들린다. \n시루가 베란다에 숨어있는 것 같다. \n베란다 바닥이 차가워서 \n시루는 베란다를 좋아하지 않는데 \n어떻게 들어간 거지?";
+    private static string text_10="게다가 나는 2층 베란다 문을 \n항상 잠가두는데…\n하지만 이런 쓸데없는 \n생각할 시간이 없어. \n어서 시루를 데려와야 해.....!";
+
+    private static string text_11="역시나 문이 잠겨 있다. \n쪽에서 철컥철컥 소리가 나서\n올려다보니 자동 조절 걸쇠가 \n작동하지 않는다. \n저걸 풀어야 문을 열 수 있다.";
+    private static string text_12="가만히 살펴보니\n전자동 개폐 장치를 수동으로\n열 수 있을 것 같다. \n하지만 창이 너무 높아서 \n손이 닿지 않는다. \n밟고 올라갈 만한 것을 \n찾아봐야겠어";
+
+
 
     static IEnumerator coroutine00=  Typing(text_00);
     static IEnumerator coroutine01=  Typing(text_01);
@@ -165,6 +182,17 @@ public class text_3_2 : MonoBehaviour
     public static void h활성화(){
       num=26;
       h_inspection=true;
+    }
+    public static void 선택지활성화(){
+      choice_a.SetActive(false);
+      choice_b.SetActive(false);
+      choice_at.text="A. 베란다 커특을 걷어본다.";
+      choice_bt.text="B. 베란다 문을 연다.";
+      choice_aB.interactable=true;
+      choice_bB.interactable=true;
+    }
+    public static void scenechange(){
+      SceneManager.LoadScene("3-3");
     }
     public static void 오브젝트비활성화(){
       at.text="";
@@ -259,6 +287,16 @@ public class text_3_2 : MonoBehaviour
     hB =h.GetComponent<Button>();
     ht = GameObject.Find("hText").GetComponent<Text>();
     hB.onClick.AddListener(h활성화);
+
+    choice_a = GameObject.Find("choice_a");
+    choice_aB =choice_a.GetComponent<Button>();
+    choice_at = GameObject.Find("choice_aText").GetComponent<Text>();
+    choice_aB.onClick.AddListener(choice_a활성화);
+
+    choice_b = GameObject.Find("choice_b");
+    choice_bB =choice_b.GetComponent<Button>();
+    choice_bt = GameObject.Find("choice_bText").GetComponent<Text>();
+    choice_bB.onClick.AddListener(choice_b활성화);
   }
     // Start is called before the first frame update
    void Start()
@@ -275,6 +313,12 @@ public class text_3_2 : MonoBehaviour
        ft.text="";
        gt.text="";
        ht.text="";
+       choice_at.text="";
+       choice_bt.text="";
+       choice_a.SetActive(false);
+       choice_b.SetActive(false);
+
+
        aB.interactable=false;
        bB.interactable=false;
        cB.interactable=false;
@@ -283,6 +327,8 @@ public class text_3_2 : MonoBehaviour
        fB.interactable=false;
        gB.interactable=false;
        hB.interactable=false;
+       choice_aB.interactable=false;
+       choice_bB.interactable=false;
 
 
         Debug.Log("coroutin is started! #3-1 num"+num);
@@ -376,6 +422,41 @@ public class text_3_2 : MonoBehaviour
         if(num==25){
             Debug.Log("오브젝트 목록!");
             오브젝트활성화();
+        }
+        if(num==26){
+            StartCoroutine(coroutine9);
+            Debug.Log("coroutine9 is started!  num"+num);
+            num++;//activate button
+            오브젝트비활성화();
+
+
+        }
+        if(num==28){
+            Debug.Log("베란다 -> 선택지 보여주기");
+            선택지활성화();
+
+        }
+        if(num==29){
+            Debug.Log("[a. 베란다 커튼을 걷어본다.]");
+            StartCoroutine(coroutine10);
+            스킵.interactable=true;
+        }
+        if(num==32){
+            Debug.Log("[a. 베란다 커튼을 걷어본다.]");
+            StartCoroutine(coroutine11);
+            스킵.interactable=false; //다음 씬으로 이동
+            Invoke("scenechange",1f);
+        }
+        if(num==35){
+            Debug.Log("[B. 베란다 문을 연다.]");
+            StartCoroutine(coroutine12);
+            스킵.interactable=true;
+        }
+        if(num==38){
+            Debug.Log("[B. 베란다 문을 연다.]");
+            StartCoroutine(coroutine13);
+            스킵.interactable=false; //다음 씬으로 이동
+            Invoke("scenechange",1f);
         }
     }
 }
