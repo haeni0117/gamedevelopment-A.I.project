@@ -101,6 +101,10 @@ public static Text choice_bt;
     static IEnumerator coroutine7 = Typing(text_6);
     static IEnumerator coroutine8 = Typing(text_7);
     static IEnumerator coroutine9 = Typing(text_8);
+    static IEnumerator coroutine10 = Typing(text_9);
+    static IEnumerator coroutine11 = Typing(text_10);
+    static IEnumerator coroutine12 = Typing(text_11);
+    static IEnumerator coroutine13 = Typing(text_12);
 
     public static void 오브젝트활성화(){
       typingText.text="";
@@ -183,9 +187,16 @@ public static Text choice_bt;
       num=26;
       h_inspection=true;
     }
+    public static void choice_a활성화(){
+      num=29;
+
+    }public static void choice_b활성화(){
+      num=35;
+
+    }
     public static void 선택지활성화(){
-      choice_a.SetActive(false);
-      choice_b.SetActive(false);
+      choice_a.SetActive(true);
+      choice_b.SetActive(true);
       choice_at.text="A. 베란다 커특을 걷어본다.";
       choice_bt.text="B. 베란다 문을 연다.";
       choice_aB.interactable=true;
@@ -440,23 +451,31 @@ public static Text choice_bt;
             Debug.Log("[a. 베란다 커튼을 걷어본다.]");
             StartCoroutine(coroutine10);
             스킵.interactable=true;
+            choice_b.SetActive(false);
+            choice_a.SetActive(false);
+            num++;
         }
         if(num==32){
             Debug.Log("[a. 베란다 커튼을 걷어본다.]");
             StartCoroutine(coroutine11);
             스킵.interactable=false; //다음 씬으로 이동
-            Invoke("scenechange",1f);
+            Invoke("scenechange",3f);
+            num++;
         }
         if(num==35){
             Debug.Log("[B. 베란다 문을 연다.]");
             StartCoroutine(coroutine12);
             스킵.interactable=true;
+            choice_a.SetActive(false);
+            choice_b.SetActive(false);
+            num++;
         }
         if(num==38){
             Debug.Log("[B. 베란다 문을 연다.]");
             StartCoroutine(coroutine13);
             스킵.interactable=false; //다음 씬으로 이동
-            Invoke("scenechange",1f);
+            Invoke("scenechange",3f);
+            num++;
         }
     }
 }
