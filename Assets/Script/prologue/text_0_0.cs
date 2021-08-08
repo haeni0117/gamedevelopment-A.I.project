@@ -16,9 +16,9 @@ public class text_0_0: MonoBehaviour
 
 
 //     //string -> narration
-    private static string text_1="빗소리가 기분 좋게 들려온다. \n\n풍경들이 내 주변을 빠르게 지나간다.\n\n창문으로 들어오는 시원한 바람이 \n어린 마음을 들뜨게 한다.\n바깥 풍경을 보고싶지만 \n키가 작아 잘 보이지 않는다. ";
+    private static string text_1="빗소리가 기분 좋게 들려온다. \n\n풍경들이 내 주변을 빠르게 지나간다.\n\n창문으로 들어오는 시원한 바람이 \n어린 마음을 들뜨게 한다.               \n바깥 풍경을 보고싶지만 \n키가 작아 잘 보이지 않는다. ";
     private static string text_2="급한 마음에 나는 안전벨트를 풀고 다리를 올려 \n창문 밖을 보려고 했다.\n\n사고는 순식간에 일어났다.";
-    private static string text_3="\"...생존확인\"\n\n머리가 아프다.\n왼팔이 타는 듯한 느낌이 든다. \n흐려지는 시야 속에서 잔뜩 갈라진 기계적인 목소리가 \n희미하게 들린다.";
+    private static string text_3="\"...생존확인\"\n\n머리가 아프다.       \n왼팔이 타는 듯한 느낌이 든다.         \n흐려지는 시야 속에서 잔뜩 갈라진 기계적인 목소리가 \n희미하게 들린다.";
     private static string text_4="\"...심장박동을 인식했습니다. \n...신체가 일부 손실되었으나 \n예상 손상 정도보다 95.7 퍼센트 감소...\n\n...깨어나세요. 일어나셔야 합니다.\"";
 
     static IEnumerator coroutine =  Typing(text_1);

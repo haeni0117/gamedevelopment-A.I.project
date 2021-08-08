@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 //#1-2 부재중전화
 
-public class text_1_2_2: MonoBehaviour
+public class text_22: MonoBehaviour
 {
     static IEnumerator Typing(string message)
     {
@@ -46,7 +46,7 @@ public class text_1_2_2: MonoBehaviour
 
     //skip button
     public static void 스킵버튼클릭(){
-        Debug.Log("skipbutton is clicked! num="+num);
+        Debug.Log(num);
         num++;
     }
     //choice1activation
@@ -61,8 +61,8 @@ public class text_1_2_2: MonoBehaviour
     static IEnumerator coroutine1 = Typing(text_2);
     static IEnumerator coroutine2 = Typing(text_3);
     //선택지클릭
-    public static void option_click(){
-      num=3;
+    static void option_click(){
+      num=2;
       Debug.Log("a.화장실로 이동한다.");
     }
 
@@ -71,27 +71,28 @@ public class text_1_2_2: MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   Button option_b = GameObject.Find("a").GetComponent<Button>();
-        Text option_t = GameObject.Find("atext").GetComponent<Text>();
+    {
+        option_b = GameObject.Find("a").GetComponent<Button>();
+        option_t = GameObject.Find("atext").GetComponent<Text>();
         option_t.text = "a. 화장실로 이동한다.";
         스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-        스킵.onClick.AddListener(text_1_2_2.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+        스킵.onClick.AddListener(text_22.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
         Debug.Log("scene1 is started "+num);
         스킵.interactable=false;
-        option_b.onClick.AddListener(text_1_2_2.option_click);
+        option_b.onClick.AddListener(text_22.option_click);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-      if(num==2){
-        option_t.text=" ";
-        option_b.interactable=false;
-        스킵.interactable=true;
-        StartCoroutine(coroutine1);
-        num++;
-      }
+        if(num==2){
+          option_t.text="";
+          option_b.interactable=false;
+          스킵.interactable=true;
+          StartCoroutine(coroutine1);
+          num++;
+        }
             //StartCoroutine(coroutine1);
 
         if(num==5){

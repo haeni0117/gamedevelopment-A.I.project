@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 //#1-8 화장실조사
 public class text_1_8: MonoBehaviour
 {
+  public static Text typingText;
   public static Button 스킵;
+  public static GameObject backbutton_;
+  public static Button backbutton;
+  public static Text backbuttont;
 
   public static GameObject choice1;
   public static Button choice1B;
@@ -85,14 +89,25 @@ public class text_1_8: MonoBehaviour
   public static Text f2t;
   //boolean variable
   public static bool item_sparekey=false;
+  public static bool item_shampoo=false;
+  public static bool item_rinse=false;
+  public static bool item_bodywash=false;
+
+  public static bool item_medicine=false;
+  public static bool item_toothpaste=false;
+  public static bool item_tissue=false;
+  public static bool item_shaver=false;
+  public static bool item_dryer=false;
+//  public static bool item_sparekey=false;
   public static bool item_toy=false;
   public static bool item_vitasen = false;
   public static bool item_gender = false;
 
 
+
     static IEnumerator Typing(string message)
     {
-        Text typingText = GameObject.Find("general text").GetComponent<Text>();
+
         Debug.Log("typingtext"+typingText);
         Debug.Log("message"+message);
 
@@ -116,7 +131,6 @@ public class text_1_8: MonoBehaviour
 
     //basic component
     public static int num = 0;
-    public static Text typingText;
     public static GameObject fadeout;
 
 
@@ -130,6 +144,8 @@ public class text_1_8: MonoBehaviour
     public static void backbutton클릭(){
       Debug.Log("you clicked the backbutton");
       num=44;
+
+
     }
     public static void raycastissue(){
       a11.SetActive(false);
@@ -152,7 +168,23 @@ public class text_1_8: MonoBehaviour
     }
 
     public static void object활성화(){
+      backbutton_.SetActive(false);
+      typingText.text="";//text : clear
+      choice1.SetActive(false);
+      a1.SetActive(false);
+      a11.SetActive(false);
+      a12.SetActive(false);
+      a13.SetActive(false);
+      a14.SetActive(false);
+      d1.SetActive(false);
+      d2.SetActive(false);
+      d3.SetActive(false);
+      d4.SetActive(false);
+      d5.SetActive(false);
+      f1.SetActive(false);
+      f2.SetActive(false);
       raycastissue();
+      Debug.Log("objects are activated.");
       at.text="(1) 샤워 부스";
       aB.interactable=true;
       aB.onClick.AddListener(text_1_8.a활성화);
@@ -171,11 +203,52 @@ public class text_1_8: MonoBehaviour
       //e
       et.text="(5) 세면대";
       eB.interactable=true;
-      eB.onClick.AddListener(text_1_8.d활성화);
+      eB.onClick.AddListener(text_1_8.e활성화);
       //f
       ft.text="(6) 수건 받침대";
       fB.interactable=true;
       fB.onClick.AddListener(text_1_8.f활성화);
+
+    }
+
+    public static void 아이템조사_a(){//한 번 조사한 오브젝트는 재조사 불가능
+
+      if(item_shampoo==true){
+        a11B.interactable=false;
+      }
+      else a11B.interactable=true;
+
+      if(item_rinse==true){
+        a12B.interactable=false;
+      }else a12B.interactable=true;
+      if(item_bodywash==true){
+        a13B.interactable=false;
+      }else a13B.interactable=true;
+      if(item_sparekey==true){
+        a14B.interactable=false;
+      }else a14B.interactable=true;
+    }
+
+    public static void 아이템조사_d(){//한 번 조사한 오브젝트는 재조사 불가능
+
+      if(item_medicine==true){
+        d1B.interactable=false;
+      }
+      else d1B.interactable=true;
+
+      if(item_toothpaste==true){
+        d2B.interactable=false;
+      }else d2B.interactable=true;
+
+      if(item_tissue==true){
+        d3B.interactable=false;
+      }else d3B.interactable=true;
+      if(item_shaver==true){
+        d4B.interactable=false;
+      }else d4B.interactable=true;
+      if(item_dryer==true){
+        d5B.interactable=false;
+      }else d5B.interactable=true;
 
     }
     public static void a활성화(){
@@ -185,7 +258,13 @@ public class text_1_8: MonoBehaviour
 
     }
     public static void a1활성화(){
+      Debug.Log("you clicked [option:(1)-1 샤워부스 선반]");
       num=14;
+      //(1)-1 샤워부스 선반 선택지 -> 비활성화
+      a1t.text=" ";
+      a1B.interactable=false;
+
+      //나머지 선택지 활성화
       a11.SetActive(true);
       a12.SetActive(true);
       a13.SetActive(true);
@@ -209,43 +288,60 @@ public class text_1_8: MonoBehaviour
       a14B.onClick.AddListener(text_1_8.a14활성화);
     }
 
-    public static void b1활성화(){
-      num=14;
-      a11.SetActive(true);
-      a12.SetActive(true);
-      a13.SetActive(true);
-      a14.SetActive(true);
+    public void d_object_inspection(){
 
-      //a-1-1 샴푸
-      a11t.text="(1)-1-1 샴푸";
-      a11B.interactable=true;
-      a11B.onClick.AddListener(text_1_8.a11활성화);
-      //a-1-2 린스
-      a12t.text="(1)-1-2 린스";
-      a12B.interactable=true;
-      a12B.onClick.AddListener(text_1_8.a12활성화);
-      //a-1-3 바디워시
-      a13t.text="(1)-1-3 바디워시";
-      a13B.interactable=true;
-      a13B.onClick.AddListener(text_1_8.a13활성화);
-      //a-1-4 스페어키
-      a14t.text="(1)-1-4 스페어키";
-      a14B.interactable=true;
-      a14B.onClick.AddListener(text_1_8.a14활성화);
+      d1.SetActive(true);
+      d2.SetActive(true);
+      d3.SetActive(true);
+      d4.SetActive(true);
+      d5.SetActive(true);
+
+      //d-1 약
+      d1t.text="(4)-1 약";
+      d1B.interactable=true;
+      d1B.onClick.AddListener(d1활성화);
+      //d-2 치약
+      d2t.text="(4)-2 치약";
+      d2B.interactable=true;
+      d2B.onClick.AddListener(d2활성화);
+      //d-3 휴지
+      d3t.text="(4)-3 휴지";
+      d3B.interactable=true;
+      d3B.onClick.AddListener(d3활성화);
+      //d-4 면도기
+      d4t.text="(4)-4 면도기";
+      d4B.interactable=true;
+      d4B.onClick.AddListener(d4활성화);
+      //d-5 드라이어
+      d5t.text="(4)-5 드라이어";
+      d5B.interactable=true;
+      d5B.onClick.AddListener(d5활성화);
     }
+
 
     public static void a11활성화(){
       num=17;
+      item_shampoo=true;
+      a11B.interactable=false;
     }
     public static void a12활성화(){
       num=20;
+      item_rinse=true;
+      a12B.interactable=false;
     }
     public static void a13활성화(){
       num=23;
+      item_bodywash=true;
+      a13B.interactable=false;
     }
     public static void a14활성화(){
       num=26;
       item_sparekey=true;
+      backbutton_.SetActive(true);
+      backbuttont.text="BACK";
+      backbutton.interactable=true;
+      backbutton.onClick.AddListener(object활성화);
+      a14B.interactable=false;
     }
     public static void b활성화(){
       num=29;
@@ -257,29 +353,66 @@ public class text_1_8: MonoBehaviour
       num=35;
     }
     public static void d1활성화(){
-      num=38;
+      Debug.Log("d1활성화");
+      num=40;
+      item_medicine=true;
     }
     public static void d2활성화(){
-      num=41;
+      Debug.Log("d2활성화");
+      num=43;
+      item_toothpaste=true;
     }
     public static void d3활성화(){
-      num=44;
+      Debug.Log("d3활성화");
+      num=46;
+      item_tissue=true;
     }
     public static void d4활성화(){
-      num=47;
+      Debug.Log("d4활성화");
+      num=49;
+      item_shaver=true;
     }
+    public static void d5활성화(){
+      Debug.Log("d5활성화");
+      num=52;
+      item_dryer=true;
+    }
+    //
     public static void e활성화(){
-      num=50;
+      num=55;
     }
     public static void f활성화(){
-      num=53;
+      num=58;
+    }
+    public static void f오브젝트활성화(){
+      f1.SetActive(true);
+      f2.SetActive(true);
+      f1B.interactable=true;
+      f2B.interactable=true;
+      f1t.text="(6)-1 코트";
+      f2t.text="(6)-2 코트";
+
     }
     public static void f1활성화(){
-      num=56;
+      num=61;
     }
     public static void f2활성화(){
-      num=59;
+      num=64;
     }
+    public static void  거울오브젝트비활성화(){
+      d1B.interactable=false;
+      d2B.interactable=false;
+      d3B.interactable=false;
+      d4B.interactable=false;
+      d5B.interactable=false;
+    }
+    public static void  선반오브젝트비활성화(){
+      a11B.interactable=false;
+      a12B.interactable=false;
+      a13B.interactable=false;
+      a14B.interactable=false;
+    }
+
     public static void 기본오브젝트삭제(){
       //a
       GameObject a = GameObject.Find("a");
@@ -327,6 +460,7 @@ public class text_1_8: MonoBehaviour
     }
 
     public static void choice1활성화(){
+      Debug.Log("화장실 문을 확인한다. 클릭");
       choice1.SetActive(false);
       num=5;
 
@@ -386,8 +520,12 @@ public class text_1_8: MonoBehaviour
 
     // Start is called before the first frame update
     void Awake(){
+      typingText = GameObject.Find("general text").GetComponent<Text>();
       스킵 = GameObject.Find("skipButton").GetComponent<Button>();
       스킵.onClick.AddListener(text_1_8.스킵버튼클릭);
+      backbutton_=GameObject.Find("backbutton");
+      backbutton=GameObject.Find("backbutton").GetComponent<Button>();
+      backbuttont=GameObject.Find("backbuttonText").GetComponent<Text>();
 
       choice1 = GameObject.Find("choice1");
       choice1B =choice1.GetComponent<Button>();
@@ -430,7 +568,7 @@ public class text_1_8: MonoBehaviour
       dt = GameObject.Find("dText").GetComponent<Text>();
       //d1
       d1 = GameObject.Find("d1");
-      d1B =d.GetComponent<Button>();
+      d1B =d1.GetComponent<Button>();
       d1t = GameObject.Find("d1Text").GetComponent<Text>();
       //d2
       d2 = GameObject.Find("d2");
@@ -438,30 +576,40 @@ public class text_1_8: MonoBehaviour
       d2t = GameObject.Find("d2Text").GetComponent<Text>();
       //d3
       d3 = GameObject.Find("d3");
-      d3B =d.GetComponent<Button>();
-      d3t = GameObject.Find("dText").GetComponent<Text>();
+      d3B =d3.GetComponent<Button>();
+      d3t = GameObject.Find("d3Text").GetComponent<Text>();
       //d4
       d4 = GameObject.Find("d4");
       d4B =d4.GetComponent<Button>();
       d4t = GameObject.Find("d4Text").GetComponent<Text>();
       //d5
       d5 = GameObject.Find("d5");
-      d5B =d.GetComponent<Button>();
-      d5t = GameObject.Find("dText").GetComponent<Text>();
+      d5B =d5.GetComponent<Button>();
+      d5t = GameObject.Find("d5Text").GetComponent<Text>();
       //e
-      e = GameObject.Find("e");
+      e = GameObject.Find("e");//
       eB =e.GetComponent<Button>();
       et = GameObject.Find("eText").GetComponent<Text>();
       //f
       f = GameObject.Find("f");
       fB =f.GetComponent<Button>();
       ft = GameObject.Find("fText").GetComponent<Text>();
+      //f1
+      f1 = GameObject.Find("f1");
+      f1B =f1.GetComponent<Button>();
+      f1t = GameObject.Find("f1Text").GetComponent<Text>();
+      //f2
+      f2 = GameObject.Find("f2");
+      f2B =f2.GetComponent<Button>();
+      f2t = GameObject.Find("f2Text").GetComponent<Text>();
     }
     void Start()
     {
         Debug.Log("scene1-8 is started "+num);
         StartCoroutine(coroutine);
 
+        backbuttont.text=" ";
+        backbutton.interactable=false;
         //choice1
         choice1t.text=" ";
         choice1B.interactable=false;
@@ -502,25 +650,73 @@ public class text_1_8: MonoBehaviour
         dt.text=" ";
         dB.interactable=false;
         dB.onClick.AddListener(text_1_8.d활성화);
+        //d1
+        d1t.text=" ";
+        d1B.interactable=false;
+        d1B.onClick.AddListener(text_1_8.d1활성화);
+        //d
+        d2t.text=" ";
+        d2B.interactable=false;
+        d2B.onClick.AddListener(text_1_8.d2활성화);
+        //d
+        d3t.text=" ";
+        d3B.interactable=false;
+        d3B.onClick.AddListener(text_1_8.d3활성화);
+        //d
+        d4t.text=" ";
+        d4B.interactable=false;
+        d4B.onClick.AddListener(text_1_8.d4활성화);
+        //d
+        d5t.text=" ";
+        d5B.interactable=false;
+        d5B.onClick.AddListener(text_1_8.d5활성화);
         //e
         et.text=" ";
         eB.interactable=false;
-        eB.onClick.AddListener(text_1_8.d활성화);
+        eB.onClick.AddListener(text_1_8.e활성화);
         //f
         ft.text=" ";
         fB.interactable=false;
         fB.onClick.AddListener(text_1_8.f활성화);
+
+        f1t.text=" ";
+        f1B.interactable=false;
+        f1B.onClick.AddListener(text_1_8.f1활성화);
+        f1.SetActive(false);
+
+        f2t.text=" ";
+        f2B.interactable=false;
+        f2B.onClick.AddListener(text_1_8.f2활성화);
+        f2.SetActive(false);
+
+
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   Debug.Log(num);
         if(num==2){
           선택지활성화();
           스킵.interactable=false;
           num++;
+          aB.interactable=false;
+          bB.interactable=false;
+          cB.interactable=false;
+          dB.interactable=false;
+          eB.interactable=false;
+          fB.interactable=false;
 
+          a11B.interactable=false;
+          a12B.interactable=false;
+          a13B.interactable=false;
+          a14B.interactable=false;
 
+          a1B.interactable=false;
+          d2B.interactable=false;
+          d3B.interactable=false;
+          d4B.interactable=false;
+          d5B.interactable=false;
+          d1B.interactable=false;
             //StartCoroutine(coroutine1);
         }
         if(num==5){
@@ -542,7 +738,7 @@ public class text_1_8: MonoBehaviour
           스킵.interactable=false;
         }
         //object1~6 기본멘트
-        //object1 : (1)샤워부스 조사멘트
+        //object1 : (1)샤워부스 조사멘트(해바라기 샤워기가 달린~)
         if(num==11){
           a1.SetActive(true);
           a활성화();
@@ -554,6 +750,10 @@ public class text_1_8: MonoBehaviour
         if(num==13){
           a1t.text="(1)-1 샤워 부스 선반";
           a1B.interactable=true;
+
+
+
+
         }
         if(num==14){
           //object1 : (1)샤워부스선반 조사멘트
@@ -562,20 +762,61 @@ public class text_1_8: MonoBehaviour
           num++;
         }
         if(num==17){
+          Debug.Log("출력전");
           StartCoroutine(object111);
+          Debug.Log("출력완료");
+          스킵.interactable=false;
+          선반오브젝트비활성화();
+          //item_shampoo=true;
+          Debug.Log("샴푸텍스트출력중 :"+num);
           num++;
+
+        }
+        if(num==19){
+          스킵.interactable=false;
+          아이템조사_a();
+
+
+
         }
         if(num==20){
+          typingText.text="";
+          item_rinse=true;
           StartCoroutine(object112);
+          스킵.interactable=false;
+          선반오브젝트비활성화();
+          Debug.Log("린스텍스트출력중 :"+num);
           num++;
+
+        }
+        if(num==22){
+          아이템조사_a();
+          스킵.interactable=false;
         }
         if(num==23){
+          item_bodywash=true;
           StartCoroutine(object113);
+          스킵.interactable=false;
+          선반오브젝트비활성화();
+          Debug.Log("바디워시텍스트출력중 :"+num);
           num++;
+        }
+        if(num==25){
+          아이템조사_a();
+          스킵.interactable=false;
         }
         if(num==26){
           StartCoroutine(object114);
+          스킵.interactable=false;
+          선반오브젝트비활성화();
+          Debug.Log("스페어키텍스트출력중 :"+num);
+          backbutton.interactable=false;//다 출력된 이후에 interactable하게 설정!
           num++;
+        }
+        if(num==28){
+          backbutton.interactable=true;
+          아이템조사_a();
+          스킵.interactable=false;
         }
         /////////////////////////////////////
         if(num==29){
@@ -585,6 +826,7 @@ public class text_1_8: MonoBehaviour
         }
         if(num==31){
           object활성화();
+          typingText.text="";
         }
         if(num==32){
           StartCoroutine(object3);
@@ -593,44 +835,107 @@ public class text_1_8: MonoBehaviour
         }
         if(num==34){
           object활성화();
+          typingText.text="";
 
         }
+        //(4) 거울
         if(num==35){
           StartCoroutine(object4);
           기본오브젝트삭제();
           num++;
         }
-        if(num==38){
-          StartCoroutine(object41);
 
+        if(num==37){
+          Invoke("d_object_inspection",1.8f);
+          d1B.interactable=true;
+          d2B.interactable=true;
+          d3B.interactable=true;
+          d4B.interactable=true;
+          d5B.interactable=true;
+          a.SetActive(false);
+          b.SetActive(false);
+          c.SetActive(false);
+          d.SetActive(false);
+          e.SetActive(false);
+          f.SetActive(false);
+          스킵.interactable=false;
         }
-        if(num==41){
+        //(4)거울과 선반 조사 시작
+        if(num==40){
+          StartCoroutine(object41);
+          거울오브젝트비활성화();
+          num++;
+        }
+        if(num==42){
+          아이템조사_d();
+          d_object_inspection();
+        }
+        if(num==43){
           StartCoroutine(object42);
+          거울오브젝트비활성화();
           num++;
         }
-        if(num==44){
+        if(num==45){
+          아이템조사_d();
+          d_object_inspection();
+        }
+        if(num==46){
           StartCoroutine(object43);
+          거울오브젝트비활성화();
           num++;
         }
-        if(num==47){
+        if(num==48){
+          아이템조사_d();
+          d_object_inspection();
+        }
+        if(num==49){
           StartCoroutine(object44);
+          거울오브젝트비활성화();
           num++;
         }
-        if(num==50){
+        if(num==51){
+          아이템조사_d();
+          d_object_inspection();
+        }
+        if(num==52){
+          StartCoroutine(object45);
+          num++;
+        }
+        if(num==54){
+          아이템조사_d();
+          d_object_inspection();
+        }
+        //오브젝트 e
+        if(num==55){
           StartCoroutine(object5);
+          기본오브젝트삭제();
           num++;
         }
-        if(num==53){
+        if(num==57){
+          object활성화();
+        }
+
+        if(num==58){
           StartCoroutine(object6);
+          기본오브젝트삭제();
           num++;
         }
-        if(num==56){
+        if(num==60){
+          f오브젝트활성화();//f 세부 오브젝트 활성화
+        }
+        if(num==61){
           StartCoroutine(object61);
           num++;
         }
-        if(num==59){
+        if(num==63){
+
+        }
+        if(num==64){
           StartCoroutine(object62);
           num++;
+        }
+        if(num==66){
+
         }
 
 
