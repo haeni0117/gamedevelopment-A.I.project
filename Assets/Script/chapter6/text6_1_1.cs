@@ -5,177 +5,220 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class text6_1_1 : MonoBehaviour
-{// Start is called before the first frame update
-   public static int num = 0;
-    public static GameObject button_;
-    public static int cnt = 0; //st atic 변수로 수정
-    
+{
+
+  public static Text typingText;
+  public static Button 스킵;
+  public static GameObject backbutton_;
+  public static Button backbutton;
+  public static Text backbuttont;
+
+  //bool-> 오브젝트 조사여부
+  public static bool a_inspection=false;
+  public static bool b_inspection=false;
+  public static bool c_inspection=false;
+  public static bool d_inspection=false;
+  public static bool e_inspection=false;
+  public static bool f_inspection=false;
+  public static bool g_inspection=false;
+  public static bool h_inspection=false;
+
+
+    public static int num = 0;
     public static GameObject fadeout;
-    //조사할 오브젝트
-    public static GameObject bed;
-    public static GameObject drawer;
-    public static GameObject closet;
-    public static GameObject sidetable;
-    public static GameObject organizer;
-    public static GameObject baghanger;
-    public static GameObject restroom;
-    public static GameObject another;
-    
+//(1)책상
+    public static GameObject a;
+    public static Button aB;
+    public static Text at;
+//(2)반려동물 방석
+    public static GameObject b;
+    public static Button bB;
+    public static Text bt;
+//(3)의지
+    public static GameObject c;
+    public static Button cB;
+    public static Text ct;
+//(4)iot쓰레기통
+    public static GameObject d;
+    public static Button dB;
+    public static Text dt;
+//(5)탁자
+    public static GameObject e;
+    public static Button eB;
+    public static Text et;
+//(6)사이드테이블
+    public static GameObject f;
+    public static Button fB;
+    public static Text ft;
+//(7) 책장
+    public static GameObject g;
+    public static Button gB;
+    public static Text gt;
+//(8) 2층 베란다창문
+    public static GameObject h;
+    public static Button hB;
+    public static Text ht;
 
-    public static Button bed_b;
-    public static Button drawer_b;
-    public static Button closet_b;
-    public static Button sidetable_b;
-    public static Button organizer_b;
-    public static Button baghanger_b;
-    public static Button restroom_b;
-    public static Button another_b;
-    public static Button achoice_b;
-    public static Button bchoice_b;
-    public static Button 스킵;
+//(8) a선택지 - 베란다 커튼을 걷어본다.
+public static GameObject choice_a;
+public static Button choice_aB;
+public static Text choice_at;
+//(8) b선택지 - 베란다 커튼을 걷어본다.
+public static GameObject choice_b;
+public static Button choice_bB;
+public static Text choice_bt;
 
-    public static Text bed_t;
-    public static Text drawer_t;
-    public static Text closet_t;
-    public static Text sidetable_t;
-    public static Text organizer_t;
-    public static Text baghanger_t;
-    public static Text restroom_t;
-    public static Text another_t;
-    public static Text achoice_t;
-    public static Text bchoice_t;
-    public static Text typingText;
 
-    
-    private static string text_1="당장이라도 눕고 싶지만 \n그럴 여유는 없다.";
-    private static string text_2="텅 빈 서랍장은 \n뒤져봐도 소용없다.";
 
-    private static string text_3="옷을 헤치고 \n안쪽을 더듬어 봤지만, \n당연히 옷 말고는 \n아무것도 없다.";
-    private static string text_4="옷장 밑 1단 서랍장은 \n잠금이 걸려 있다.";
-    private static string text_5="역시 비밀번호는 \n기억나지 않는다.\n구급상자를 \n금고에 넣어뒀을 리는 없으니 \n일단 구급상자부터 찾아보자.";
 
-    private static string text_6="구급상자는 보이지 않는다.";
-    private static string text_7="수납장 위를 훑어봐도 \n구급상자는 보이지 않아.";
-    private static string text_8="백팩을 한 번 더 뒤졌다.\n역시 쓸 만한 것은\n보이지 않아.";
-    private static string text_9="화장실에는 \n다시 들어가고 싶지 않다. ";
-    private static string text_10="다른 곳도 둘러볼까?";
-   
+//     //string -> narration
+    private static string text_00="당장이라도 눕고 싶지만 \n그럴 여유는 없다.";
+    private static string text_01="텅 빈 서랍장은 \n뒤져봐도 소용없다";
+    private static string text_1="옷을 헤치고 \n안쪽을 더듬어 봤지만, \n당연히 옷 말고는 \n아무것도 없다.           ";
+    private static string text_2="옷장 밑 1단 서랍장은 \n잠금이 걸려 있다.           ";
+    private static string text_3="역시 비밀번호는 \n기억나지 않는다.\n구급상자를 \n금고에 넣어뒀을 리는 없으니 \n일단 구급상자부터 찾아보자.           ";
 
-    static IEnumerator coroutine1 =  Typing(text_1);
-    static IEnumerator coroutine2 =  Typing(text_2);
-    static IEnumerator coroutine3 =  Typing(text_3);
-    static IEnumerator coroutine4 =  Typing(text_4);
-    static IEnumerator coroutine5 =  Typing(text_5);
-    static IEnumerator coroutine6 =  Typing(text_6);
-    static IEnumerator coroutine7 =  Typing(text_7);
-    static IEnumerator coroutine8 =  Typing(text_8);
-    static IEnumerator coroutine9 =  Typing(text_9);
-    static IEnumerator coroutine10 =  Typing(text_10);
-    
-   
+
+    private static string text_4="구급상자는 보이지 않는다.           ";
+    private static string text_5="수납장 위를 훑어봐도 \n구급상자는 보이지 않아.           ";
+    private static string text_6="백팩을 한 번 더 뒤졌다. \n역시 쓸 만한 것은 \n보이지 않아.           ";
+    private static string text_7="화장실에는 \n다시 들어가고 싶지 않다.            ";
+    private static string text_8="다른 곳도 둘러볼까?";
+
+    static IEnumerator coroutine00=  Typing(text_00);
+    static IEnumerator coroutine01=  Typing(text_01);
+    static IEnumerator coroutine2=  Typing(text_1);
+    static IEnumerator coroutine3 = Typing(text_2);
+    static IEnumerator coroutine4 = Typing(text_3);
+    static IEnumerator coroutine5 = Typing(text_4);
+    static IEnumerator coroutine6 = Typing(text_5);
+    static IEnumerator coroutine7 = Typing(text_6);
+    static IEnumerator coroutine8 = Typing(text_7);
+    static IEnumerator coroutine9 = Typing(text_8);
+
+
+    public static void 오브젝트활성화(){
+      typingText.text="";
+      at.text="(1) 침대";
+      bt.text="(2) 서랍장";
+      ct.text="(3) 옷장";
+      dt.text="(4) 사이드 테이블";
+      et.text="(5) 수납대";
+      ft.text="(6) 가방걸이";
+      gt.text="(7) 안방 화장실";
+      ht.text="(8) 다른 장소로 가본다.";
+
+
+      if(a_inspection==false){
+        aB.interactable=true;
+      }else aB.interactable=false;
+
+      if(b_inspection==false){
+        bB.interactable=true;
+      }else bB.interactable=false;
+
+      if(c_inspection==false){
+        cB.interactable=true;
+      }else cB.interactable=false;
+
+      if(d_inspection==false){
+        dB.interactable=true;
+      }else dB.interactable=false;
+
+      if(e_inspection==false){
+        eB.interactable=true;
+      }else eB.interactable=false;
+
+      if(f_inspection==false){
+        fB.interactable=true;
+      }else fB.interactable=false;
+
+      if(g_inspection==false){
+        gB.interactable=true;
+      }else gB.interactable=false;
+
+      if(h_inspection==false){
+        hB.interactable=true;
+      }else hB.interactable=false;
+    }
+
 
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num+=1;
+    }
+    public static void a활성화(){
+      num=2;
+      a_inspection=true;
+    }
+    public static void b활성화(){
+      num=5;
+      b_inspection=true;
+    }
+    public static void c활성화(){
+      num=8;
+      c_inspection=true;
+    }
+    public static void d활성화(){
+      num=17;
+      d_inspection=true;
+    }
+    public static void e활성화(){
+      num=20;
+      e_inspection=true;
+    }
+    public static void f활성화(){
+      num=23;
+      f_inspection=true;
+    }
+    public static void g활성화(){
+      num=26;
+      g_inspection=true;
+    }
+    public static void h활성화(){
+      num=29;
+      h_inspection=true;
+    }
+    public static void choice_a활성화(){
+      num=32;
+
+    }public static void choice_b활성화(){
+      num=33;
 
     }
-    public void activate(){
-        
-        bed_b.interactable=true;
-        drawer_b.interactable=true;
-        closet_b.interactable=true;
-        sidetable_b.interactable=true;
-        organizer_b.interactable=true;
-        baghanger_b.interactable=true;
-        restroom_b.interactable=true;
-        another_b.interactable=true;
-        
-        drawer_t.text="(2) 서랍장";
-        bed_t.text="(1) 침대";
-        closet_t.text="(3) 옷장";
-        sidetable_t.text="(4) 사이드테이블";
-        organizer_t.text="(5) 수납대";
-        baghanger_t.text="(6) 가방걸이";
-        restroom_t.text="(7) 안방 화장실";
-        another_t.text="(8) 다른 장소로 가본다.";
-        
+    public static void 선택지활성화(){
+      choice_a.SetActive(true);
+      choice_b.SetActive(true);
+      choice_at.text="A. 다른 곳을 둘러본다.";
+      choice_bt.text="B. 아니다, 더 찾아보자.";
+      choice_aB.interactable=true;
+      choice_bB.interactable=true;
     }
-    public void inactivate(){
-        
-        bed_b.interactable=false;
-        drawer_b.interactable=false;
-        closet_b.interactable=false;
-        sidetable_b.interactable=false;
-        organizer_b.interactable=false;
-        baghanger_b.interactable=false;
-        restroom_b.interactable=false;
-        another_b.interactable=false;
-
-        drawer_t.text=" ";
-        bed_t.text=" ";
-        closet_t.text=" ";
-        sidetable_t.text=" ";
-        organizer_t.text=" ";
-        baghanger_t.text=" ";
-        restroom_t.text=" ";
-        another_t.text=" ";}
-
-    public void click_bed(){
-        스킵.interactable=false;
-        num=2;
+    public static void scenechange(){
+      SceneManager.LoadScene("6-1");
     }
-    public void click_drawer(){
-        스킵.interactable=false;
-        num=5;
-    }
-    public void click_closet(){
-        스킵.interactable=true;
-        num=8;
-    }
-    public void click_sidetable(){
-        num=17;
-        스킵.interactable=false;
-    }
-    public void click_organizer(){
-        스킵.interactable=false;
-        num=20;
-    }
-    public void click_baghanger(){
-        스킵.interactable=false;
-        num=23;
-    }
-    public void click_restroom(){
-        스킵.interactable=false;
-        num=26;
-        
-    }
-    public void click_another(){
-        스킵.interactable=false;
-        num=29;
-        
-    }
-    public void choiceAB_activate(){
-        achoice_b.interactable=true;
-        bchoice_b.interactable=true;
-        achoice_t.text="A. 다른 곳을 둘러본다.";
-        bchoice_t.text="B. 아니다. 더 찾아보자.";
-
-    }
-    public void click_achoice(){
-        SceneManager.LoadScene("6-1");
-    }
-    public void click_bchoice(){
-        achoice_b.interactable=false;
-        bchoice_b.interactable=false;
-        achoice_t.text=" ";
-        bchoice_t.text=" ";
-        activate();
-        typingText.text=" ";
+    public static void 오브젝트비활성화(){
+      at.text="";
+      bt.text="";
+      ct.text="";
+      dt.text="";
+      et.text="";
+      ft.text="";
+      gt.text="";
+      ht.text="";
+      aB.interactable=false;
+      bB.interactable=false;
+      cB.interactable=false;
+      dB.interactable=false;
+      eB.interactable=false;
+      fB.interactable=false;
+      gB.interactable=false;
+      hB.interactable=false;
     }
 
     static IEnumerator Typing(string message)
     {
-        typingText = GameObject.Find("general text").GetComponent<Text>();
+        Text typingText = GameObject.Find("general text").GetComponent<Text>();
         Debug.Log(typingText);
         Debug.Log(message);
 
@@ -201,226 +244,217 @@ public class text6_1_1 : MonoBehaviour
 
 
   void Awake(){
-    //button
-    bed_b = GameObject.Find("bed").GetComponent<Button>();
-    drawer_b = GameObject.Find("drawer").GetComponent<Button>();
-    closet_b = GameObject.Find("closet").GetComponent<Button>();
-    sidetable_b = GameObject.Find("sidetable").GetComponent<Button>();
-    organizer_b = GameObject.Find("organizer").GetComponent<Button>();
-    baghanger_b = GameObject.Find("baghanger").GetComponent<Button>();
-    restroom_b = GameObject.Find("restroom").GetComponent<Button>();
-    another_b = GameObject.Find("another").GetComponent<Button>();
-    achoice_b = GameObject.Find("achoice").GetComponent<Button>();
-    bchoice_b = GameObject.Find("bchoice").GetComponent<Button>();
     typingText = GameObject.Find("general text").GetComponent<Text>();
-    //text
-    bed_t = GameObject.Find("bedtext").GetComponent<Text>();
-    drawer_t = GameObject.Find("drawertext").GetComponent<Text>();
-    closet_t = GameObject.Find("closettext").GetComponent<Text>();
-    sidetable_t = GameObject.Find("sidetabletext").GetComponent<Text>();
-    organizer_t = GameObject.Find("organizertext").GetComponent<Text>();
-    baghanger_t = GameObject.Find("baghangertext").GetComponent<Text>();
-    restroom_t = GameObject.Find("restroomtext").GetComponent<Text>();
-    another_t = GameObject.Find("anothertext").GetComponent<Text>();
-    achoice_t= GameObject.Find("achoicetext").GetComponent<Text>();
-    bchoice_t = GameObject.Find("bchoicetext").GetComponent<Text>();
-    typingText = GameObject.Find("general text").GetComponent<Text>();
+    스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+    스킵.onClick.AddListener(text_1_8.스킵버튼클릭);
+    backbutton_=GameObject.Find("backbutton");
+    backbutton=GameObject.Find("backbutton").GetComponent<Button>();
+    backbuttont=GameObject.Find("backbuttonText").GetComponent<Text>();
 
-    //onclick -> function
-    bed_b.onClick.AddListener(click_bed);
-    drawer_b.onClick.AddListener(click_drawer);
-    closet_b.onClick.AddListener(click_closet);
-    sidetable_b.onClick.AddListener(click_sidetable);
-    organizer_b.onClick.AddListener(click_organizer);
-    baghanger_b.onClick.AddListener(click_baghanger);
-    restroom_b.onClick.AddListener(click_restroom);
-    another_b.onClick.AddListener(click_another);
-    achoice_b.onClick.AddListener(click_achoice);
-    bchoice_b.onClick.AddListener(click_bchoice);
+    a = GameObject.Find("a");
+    aB =a.GetComponent<Button>();
+    at = GameObject.Find("aText").GetComponent<Text>();
+    aB.onClick.AddListener(a활성화);
 
+    b = GameObject.Find("b");
+    bB =b.GetComponent<Button>();
+    bt = GameObject.Find("bText").GetComponent<Text>();
+    bB.onClick.AddListener(b활성화);
+
+    c = GameObject.Find("c");
+    cB =c.GetComponent<Button>();
+    ct = GameObject.Find("cText").GetComponent<Text>();
+    cB.onClick.AddListener(c활성화);
+
+    d = GameObject.Find("d");
+    dB =d.GetComponent<Button>();
+    dt = GameObject.Find("dText").GetComponent<Text>();
+    dB.onClick.AddListener(d활성화);
+
+    e = GameObject.Find("e");
+    eB =e.GetComponent<Button>();
+    et = GameObject.Find("eText").GetComponent<Text>();
+    eB.onClick.AddListener(e활성화);
+
+    f = GameObject.Find("f");
+    fB =f.GetComponent<Button>();
+    ft = GameObject.Find("fText").GetComponent<Text>();
+    fB.onClick.AddListener(f활성화);
+
+    g = GameObject.Find("g");
+    gB =g.GetComponent<Button>();
+    gt = GameObject.Find("gText").GetComponent<Text>();
+    gB.onClick.AddListener(g활성화);
+
+    h = GameObject.Find("h");
+    hB =h.GetComponent<Button>();
+    ht = GameObject.Find("hText").GetComponent<Text>();
+    hB.onClick.AddListener(h활성화);
+
+    choice_a = GameObject.Find("choice_a");
+    choice_aB =choice_a.GetComponent<Button>();
+    choice_at = GameObject.Find("choice_aText").GetComponent<Text>();
+    choice_aB.onClick.AddListener(choice_a활성화);
+
+    choice_b = GameObject.Find("choice_b");
+    choice_bB =choice_b.GetComponent<Button>();
+    choice_bt = GameObject.Find("choice_bText").GetComponent<Text>();
+    choice_bB.onClick.AddListener(choice_b활성화);
+
+     
   }
     // Start is called before the first frame update
    void Start()
     {
-       스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-       스킵.onClick.AddListener(text6_1_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
-       스킵.interactable=false;
+       Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+       스킵.onClick.AddListener(text_3_2.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+       스킵.interactable=true;//스킵비활성화
+       //오브젝트 초기화
+       at.text="";
+       bt.text="";
+       ct.text="";
+       dt.text="";
+       et.text="";
+       ft.text="";
+       gt.text="";
+       ht.text="";
+       choice_at.text="";
+       choice_bt.text="";
+       choice_a.SetActive(false);
+       choice_b.SetActive(false);
+       
 
-        bed_b.interactable=true;
-        drawer_b.interactable=true;
-        closet_b.interactable=true;
-        sidetable_b.interactable=true;
-        organizer_b.interactable=true;
-        baghanger_b.interactable=true;
-        restroom_b.interactable=true;
-        another_b.interactable=true;
-        
-        bed_t.text="(1) 침대";
-        drawer_t.text="(2) 서랍장";
-        closet_t.text="(3) 옷장";
-        sidetable_t.text="(4) 사이드테이블";
-        organizer_t.text="(5) 수납대";
-        baghanger_t.text="(6) 가방걸이";
-        restroom_t.text="(7) 안방 화장실";
-        another_t.text="(8) 다른 장소로 가본다.";
-        achoice_t.text=" ";
-        bchoice_t.text=" ";
-        Debug.Log("coroutin is started! #6-1-2 -> 작업실 조사 num"+num);
-        
-        
 
+       aB.interactable=false;
+       bB.interactable=false;
+       cB.interactable=false;
+       dB.interactable=false;
+       eB.interactable=false;
+       fB.interactable=false;
+       gB.interactable=false;
+       hB.interactable=false;
+       choice_aB.interactable=false;
+       choice_bB.interactable=false;
+       오브젝트활성화();
+
+
+        Debug.Log("coroutin is started! #3-1 num"+num);
+        
     }
 
 //     // Update is called once per frame
     void Update(){
-
-        Debug.Log(num);
+        //Debug.Log(num);
         if(num==2){
-            //(1)bed
-            스킵.interactable=false;
-            inactivate();
-            Debug.Log("coroutine is started!  num"+num);
-            StartCoroutine(coroutine1);
+            Debug.Log("[침대]");
+            StartCoroutine(coroutine00);
+            오브젝트비활성화();
             num++;
-            Invoke("activate",1.8f);
+            스킵.interactable=false;
+
+            //StartCoroutine(coroutine1);
+        }
+        if(num==4){
+            Debug.Log("오브젝트 활성화!");
+            오브젝트활성화();
+            스킵.interactable=false;
         }
         if(num==5){
-            //(2)drawer
-            스킵.interactable=false;
-            inactivate();
-            Debug.Log("coroutine is started!  num"+num);
-            StartCoroutine(coroutine2);
+            Debug.Log("[서랍장]");
+            StartCoroutine(coroutine01);
+            오브젝트비활성화();
             num++;
-            Invoke("activate",1.8f);
-            
+        }
+        if(num==7){
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
         }
         if(num==8){
-            //(3)closet-1
-            스킵.interactable=true;
-            inactivate();
-            Debug.Log("coroutine is started!  num"+num);
+            Debug.Log("[옷장 - 1]");
+            StartCoroutine(coroutine2);
+            오브젝트비활성화();
+            스킵.interactable=false;
+            num++;
+        }
+        if(num==10){
+            Debug.Log("[옷장 - 2]");
             StartCoroutine(coroutine3);
             num++;
-            //closet text 출력시작 
-            
         }
-        if(num==11){
-            //(3)closet-2
-            inactivate();
+        if(num==12){
+            Debug.Log("[옷장 - 3]");
             StartCoroutine(coroutine4);
-            Debug.Log("coroutine is started!  num"+num);
+            Debug.Log("coroutine4 is started!  num"+num);
             num++;
-            
-            
+            오브젝트비활성화();
         }
         if(num==14){
-            //(3)closet-3
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine5);
-            Debug.Log("coroutine is started!  num"+num);
-            num++;//activate button
-            Invoke("activate",4.3f);
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
+            
         }
-        
         if(num==17){
-            //(4)sidetable
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine6);
-            Debug.Log("coroutine is started!  num"+num);
-            num++;//activate button
-            Invoke("activate",1f);
+            Debug.Log("[사이드테이블]");
+            StartCoroutine(coroutine5);
+            오브젝트활성화();
+            num++;
         }
+        if(num==19){
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
+        }
+
         if(num==20){
-            //(5)organizer
-            스킵.interactable=false;
-            StartCoroutine(coroutine7);
-            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine6);
+            Debug.Log("[수납대]");
             num++;//activate button
-            Invoke("activate",1.8f);
+            오브젝트비활성화();
+        }
+        if(num==22){
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
         }
         if(num==23){
-            //(6)baghanger
-            inactivate();
-            StartCoroutine(coroutine8);
-            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine7);
+            Debug.Log("[가방걸이]");
             num++;//activate button
-            스킵.interactable=false;
-            Invoke("activate",2.5f);
-            
+            오브젝트비활성화();
+        }
+        if(num==25){
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
         }
         if(num==26){
-            //(7)안방화장실
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine9);
-            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine8);
+            Debug.Log("[안방화장실]");
             num++;//activate button
-            Invoke("activate",1.8f);
+            오브젝트비활성화();
+        }
+        if(num==28){
+            Debug.Log("오브젝트 목록!");
+            오브젝트활성화();
         }
         if(num==29){
-            //(8)다른 장소로 가본다.
-            스킵.interactable=false;
-            inactivate();
-            StartCoroutine(coroutine10);
-            Debug.Log("coroutine is started!  num"+num);
-            num++;
-            Invoke("choiceAB_activate",1.8f);
-            //activate button
+            StartCoroutine(coroutine9);
+            Debug.Log("[다른 장소로 가본다.]");
+            num++;//activate button
+            오브젝트비활성화();
+        }
+        if(num==31){
+            Debug.Log("다른장소 -> 선택지");
+            선택지활성화();
+
+        }
+        if(num==32){
+            Debug.Log("[다른 곳을 둘러본다.]");
+            scenechange();
             
         }
-        // if(num==32){
-        //     스킵.interactable=false;
-        //     inactivate();
-        //     StartCoroutine(coroutine11);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        //     Invoke("activate",1.8f);
-        // }
-        // if(num==35){
-        //     스킵.interactable=false;
-        //     inactivate();
-        //     StartCoroutine(coroutine12);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        //     Invoke("activate",1.8f);
-        // }
-        // if(num==38){
-        //     StartCoroutine(coroutine13);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==41){
-        //     StartCoroutine(coroutine14);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==44){
-        //     StartCoroutine(coroutine15);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==47){
-        //     StartCoroutine(coroutine16);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==50){
-        //     StartCoroutine(coroutine17);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==53){
-        //     StartCoroutine(coroutine18);
-        //     Debug.Log("coroutine is started!  num"+num);
-        //     num++;//activate button
-        // }
-        // if(num==56){
-        //     SceneManager.LoadScene("4-2");
-        //     num++;//activate button
-        // }
-
-
+        if(num==33){
+            Debug.Log("[아니다, 더 찾아보자.]");
+            오브젝트활성화();
+            
+        }
+        
     }
 }

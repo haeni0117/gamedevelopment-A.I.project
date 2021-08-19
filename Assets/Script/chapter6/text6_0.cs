@@ -11,7 +11,24 @@ public class text6_0 : MonoBehaviour
     public static int cnt = 0; //st atic 변수로 수정 
     public static Text typingText; 
     public static GameObject fadeout;
+    public static Button 스킵;
     //스킵버튼
+
+    public static GameObject a;
+    public static Button aB;
+    public static Text at;
+//(2)반려동물 방석
+    public static GameObject b;
+    public static Button bB;
+    public static Text bt;
+//(3)의지
+    public static GameObject c;
+    public static Button cB;
+    public static Text ct;
+//(4)iot쓰레기통
+    public static GameObject d;
+    public static Button dB;
+    public static Text dt;
     public static void 스킵버튼클릭(){
         Debug.Log("skipbutton is clicked! num="+num);
         num++;
@@ -59,7 +76,7 @@ public class text6_0 : MonoBehaviour
     private static string text_10="나는 두려움을 삼키고 \n다시 몸을 일으켰다. \n약속을 지키기 위해.";
     private static string text_11="자꾸만 도망가는 시루를 \n겨우 붙잡고 \n피가 흐르는 뒷다리를 살폈다.\n왼쪽 뒤 발바닥에 \n베인 상처가 뚜렷했다. \n아마 나무에서 미끄러지면서 \n거친 껍질에 상처가 난 것 같다. ";
     private static string text_12="어서 구급상자를 찾아야 해.";
-    
+    private static string text_13="어디부터 찾아볼까?";
     //chapter4 end
     
     static IEnumerator coroutine =  Typing(text_1);
@@ -74,16 +91,47 @@ public class text6_0 : MonoBehaviour
     static IEnumerator coroutine9 = Typing(text_10);
     static IEnumerator coroutine10 = Typing(text_11);       
     static IEnumerator coroutine11 = Typing(text_12);
+    static IEnumerator coroutine12 = Typing(text_13);
+  
+    void Awake(){
+        // a = GameObject.Find("a");
+        // aB =a.GetComponent<Button>();
+        // at = GameObject.Find("aText").GetComponent<Text>();
+        // aB.onClick.AddListener(a활성화);
 
+        // b = GameObject.Find("b");
+        // bB =b.GetComponent<Button>();
+        // bt = GameObject.Find("bText").GetComponent<Text>();
+        // bB.onClick.AddListener(b활성화);
 
+        // c = GameObject.Find("c");
+        // cB =c.GetComponent<Button>();
+        // ct = GameObject.Find("cText").GetComponent<Text>();
+        // cB.onClick.AddListener(c활성화);
+
+        // d = GameObject.Find("d");
+        // dB =d.GetComponent<Button>();
+        // dt = GameObject.Find("dText").GetComponent<Text>();
+        // dB.onClick.AddListener(d활성화);
+
+        // at.text="1. 안방에 들어간다.";
+        // bt.text="2. 작업실에 들어간다.";
+        // ct.text="3. 거실에 들어간다.";
+        // dt.text="4. 게스트룸에 들어간다.";
+    }
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Scene 6-0 is started");
    
-       Button 스킵 = GameObject.Find("skipButton").GetComponent<Button>();
+       스킵 = GameObject.Find("skipButton").GetComponent<Button>();
        스킵.onClick.AddListener(text6_0.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
        StartCoroutine(coroutine);
+
+    //    a.SetActive(false);
+    //    b.SetActive(false);
+    //    c.SetActive(false);
+    //    d.SetActive(false);
 
 
     }
@@ -147,8 +195,14 @@ public class text6_0 : MonoBehaviour
             num++;
 
         } 
-        if(num==35){
+        if(num==34){
             SceneManager.LoadScene("6-1");
+        }
+        if(num==37){
+            a.SetActive(true);
+            b.SetActive(true);
+            c.SetActive(true);
+            d.SetActive(true);
         }
 
     }

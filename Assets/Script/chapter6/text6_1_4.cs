@@ -9,8 +9,8 @@ public class text6_1_4 : MonoBehaviour
     public static int num = 0;
     public static GameObject button_;
     public static int cnt = 0; //static 변수로 수정
-    public static bool bed_inspection = false;
-    public static bool emergencypox_inspection = false;
+    // public static bool bed_inspection = false;
+    // public static bool emergencypox_inspection = false;
     public static bool drawer_inspection = false;
     public static GameObject fadeout;
     //조사할 오브젝트
@@ -38,6 +38,11 @@ public class text6_1_4 : MonoBehaviour
     // public static Text achoice_t;
     // public static Text bchoice_t;
     public static Text typingText;
+    public static bool bed_inspection=false;
+    public static bool closet_inspection=false;
+    public static bool restroom_inspection=false;
+    public static bool makeup_inspection=false;
+
 
     
     private static string text_1="침대를 오랫동안 사용하지 않아 \n먼지가 소복이 쌓였다.\n베개 틈 사이에 \n뭔가 있지만, 너무 작아서 \n확실히 구급상자는 아니다.\n사람 발처럼 \n생긴 것 같기도 하고....";
@@ -75,12 +80,20 @@ public class text6_1_4 : MonoBehaviour
         SceneManager.LoadScene("6-2");
     }
     public void activate(){
+        if(bed_inspection==false){
+            bed_b.interactable=true;
+        }else closet_b.interactable=false;
+        if(closet_inspection==false){
+            closet_b.interactable=true;
+        }else closet_b.interactable=false;
+        if(restroom_inspection==false){
+            restroom_b.interactable=true;
+        }else restroom_b.interactable=false;
+        if(makeup_inspection==false){
+            makeup_b.interactable=true;
+        }else makeup_b.interactable=false;
         
-        bed_b.interactable=true;
-        closet_b.interactable=true;
-        restroom_b.interactable=true;
-        makeup_b.interactable=true;
-        drawer_b.interactable=false;
+        
         
 
         bed_t.text="(1) 침대";
@@ -107,9 +120,7 @@ public class text6_1_4 : MonoBehaviour
 
     public void click_bed(){
         스킵.interactable=false;
-        if(bed_inspection==true){스킵.interactable=true;}
-        
-        else{num=2;스킵.interactable=false;}
+        num=2;
     }
     public void click_closet(){
         스킵.interactable=false;
@@ -239,41 +250,23 @@ public class text6_1_4 : MonoBehaviour
 
         Debug.Log(num);
         if(num==2){
-            
-            스킵.interactable=false;
-            inactivate();
-            Debug.Log("coroutine is started!  num"+num);
+            스킵.interactable=true;
             StartCoroutine(coroutine1);
+            inactivate();
+            //구급상자...
             num++;
-            if(drawer_inspection==true){
-                스킵.interactable=true;
-            }
-            else{
-                Invoke("activate",6f);
-            }
+            
+            
             
         }
         if(num==5){
             스킵.interactable=false;
             inactivate();
-            Debug.Log("coroutine is started!  num"+num);
-            StartCoroutine(coroutine2);
             num++;
-            Invoke("activate",2f);
-        }
-        if(drawer_inspection==true){
-                스킵.interactable=true;
-                num=41;
             }
-        if(num==5){
-            스킵.interactable=false;
-            inactivate();
-            Debug.Log("coroutine is started!  num"+num);
-            StartCoroutine(coroutine2);
-            num++;
-            Invoke("activate",1.6f);
             
-        }
+        
+        
         if(num==8){
             스킵.interactable=false;
             inactivate();
