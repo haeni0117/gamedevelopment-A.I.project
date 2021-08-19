@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class text7_5 : MonoBehaviour
+public class text7_4_1 : MonoBehaviour
 {
     public void FadeIn(float fadeOutTime, System.Action nextEvent = null){
 		StartCoroutine(CoFadeIn(fadeOutTime,nextEvent));
@@ -66,9 +66,9 @@ public class text7_5 : MonoBehaviour
         if(d_inspection==false){
             dB.interactable=true;
         }else dB.interactable=false;
-        // if(e_inspection==false){
-        //     eB.interactable=true;
-        // }else eB.interactable=false;
+        if(e_inspection==false){
+            eB.interactable=true;
+        }else eB.interactable=false;
         
     }
 
@@ -163,16 +163,16 @@ public class text7_5 : MonoBehaviour
     }
      public static void b활성화(){
          b_inspection=true;
-        num=8;
+        num=17;
     }
 
     public static void c활성화(){
         c_inspection=true;
-        num=11;
+        num=20;
     }
     public static void d활성화(){
         d_inspection=true;
-        num=14;
+        num=23;
     }
     public static void e활성화(){
         e_inspection=true;
@@ -183,18 +183,18 @@ public class text7_5 : MonoBehaviour
         num=1;
     }
     public static void choice1활성화(){
-        num=17;
+        num=8;
     }
 
-    private static string text_1="의수 하드웨어 부품은 모두 \n작업실 상자에 들어있다.";
-    private static string text_2="책상 위에는 특별한 것이 없다.";
-    private static string text_3="쓰레기통은 그만 \n뒤지는 것이 좋겠어....";
-    private static string text_4="스마트 액자엔 동료들과 찍은 \n영상이 5초 간격으로 반복되고 \n있다. ";
-    private static string text_5="의수 부품 상자가 여기 있다!\n\n{의수 부품 상자를 획득했다.}\n\n부품 상자를 열어보자.";
-    private static string text_6="아까 의자에서 넘어질 때\n상자를 떨어뜨려서 \n안의 부품들이 전부 뒤섞였다. \n상자를 이리저리 뒤져서 \n알맞은 부품을 꺼냈다.\n\n{의수 손가락 관절 부품을 획득했다.}"; //B선택지연결(변기로간다)
+    private static string text_1="거울 뒤 선반에서 드라이어를 꺼냈다. \n{드라이어를 획득했다.}";
+    private static string text_2="드라이어를 코드에 꽂아. \n젖은 자체 발전기를 \n말렸다.";
+    private static string text_3="자체 발전기가 완전히 말랐다! \n이제 예전처럼 기능할 거야. \n드디어 사라와 대화할 수 있어!";
+    private static string text_4="드라이기는 제자리에 두고 \n작업실로 향했다. \n{드라이어 삭제}";
+    private static string text_5="아직도 비릿한 피 냄새가 \n나는 것 같다. \n도대체 어디서 오는 냄새일까?"; //B선택지연결(변기로간다)
     //C선택지(욕조로 간다)
-    private static string text_7="오래되어 녹이 슨 부품이지만, \n의수를 움직이는 데는 문제가 \n없을 것이다."; //C선택지연결
-
+    private static string text_6="물기가 가득한 곳에 드라이어를 \n보관했을 리 없어."; //C선택지연결
+    private static string text_7="드라이어가 여기 있을 리 없잖아.";
+    private static string text_8="드라이어는 여기 없다.";
     
     
     //coroutine function
@@ -205,8 +205,7 @@ public class text7_5 : MonoBehaviour
     static IEnumerator coroutine4 = Typing(text_5);
     static IEnumerator coroutine5 = Typing(text_6);
     static IEnumerator coroutine6 = Typing(text_7);
-    // static IEnumerator coroutine6 = Typing(text_7);
-    // static IEnumerator coroutine7 = Typing(text_8);
+    static IEnumerator coroutine7 = Typing(text_8);
    
 
 
@@ -235,10 +234,10 @@ public class text7_5 : MonoBehaviour
         dt = GameObject.Find("dText").GetComponent<Text>();
         dB.onClick.AddListener(d활성화);
 
-        // e = GameObject.Find("e");
-        // eB =e.GetComponent<Button>();
-        // et = GameObject.Find("eText").GetComponent<Text>();
-        // eB.onClick.AddListener(e활성화);
+        e = GameObject.Find("e");
+        eB =e.GetComponent<Button>();
+        et = GameObject.Find("eText").GetComponent<Text>();
+        eB.onClick.AddListener(e활성화);
 
         // f = GameObject.Find("f");
         // fB =f.GetComponent<Button>();
@@ -255,21 +254,21 @@ public class text7_5 : MonoBehaviour
         choice1t = GameObject.Find("choice1Text").GetComponent<Text>();
         choice1B.onClick.AddListener(choice1활성화);
 
-        at.text="(1) 책상";
-        bt.text="(2) IoT 쓰레기통";
-        ct.text="(3) 양탄자";
-        dt.text="(4) 책장";
-        // et.text="(5) 수건 받침대";
+        at.text="(1) 거울 + 세면대";
+        bt.text="(2) 변기";
+        ct.text="(3) 샤워 부스";
+        dt.text="(4) 발 매트";
+        et.text="(5) 수건 받침대";
         // ft.text="F. 게스트룸 화장실로 간다.";
-        choicet.text="1. 작업실을 조사한다.";
-        choice1t.text="{의수 부품 상자를 분해한다}\n{의수 부품 상자 삭제}";
+        choicet.text="1. 어디를 조사하지?";
+        choice1t.text="{드라이어와 젖은 자체 발전기를 조합한다.}";
         
 
         a.SetActive(false);
         b.SetActive(false);
         c.SetActive(false);
         d.SetActive(false);
-      
+        e.SetActive(false);
        
 
 
@@ -294,9 +293,8 @@ public class text7_5 : MonoBehaviour
         //오피스텔 화장실 .img
    
        스킵 = GameObject.Find("skipButton").GetComponent<Button>();
-       스킵.onClick.AddListener(text7_5.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
-       
-       StartCoroutine(coroutine);
+       스킵.onClick.AddListener(text7_4_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
+       choice.SetActive(true);
       
        
        
@@ -312,6 +310,8 @@ public class text7_5 : MonoBehaviour
             b.SetActive(true);
             c.SetActive(true);
             d.SetActive(true);
+            e.SetActive(true);
+            
             활성화();
             typingText.text=" ";
             
@@ -326,89 +326,124 @@ public class text7_5 : MonoBehaviour
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
-            StartCoroutine(coroutine1);
+            e.SetActive(false);
+            StartCoroutine(coroutine);
             num++;
             스킵.interactable=false;
             
         }
         if(num==7){
-            a.SetActive(true);
-            b.SetActive(true);
-            c.SetActive(true);
-            d.SetActive(true);
-            
-            활성화();
+            choice1.SetActive(true);
             typingText.text=" ";
                //StartCoroutine(coroutine1);
         }
 
     
         if(num==8){
-            a.SetActive(false);
-            b.SetActive(false);
-            c.SetActive(false);
-            d.SetActive(false);
-            StartCoroutine(coroutine2);
+            
+            StartCoroutine(coroutine1);
+            choice1.SetActive(false);
+            스킵.interactable=true;
             num++;
-            스킵.interactable=false;
         }
       
        
-        if(num==10){
-            a.SetActive(true);
-            b.SetActive(true);
-            c.SetActive(true);
-            d.SetActive(true);
-           
-            // f.SetActive(true);
-            활성화();
-            typingText.text=" ";    
-        }
         if(num==11){
-            a.SetActive(false);
-            b.SetActive(false);
-            c.SetActive(false);
-            d.SetActive(false);
-            StartCoroutine(coroutine3);
-            num++;
-            스킵.interactable=false;   //StartCoroutine(coroutine1);
+            StartCoroutine(coroutine2);
+            스킵.interactable=true;
+            num++;     
         }
-        if(num==13){
-            a.SetActive(true);
-            b.SetActive(true);
-            c.SetActive(true);
-            d.SetActive(true);
-            // f.SetActive(true);
-            활성화();
-            typingText.text=" ";  
+        if(num==14){
+            StartCoroutine(coroutine3);
+            스킵.interactable=false;
+            num++;    //StartCoroutine(coroutine1);
+        }
+        if(num==16){
+            SceneManager.LoadScene("7-5");
         }
         
-        if(num==14){
+        if(num==17){
             a.SetActive(false);
             b.SetActive(false);
             c.SetActive(false);
             d.SetActive(false);
+            e.SetActive(false);
              StartCoroutine(coroutine4);
             num++;            
         }
-        if(num==16){
-            choice1.SetActive(true);
-            스킵.interactable=false;
+        if(num==19){
+            a.SetActive(true);
+            b.SetActive(true);
+            c.SetActive(true);
+            d.SetActive(true);
+            e.SetActive(true);
             // f.SetActive(true);
+            활성화();
             typingText.text=" "; //StartCoroutine(coroutine1);
         }
-        if(num==17){
-            StartCoroutine(coroutine5);
-            choice1.SetActive(false);
-            스킵.interactable=true;
-            num++;        
-        }
         if(num==20){
-            StartCoroutine(coroutine6);
-            num++;   //StartCoroutine(coroutine1);
+            a.SetActive(false);
+            b.SetActive(false);
+            c.SetActive(false);
+            d.SetActive(false);
+            e.SetActive(false);
+           
+            StartCoroutine(coroutine5);
+            num++;            
         }
         if(num==22){
-            SceneManager.LoadScene("7-6");
+            a.SetActive(true);
+            b.SetActive(true);
+            c.SetActive(true);
+            d.SetActive(true);
+            e.SetActive(true);
+            // f.SetActive(true);
+            활성화();
+            typingText.text=" "; //StartCoroutine(coroutine1);
+        }
+        if(num==23){
+            a.SetActive(false);
+            b.SetActive(false);
+            c.SetActive(false);
+            d.SetActive(false);
+            e.SetActive(false);
+            // f.SetActive(false);
+             StartCoroutine(coroutine6);
+             스킵.interactable=false;
+            num++;            
+        }
+        if(num==25){
+            a.SetActive(true);
+            b.SetActive(true);
+            c.SetActive(true);
+            d.SetActive(true);
+            e.SetActive(true);
+            
+            활성화();
+            typingText.text=" "; 
+                   
+        }
+        if(num==26){
+            a.SetActive(false);
+            b.SetActive(false);
+            c.SetActive(false);
+            d.SetActive(false);
+            e.SetActive(false);
+            
+             StartCoroutine(coroutine7);
+             스킵.interactable=true;
+            num++;            
+        }
+        if(num==28){
+            a.SetActive(true);
+            b.SetActive(true);
+            c.SetActive(true);
+            d.SetActive(true);
+            e.SetActive(true);
+            
+            활성화();
+            typingText.text=" "; 
+                   
         }
         
         
