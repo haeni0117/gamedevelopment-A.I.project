@@ -97,8 +97,8 @@ public class text_10_1: MonoBehaviour
     private static string text_6="\"스마트홈 인공지능을 \n복제하는 건 쉬운 일이 아니야. \n게다가 지금 컴퓨터도 모두 \n카라의 손에 들어간 상태고";
     private static string text_7="\"저를 복제하자는 게 아닙니다. \n의수에 이미 복제된 \n이전 버전의 저를 \n이용하자는 의미입니다.\"";
     private static string text_8= "\"하지만 그것 역시 \n너의 일부야. \n복구할 수 없는 개체를 \n함부로 희생시키고 싶진 않아\"" ;
-    private static string text_9="\"하지만 이 방법은 \n저를 희생시키지 않으면서 \n탈출 가능성을 높일 수 있는 \n유일한 선택지입니다.\"";
-    private static string text_10_="인공지능은 바이러스와 같다.\n생물의 기본 요건을\n갖추지는 못했지만, \n그들은 분명히 살아있다. \n나는 차마 사라의 눈을 \n똑바로 바라보지 못하고 \n고개를 끄덕였다.";
+    private static string text_9="\"괜찮습니다. 저는 이미\n이런 일에 익숙해져 있습니다.\n그리고 그 어떤 버전의 저라도\n화이님을 위해서라면.... \n기쁜 마음으로 희생할 것입니다\"";
+    private static string text_10="순간 소름이 돋았다. \n방금 사라가 한 말은...\n감정이 있는 인간이 뱉는 말과\n다를 바가 없어보였다. \n하지만 대체 언제? 어린 시절의 \n나와 교류하면서 생긴 \n감정이라고 하기에는\n너무 깊어보인다. \n내가 기억하지 못하는\n특별한 계기가 있는 걸까?";
     private static string text_11="\"그래, 사라. \n지금은 그 방법밖에 없겠지. \n코어를 가져올게. \n컴퓨터에 연결해보자\"";
     
 
@@ -111,7 +111,7 @@ public class text_10_1: MonoBehaviour
     static IEnumerator coroutine6 = Typing(text_7);
     static IEnumerator coroutine7 = Typing(text_8);       
     static IEnumerator coroutine8 = Typing(text_9);
-    static IEnumerator coroutine9 = Typing(text_10_);
+    static IEnumerator coroutine9 = Typing(text_10);
     static IEnumerator coroutine10 = Typing(text_11);
    
 
@@ -125,6 +125,7 @@ public class text_10_1: MonoBehaviour
         스킵.onClick.AddListener(text_10_1.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
         Debug.Log("scene8-1-1 is started "+num);
         StartCoroutine(coroutine);
+        스킵.interactable=true;
 
         
 
@@ -185,7 +186,7 @@ public class text_10_1: MonoBehaviour
             StartCoroutine(coroutine10);
             num++;
         }
-        if(num==32){
+        if(num==31){
             SceneManager.LoadScene("10-2");
         }
         

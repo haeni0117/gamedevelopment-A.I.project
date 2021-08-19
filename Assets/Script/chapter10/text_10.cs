@@ -104,27 +104,27 @@ public class text_10: MonoBehaviour
     private static string text_13="화이라니. \n오랜만에 듣는 별명이다.";
     private static string text_14="\"기쁨이 뭔지는 알아, 사라?\"";
     private static string text_15="\"잘은 모릅니다. \n저는 호스트의 감정을 이해하지 \n못하니까요.\"";
-    private static string text_16="하지만 제가 두 분을 \n지켜보는 걸 좋아했다는 건 \n알았습니다.";
+    private static string text_16="하지만 제가 화이님을 \n지켜보는 걸 좋아했다는 건 \n알았습니다.";
     private static string text_17= "저도 2.32 패치 이후 \n호불호를 이해할 수 \n있게 되었거든요" ;
     private static string text_18="좋아하는 걸 잃는 게 슬픔이라면 \n좋아하는 걸 보는 건 \n기쁨 아닌가요? ";
     private static string text_19="하지만 ‘화이’님은 사고 이후 \n‘아로’님의 사진을 보며 \n‘슬프다’는 말 대신 ‘그립다’는 \n말씀을 자주 하셨습니다.”";
     private static string text_20="\"그래도 여전히 네가 갑자기 \n오빠 얘기를 꺼낸 이유를 \n모르겠는걸.\"";
     private static string text_21="\"표정 분석 알고리즘에 따르면, \n지금 화이님은 아로님의 \n사진을 볼 때와 표정이 \n똑같습니다.\"";
-    private static string text_22="사라가 우리 집에 온 뒤로\n나와 오빠를 위해 \n가장 처음 한 일은 \n방 안이 꽉 차도록 \n우주 AR을 틀어주는 것이었다.\n우리는 까만 밤하늘에 \n드문드문 박힌 별을 향해 \n망토 대신 담요를 둘러매고 \n침대 위를 이리저리 뛰어다녔다.";
-    private static string text_23="여느 남매가 그렇듯, \n여동생에게 엄청 다정하고 \n착한 오빠는 아니었지만\n오빠는 세 살이나 어린 여동생을 \n놀아달라는 요청을 \n한 번도 거절한 적이 없었던 \n사람이었다.?";
-    private static string text_24="있지, 사라. \n지금은 적절한 때가 \n아니라고 생각하지만.......\n그래도 얘기 하나만 들어줄래?";
-    private static string text_25="\"네. 물론이죠.\"";
-    private static string text_26= "\"내가 12살이 되던 날, \n오빠가 죽었어. \n오늘은 생일이니까 안전벨트를 \n매기 싫다고 땡깡을 부렸거든.\"" ;
-    private static string text_27="근데 하필 그때 빗길에 사람이 \n운전하는 스쿨버스가 미끄러졌고, \n우리 가족이 타고 있던 \n캐니언 V6는 안전벨트를 \n매고 있지 않은 사람을 우선으로 \n보호하는 결정을 내린 거야.\n그래서 죽었어.";
+    private static string text_22="사고 이후 사라는 종종 \n우울해하는 나를 위해 \n종종 방 안이 꽉 차도록 \n우주 AR을 틀어주었다. \n그러면 종종 오빠와 함께\n놀던 시절이 생각났다.";
+    private static string text_23="여느 남매가 그렇듯, \n여동생에게 엄청 다정하고 \n착한 오빠는 아니었지만,\n오빠는 개인 노트북만 \n만지작거리는 내성적인 동생을\n챙겨주라는 부모님의 요청을\n한 번도 거절한 적이 없었던 \n사람이었다.";
+    private static string text_24="오빠는 종종 노트북에 친구라도\n있냐고 나를 나무라며 손을 잡고\n도시복합체 내에 있는 \n어린이 놀이공간에 나를 \n데려가곤 했다.";
+    private static string text_25="\"있지, 사라. \n지금은 적절한 때가 \n아니라고 생각하지만...\n그래도 얘기 하나만 들어줄래?\"";
+    private static string text_26= "\"네, 물론이죠.\"" ;
+    private static string text_27="\"내가 12살이 되던 날, \n오빠가 죽었어. \n바깥 풍경이 보고 싶어서 \n부모님 몰래 안전벨트를 풀었거든.\n근데 하필 그때 빗길에 사람이 \n운전하는 스쿨버스가 미끄러졌고, \n우리 가족이 타고 있던 \n캐니언 V6는 안전벨트를 \n매고 있지 않은 사람을 우선으로 \n보호하는 결정을 내린 거야. \n그래서 죽었어.\"";
     private static string text_28="늘 나한테 양보하고 세상에서 가장 \n똑똑했던 우리 오빠가, \n앞길이 창창하던 우리 오빠가, \n내가.... \n내가, 안전벨트를 안 매서 \n죽은 거야.\"";
     private static string text_29="사라는 감정을 이해하지 못해서, \n명령만 따르는 기계라서,\n나를 원망하지도, 비난하지도, \n판단하지도 않았다.\"";
-    private static string text_30="하지만 이젠 인공지능마저….";
-    private static string text_31="\"그해 전량 폐기된 캐니언 V6의 \n판단 및 결정 프로그램의 모체는 \n자이나 사의 스마트홈 \n인공지능이었습니다. \n그렇다면 저도 전량 폐기해야\n하는 것 아닌가요?\"";
-    private static string text_32="\"캐니언 V6에 있던 \n판단 및 의사결정 프로그램이…, \n너였다고?\"";
-    private static string text_33="\"네 그렇습니다. 당시 \n신생 회사였던 캐니언 오토사는 \n100% 자율주행이 가능한 \n인공지능을 구현할 수가 없었고, \n판단 및 결정 프로그램을 \n자이나 사에서 조달해 \n제작했습니다.\"";
-    private static string text_34="\"사라, \n정말 네 말이 사실이라면, \n지금 당장 여기를 나가야 해.\"";
-  
-
+    private static string text_30="\"...그렇다면 그런 일이 \n다시는 일어나지 않도록 \n막으면 됩니다.\n자신을 탓하지 말아주세요.\n그럴 때마다 저는...";
+    private static string text_31="하지만 이젠 인공지능마저...\"";
+    private static string text_32="왜 그래, 사라 무슨 소리야.\n무슨 문제 있어?’";
+    private static string text_33="\"...그해 전량 폐기된 캐니언 V6의 \n판단 및 결정 프로그램의 모체는 \n자이나 사의 스마트홈 \n인공지능이었습니다. \n그렇다면 저도 폐기해야\n하는 것 아닌가요?”\"";
+    private static string text_34="\"캐니언 V6에 있던 \n판단 및 의사결정 프로그램이... \n너였다고?\"";
+    private static string text_35="\"정확히 저는 아니지만...\n인공지능 ‘사라’ 였던건 맞습니다. \n당시 신생 회사였던 \n캐니언 오토사는 \n100% 자율주행이 가능한 \n인공지능을 구현할 수가 없었고, \n판단 및 결정 프로그램을 \n자이나 사에서 조달해 \n제작했습니다.\n아마 캐니언 오토 사건도\n사고 당시 자동차에 있던\n인공지능에게 문제가 있었을\n가능성이 있습니다.\"";
+    private static string text_36="\"사라, \n정말 네 말이 사실이라면, \n지금 당장 여기를 나가야 해\"";
     static IEnumerator coroutine =  Typing(text_1);
     static IEnumerator coroutine1 = Typing(text_2);
     static IEnumerator coroutine2 = Typing(text_3);       
@@ -159,6 +159,8 @@ public class text_10: MonoBehaviour
     static IEnumerator coroutine31 = Typing(text_32);
     static IEnumerator coroutine32 = Typing(text_33);       
     static IEnumerator coroutine33 = Typing(text_34);
+    static IEnumerator coroutine34 = Typing(text_35);
+    static IEnumerator coroutine35 = Typing(text_36);
 
      
     
@@ -170,6 +172,7 @@ public class text_10: MonoBehaviour
         스킵.onClick.AddListener(text_10.스킵버튼클릭);//adlistner로 불러오려면 static void여야 한다.
         Debug.Log("scene8-1-1 is started "+num);
         StartCoroutine(coroutine);
+        스킵.interactable=true;
 
         
 
@@ -348,6 +351,16 @@ public class text_10: MonoBehaviour
             num++;
         }
         if(num==101){
+            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine34);
+            num++;
+        }
+        if(num==104){
+            Debug.Log("coroutine is started!  num"+num);
+            StartCoroutine(coroutine35);
+            num++;
+        }
+        if(num==106){
             SceneManager.LoadScene("10-1");
         
         }
