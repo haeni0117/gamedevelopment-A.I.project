@@ -122,6 +122,8 @@ public static Text choice_bt;
   //(8)2층 베란다 창문 -> ㄴ. 의자 획득 이후 조사를 했을 때
     private static string text_17="의자를 밟고 올라가면 \n손이 닿을 것 같다!\n{의자를 2층 베란다 창문에 사용한다.} ";
     private static string text_18="\"됐다!\"\n조절 장치를 돌려\n문을 열었다.\n그런데...\n\"앗!\"";
+    private static string text_19="의자에서 미끄러져 \n완전히 굴러떨어졌다. \n그래도 크게 다친 곳은 없다.\n하지만 의자가 완전히 \n부서져 버렸다.\n{아이템 창에서 의자 삭제}";
+    private static string text_20="부서진 의자의 부품을 \n밟지 않도록 조심하며\n베란다로 나갔다.";
     static IEnumerator coroutine00=  Typing(text_00);
     static IEnumerator coroutine01=  Typing(text_01);
     static IEnumerator coroutine2=  Typing(text_1);
@@ -139,9 +141,11 @@ public static Text choice_bt;
     static IEnumerator coroutine14 = Typing2(text_13);
     static IEnumerator coroutine15 = Typing2(text_14);
     static IEnumerator coroutine16 = Typing2(text_15);
-    static IEnumerator coroutine17 = Typing2(text_16);
+    static IEnumerator coroutine17 = Typing(text_16);
     static IEnumerator coroutine18 = Typing(text_17);
     static IEnumerator coroutine19 = Typing(text_18);
+    static IEnumerator coroutine20 = Typing(text_19);
+    static IEnumerator coroutine21 = Typing(text_20);
 
     public static void 오브젝트활성화(){
       a.SetActive(true);
@@ -232,20 +236,20 @@ public static Text choice_bt;
       backbutton_.SetActive(false);
     }
     public static void f1활성화(){
-      num=20;
+      num=32;
       f1_inspection2=true;
     }
     public static void f2활성화(){
-      num=20;
+      num=35;
       f2_inspection2=true;
     }
     public static void g활성화(){
-      num=23;
+      num=53;
       g_inspection2=true;
       backbutton_.SetActive(false);
     }
     public static void h활성화(){
-      num=26;
+      num=56;
       h_inspection2=true;
       backbutton_.SetActive(false);
     }
@@ -265,7 +269,7 @@ public static Text choice_bt;
       choice_bB.interactable=true;
     }
     public static void scenechange(){
-      SceneManager.LoadScene("3-3");
+      SceneManager.LoadScene("3-4");
     }
     public static void backbutton활성화(){
       num=1;
@@ -301,6 +305,12 @@ public static Text choice_bt;
       f2t.text="(6)-2 다이어리";
       f1B.interactable=true;
       f2B.interactable=true;
+      typingText.text=" ";
+    }
+    public static void 사이드테이블오브젝트비활성화(){
+      f1.SetActive(false);
+      f2.SetActive(false);
+      diary.SetActive(false);
       typingText.text=" ";
     }
     public static void 탁자오브젝트활성화(){
@@ -691,52 +701,102 @@ public static Text choice_bt;
         if(num==35){//팝업창 생성
             Debug.Log("[다이어리]");
             StartCoroutine(coroutine11);
+            
             스킵.interactable=true;
-            num++;
-        }
-        if(num==38){
-            Debug.Log("[다이어리->pop-up]");
             diary.SetActive(true);
-            StartCoroutine(coroutine11);
-            스킵.interactable=true;
+            f2B.interactable=false;
             num++;
         }
         if(num==38){
-            Debug.Log("[다이어리]");
+            Debug.Log("[다이어리 text1]");
             StartCoroutine(coroutine12);
             스킵.interactable=true;
+            f2B.interactable=false;
             num++;
+  
         }
-        if(num==38){
-            Debug.Log("[다이어리]");
+        if(num==41){
+            Debug.Log("[다이어리 text2]");
+            diary.SetActive(true);
             StartCoroutine(coroutine13);
             스킵.interactable=true;
+            f2B.interactable=false;
             num++;
         }
-        if(num==38){
-            Debug.Log("[다이어리]");
+        if(num==44){
+            Debug.Log("[다이어리 text3]");
             StartCoroutine(coroutine14);
             스킵.interactable=true;
+            f2B.interactable=false;
             num++;
         }
-        if(num==38){
-            Debug.Log("[다이어리]");
+        if(num==47){
+            Debug.Log("[다이어리 text4]");
             StartCoroutine(coroutine15);
-            스킵.interactable=false;
+            스킵.interactable=true;
+            f2B.interactable=false;
             num++;
         }
-        if(num==40){
+        if(num==50){
+            Debug.Log("[다이어리 text5]");
+            StartCoroutine(coroutine16);
+            스킵.interactable=false;
+            f2B.interactable=false;
+            num++;
+        }
+      
+        if(num==52){
             diary.SetActive(false);
             Debug.Log("[다이어리 선택지 종료]");
             typingText2.text ="";//다이어리 텍스트 초기화
+            사이드테이블오브젝트비활성화();
+            오브젝트활성화();
+
 
         }
-        if(num==38){
-            Debug.Log("[B. 베란다 문을 연다.]");
-            StartCoroutine(coroutine13);
-            스킵.interactable=false; //다음 씬으로 이동
-            Invoke("scenechange",3f);
+        if(num==53){
+            Debug.Log("[책장]");
+            StartCoroutine(coroutine17);
+            스킵.interactable=false;
+            오브젝트비활성화(); 
+            backbuttont.text="";
             num++;
+        }
+        if(num==55){
+            Debug.Log("[오브젝트활성화]");
+            오브젝트활성화();
+            스킵.interactable=false; 
+        }
+        if(num==56){
+            Debug.Log("[2층 베란다 창문]");
+            if(f2_inspection2==false){
+              typingText.text="주변을 더 둘러봐야 할 것 같다.";
+            }
+            else{if(c_inspection2==false){
+              StartCoroutine(coroutine18);
+            }
+            else {StartCoroutine(coroutine19);}
+            스킵.interactable=true; }
+            오브젝트비활성화(); 
+            num++;
+        }
+        if(num==59){
+            Debug.Log("[2층 베란다 창문 -> 기본 텍스트]");
+            스킵.interactable=true; //다음 씬으로 이동
+            StartCoroutine(coroutine20);
+            num++;
+        }
+        if(num==62){
+            Debug.Log("[의자 아이템 삭제]");
+            스킵.interactable=true; //다음 씬으로 이동
+            StartCoroutine(coroutine21);
+            num++;
+        }
+        if(num==64){
+            Debug.Log("[scene #3-3 -> #3-4]");
+            스킵.interactable=false; //다음 씬으로 이동
+            scenechange();
+            
         }
     }
 }
