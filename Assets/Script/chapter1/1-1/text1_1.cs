@@ -35,8 +35,31 @@ public class text1_1: MonoBehaviour
     public static int num = 0;
     public static GameObject button_;
     public static int cnt = 0; //st atic 변수로 수정
-    public static Text typingText;
     public static GameObject fadeout;
+    public static Text typingText;
+    public static GameObject a;
+    public static Button aB;
+    public static Button 스킵;
+    public static Text at;
+//(2)반려동물 방석
+    public static GameObject b;
+    public static Button bB;
+    public static Text bt;
+//(3)의지
+    public static GameObject c;
+    public static Button cB;
+    public static Text ct;
+//(4)iot쓰레기통
+    public static GameObject d;
+    public static Button dB;
+    public static Text dt;
+    public static GameObject choice;
+    public static Button choiceB;
+    public static Text choicet;
+
+    public static GameObject choice1;
+    public static Button choice1B;
+    public static Text choice1t;
 
 
     //skip button
@@ -46,57 +69,9 @@ public class text1_1: MonoBehaviour
     }
     //choice1activation
 
-    public static void 선택지활성화(){
-
-
-        //objects are showed
-        //a
-        GameObject a = GameObject.Find("a");
-        Button aB =a.GetComponent<Button>();
-        Text at = GameObject.Find("aText").GetComponent<Text>();
-        at.text="A. 5분만 더.... ";
-        aB.interactable=true;
-        aB.onClick.AddListener(text1_1.a활성화);
-
-        //b
-        GameObject b = GameObject.Find("b");
-        Button bB =b.GetComponent<Button>();
-        Text bt = GameObject.Find("bText").GetComponent<Text>();
-        bt.text="B. 지금 몇 시야 카라?";
-        bB.interactable=true;
-        bB.onClick.AddListener(text1_1.b활성화);
-    }
-
-
-
     public static void a활성화(){
-      GameObject b = GameObject.Find("b");
-      Button bB =b.GetComponent<Button>();
-      Text bt = GameObject.Find("bText").GetComponent<Text>();
-      GameObject a = GameObject.Find("a");
-      Button aB =a.GetComponent<Button>();
-      Text at = GameObject.Find("aText").GetComponent<Text>();
-      num=5;
-      at.text=" ";
-      aB.interactable=false;
-      bt.text=" ";
-      bB.interactable=false;
-    }
-    public static void b활성화(){
-      GameObject a = GameObject.Find("a");
-      Button aB =a.GetComponent<Button>();
-      Text at = GameObject.Find("aText").GetComponent<Text>();
-      GameObject b = GameObject.Find("b");
-      Button bB =b.GetComponent<Button>();
-      Text bt = GameObject.Find("bText").GetComponent<Text>();
-      num=11;
-      at.text=" ";
-      aB.interactable=false;
-      bt.text=" ";
-      bB.interactable=false;
-    }
 
-
+    }
 
     private static string text_1="일어나실 시간입니다.";
     //a. 5분만 더
@@ -112,6 +87,7 @@ public class text1_1: MonoBehaviour
     static IEnumerator coroutine1 = Typing(text_2);
     static IEnumerator coroutine2 = Typing(text_3);
     static IEnumerator coroutine3 = Typing(text_4);
+
 
 
 
@@ -133,51 +109,61 @@ public class text1_1: MonoBehaviour
         // choice1B.onClick.AddListener(text_8_1_2.선택지활성화);
 
        //a
-        GameObject a = GameObject.Find("a");
-        Button aB =a.GetComponent<Button>();
-        Text at = GameObject.Find("aText").GetComponent<Text>();
-        at.text=" ";
-        aB.interactable=false;
+        a = GameObject.Find("a");
+        aB =a.GetComponent<Button>();
+        at = GameObject.Find("aText").GetComponent<Text>();
+        at.text="A. 5분만 더.... ";
+        aB.interactable=true;
         aB.onClick.AddListener(text1_1.a활성화);
 
         //b
-        GameObject b = GameObject.Find("b");
-        Button bB =b.GetComponent<Button>();
-        Text bt = GameObject.Find("bText").GetComponent<Text>();
-        bt.text=" ";
-        bB.interactable=false;
+        b = GameObject.Find("b");
+        bB =b.GetComponent<Button>();
+        bt = GameObject.Find("bText").GetComponent<Text>();
+        bt.text="B. 지금 몇 시야 카라?";
+        bB.interactable=true;
         bB.onClick.AddListener(text1_1.b활성화);
+
+        a.SetActive(false);
+        b.SetActive(false);
+        스킵.interactable=false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(num==2){
-            선택지활성화();
-            num++;
+        if(num==1){
+            a.SetActive(true);
+            b.SetActive(true);
+            스킵.interactable=true;
+
             //StartCoroutine(coroutine1);
         }
         if(num==5){
             StartCoroutine(coroutine1);
             num++;
+            스킵.interactable=false;
+
+        }
+        if(num==7){
+            SceneManager.LoadScene("1-1-1");
+            스킵.interactable=false;
+
 
         }
         if(num==8){
-            SceneManager.LoadScene("1-1-1");
-
-        }
-        if(num==11){
             StartCoroutine(coroutine2);
             Debug.Log("coroutine is started!  num"+num);
             num++;
+            스킵.interactable=true;
         }
-        if(num==14){
+        if(num==11){
             StartCoroutine(coroutine3);
             Debug.Log("coroutine is started!  num"+num);
             num++;
         }
-        if(num==17){
+        if(num==13){
            SceneManager.LoadScene("1-1-1");
 
         }

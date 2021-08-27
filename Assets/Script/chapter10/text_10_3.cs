@@ -293,8 +293,8 @@ public class text_10_3 : MonoBehaviour
         b.SetActive(false);
         c.SetActive(false);
         d.SetActive(false);
-        d1.SetActive(false);
-        d2.SetActive(false);
+        // d1.SetActive(false);
+        // d2.SetActive(false);
 
 
         choice.SetActive(false);
